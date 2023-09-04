@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: 2023-08-26
-draft: true
+draft: false
 layout: math_post
 ---
 ## Test Post
