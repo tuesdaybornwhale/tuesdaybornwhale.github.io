@@ -2,6 +2,7 @@
 title: "My First Post"
 date: 2023-08-26
 layout: math_post
+draft: true
 ---
 
 {{< math_post >}}
