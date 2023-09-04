@@ -7,4 +7,4 @@ layout: math_post
 
 does this **actually** work?
 
-$$ E=mc^2 $$
+% 1//2 = 0.5 %
