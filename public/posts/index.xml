@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on TuesdayBornWhale</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on TuesdayBornWhale</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>//localhost:1313/posts/test_post/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/test_post/</guid>
+      <description>---layout: post---Test Post does this actually work?
+$$ E=mc^2 $$
+$$ \begin{pmatrix} 0 &amp;amp; 1 \\ 0 &amp;amp; 0 \end{pmatrix}\begin{pmatrix} 0 &amp;amp; 0 \\ 1 &amp;amp; 0 \end{pmatrix}=\begin{pmatrix} 1 &amp;amp; 0 \\ 0 &amp;amp; 0 \end{pmatrix} $$</description>
+    </item>
+    
+    <item>
+      <title>Math Genealogy</title>
+      <link>//localhost:1313/posts/math_genealogy/</link>
+      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      
+      <guid>//localhost:1313/posts/math_genealogy/</guid>
+      <description>Introduction Math genealogy is a pretty cool mental motion I discovered that helps me think about math in ways that are both fun and insightful.
+Motivating examples </description>
+    </item>
+    
+  </channel>
+</rss>
