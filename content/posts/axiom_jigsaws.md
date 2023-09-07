@@ -42,15 +42,26 @@ Let E be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),..., which 
 4. \\(\mathbb{P}[E] = 1\\)
 5. If A and B have no element in common, then \\(\mathbb{P}[A] + \mathbb{P}[B] = \mathbb{P}[A \cup B]\\)
 
+The system of sets F, together with the definite assignment of the numbers \\(\\mathbb{P}[A]\\) satisfying these axioms 1-5, is called a field of probability.
+
 -----
 
-In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. E is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \\(E=\\{1,2,3,4,5,6\\}\\). F is a subset of the power set of E, which means in our example that it could contain elements such as \\(\\{1\\}, \\{3\\}, \\{1,3\\}\\), \\(\\{1,2,3,4\\}\\), or E. We are interested in assigning probabilities to members of F rather than members of E. This is becuase we might be just as excited to discuss what the probability of a die landing a prime number or an even number as in what the probability of it landing a specific number. Importantly, F is assumed to be a field, which means we can happily operate on the sets in F and be assured that the result is actually still in F and therefore has a probability assigned to it. For example, if \\(\\{1\\} \\in F \\space and \\space \\{3\\} \\in F\\), then \\(\\{1,3\\}\\in F\\).
+In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. E is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \\(E=\\{1,2,3,4,5,6\\}\\). F is a subset of the power set of E, which means in our example that it could contain elements such as \\(\\{1\\}, \\{3\\}, \\{1,3\\}\\), \\(\\{1,2,3,4\\}\\), or E. We are interested in assigning probabilities to members of F rather than members of E. This is becuase we might be just as excited to discuss, for example, what the probability of a die landing a prime or an even number as the probability of it landing a specific number. Importantly, F is assumed to be a field, which means we can happily operate on the sets in F and be assured that the result is actually still in F and therefore has a probability assigned to it. For example, if \\(\\{1\\} \\in F \\space and \\space \\{3\\} \\in F\\), then \\(\\{1,3\\}\\in F\\). 
+
+The next three axioms outline the features of our function \\(\mathbb{P}\\). Elegantly, these three simple claims allow us to deduce many of the features of probabilities that we would like to be true. You can try and prove some yourself or check the proofs on wikipedia.
+
+From my perspective ninety years in the future, there were several pieces of this system that surprised me. the first odd thing was that axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about infinite sums. The second, even more eye-catching thing was that E was assumed to be a *finite* set. This contrasts the modern formulation I'm familiar with, where no claim is made as to the size of E. Of course, this second anomaly explains the first, as one doesn't need to worry about infinite unions when dealing with a finite set.
+
+Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set E, one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't need any additional
+
 
 ### A more modern presentation of the axioms
+
+------
 Let \\((\Omega, \sigma\\)) be a measurable space. A probability measure is a total function \\(\mathbb{P}:\sigma \rightarrow \mathbb{R} \\) such that:
 
 1. \\(\forall A \in \sigma, \space \mathbb{P}[A]\geq 0\\)
 2. \\(\mathbb{P}[\Omega] = 1\\)
 3. \\(\mathbb{P}[\bigcup_{n=1}^{\infty}A_n]=\sum_{n=1}^{\infty}\mathbb{P}[A_n]\\) for a sequence \\((A_n)_{n \geq 1}\\) of sets in \\(\sigma\\)
-
+------
 
