@@ -34,25 +34,26 @@ There are many other properties we would like our function to have, such as the 
 
 ----
 
-Let \\(\\Omega\\) be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),..., which we shall call elementary events, and \\(\\sigma\\) a set of subsets of \(\\Omega\\) ; the elements of the set \\(\\sigma\\) will be called random events.
+Let \\(\Omega\\) be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),..., which we shall call elementary events, and \\(\sigma\\) a set of subsets of \\(\Omega\\) ; the elements of the set \\(\sigma\\) will be called random events.
 
-1. \\(\\sigma\\) is a field of sets
-2. \\(\\sigma\\) contains the set \\(\\Omega\\)
-3. To each set A in \\(\\sigma\\) is assigned a non-negative real number \\(\mathbb{P}[A]\\). This number \\(\mathbb{P}[A]\\) is called the probability of the event A.
-4. \\(\mathbb{P}[\\Omega] = 1\\)
+1. \\(\sigma\\) is a field of sets
+2. \\(\sigma\\) contains the set \\(\Omega\\)
+3. To each set A in \\(\sigma\\) is assigned a non-negative real number \\(\mathbb{P}[A]\\). This number \\(\mathbb{P}[A]\\) is called the probability of the event A.
+4. \\(\mathbb{P}[\Omega] = 1\\)
 5. If A and B have no element in common, then \\(\mathbb{P}[A] + \mathbb{P}[B] = \mathbb{P}[A \cup B]\\)
 
-The system of sets \\(\\sigma\\), together with the definite assignment of the numbers \\(\\mathbb{P}[A]\\) satisfying these axioms 1-5, is called a field of probability.
+The system of sets \\(\sigma\\), together with the definite assignment of the numbers \\(\\mathbb{P}[A]\\) satisfying these axioms 1-5, is called a field of probability.
 
 -----
 
-In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. E is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \\(E=\\{1,2,3,4,5,6\\}\\). F is a subset of the power set of E, which means in our example that it could contain elements such as \\(\\{1\\}, \\{3\\}, \\{1,3\\}\\), \\(\\{1,2,3,4\\}\\), or E. We are interested in assigning probabilities to members of F rather than members of E. This is becuase we might be just as excited to discuss, for example, what the probability of a die landing a prime or an even number as the probability of it landing a specific number. Importantly, F is assumed to be a field, which means we can happily operate on the sets in F and be assured that the result is actually still in F and therefore has a probability assigned to it. For example, if \\(\\{1\\} \\in F \\space and \\space \\{3\\} \\in F\\), then \\(\\{1,3\\}\\in F\\). 
+In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. \\(\Omega\\) is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \\(\Omega=\\{1,2,3,4,5,6\\}\\). \\(\sigma\\) is a subset of the power set of \\(\Omega\\), which means in our example that it could contain elements such as \\(\\{1\\}, \\{3\\}, \\{1,3\\}\\), \\(\\{1,2,3,4\\}\\), or \\(\Omega\\) itself. We are interested in assigning probabilities to members of \\(\sigma\\) rather than members of \\(\Omega\\). This is becuase we might be just as excited to discuss, for example, what the probability of a die landing a prime or an even number as the probability of it landing a specific number. Importantly, \\(\sigma\\) is assumed to be a field, which means we can happily operate on the sets in \\(\sigma\\) and be assured that the result is actually still in \\(\sigma\\) and therefore has a probability assigned to it. For example, if \\(\\{1\\} \\in \sigma \\space and \\space \\{3\\} \\in \sigma\\), then \\(\\{1,3\\}\\in \sigma\\). 
 
 The next three axioms outline the features of our function \\(\mathbb{P}\\). Elegantly, these three simple claims allow us to deduce many of the features of probabilities that we would like to be true. You can try and prove some yourself or check the proofs on wikipedia.
 
-From my perspective ninety years in the future, there were several pieces of this system that surprised me. the first odd thing was that axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about infinite sums. The second, even more eye-catching thing was that E was assumed to be a *finite* set. This contrasts the modern formulation I'm familiar with, where no claim is made as to the size of E. Of course, this second anomaly explains the first, as one doesn't need to worry about infinite unions when dealing with a finite set.
+From my perspective ninety years in the future, there were several pieces of this system that surprised me. Firstly, axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about infinite sums. Secondly, \\(\sigma\\) is a field, whereas I am used to it being a Borel field a.k.a a \\(\sigma\\)-algebra. \\(\sigma\\)-algebras are meaningfully different from fields because the first are closed by infinite unions, whereas the last aren't. Finally and most eye-catching of all, \\(\Omega\\) is assumed to be a *finite* set. This contrasts the modern formulation I'm familiar with, where no claim is made as to the size of \\(\Omega\\). The third anomaly actually explains the first two, as one doesn't need to worry about infinite unions when dealing with a finite set.
 
-Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set E, one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't use any additional axioms...
+Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set \\(\Omega\\), one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't use any additional axioms to feel like it properly dealt with infinite sets...
+
 ### A more modern presentation of the axioms
 
 ------
@@ -60,7 +61,18 @@ Let \\((\Omega, \sigma\\)) be a measurable space. A probability measure is a tot
 
 1. \\(\forall A \in \sigma, \space \mathbb{P}[A]\geq 0\\)
 2. \\(\mathbb{P}[\Omega] = 1\\)
-3. \\(\mathbb{P}[\bigcup_{n=1}^{\infty}A_n]=\sum_{n=1}^{\infty}\mathbb{P}[A_n]\\) for a sequence \\((A_n)_{n \geq 1}\\) of sets in \\(\sigma\\)
+3. (additivity) \\(\mathbb{P}[\bigcup_{n=1}^{\infty}A_n]=\sum_{n=1}^{\infty}\mathbb{P}[A_n]\\) for a sequence \\((A_n)_{n \geq 1}\\) of sets in \\(\sigma\\)
+
+For a \\(\mathbb{P}\\) satisfying these axioms, we call \\((\Omega, \sigma, \mathbb{P})\\) a probability space.
+
 ------
 
-One may notice that the first two axioms in Kolgomorov's text got eaten up by the first paragraph of our new presentation. This is a fun effect of the inexorable progress of time. Information and concepts that have proven repeatedly useful get squished and compressed into ever more deformed shorthands. Over time, 
+One may notice that the first two axioms in Kolgomorov's text got eaten up by the first paragraph of our new presentation. This is, I suspect, an amusing effect of the inexorable progress of time. Information and concepts that have proven repeatedly useful get squished and compressed into ever more deformed shorthands. Over time, the information that \\(\Omega\\) is a set and that \\(\sigma\\) is a \\(\sigma\\)-algebra over that set got flattened into '\\((\Omega, \sigma\\)) is a measurable space.'
+
+The more substantive difference here is that Swan tries to directly define probabilities for sets that are not necessarily finite, without the use of an auxilliary axiom. It does this by making \\(\sigma\\) closed under infinite unions as well as finite ones, and secondly by defining the additivity axiom for infinite unions. The question this post seeks to answer next is what is the hole, inconsistency or pathological example that these modifications are undoubtedly papering over. Moreover, how did Kolmogorov deal with this hole and why did he choose to add a sixth axiom instead of modifying the first five until no holes were left.
+
+## The Mysterious sixth axiom
+
+------
+
+------
