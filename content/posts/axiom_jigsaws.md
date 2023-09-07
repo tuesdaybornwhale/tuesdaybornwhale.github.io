@@ -34,15 +34,15 @@ There are many other properties we would like our function to have, such as the 
 
 ----
 
-Let E be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),..., which we shall call elementary events, and F a set of subsets of E ; the elements of the set F will be called random events.
+Let \\(\\Omega\\) be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),..., which we shall call elementary events, and \\(\\sigma\\) a set of subsets of \(\\Omega\\) ; the elements of the set \\(\\sigma\\) will be called random events.
 
-1. F is a field of sets
-2. F contains the set E
-3. To each set A in F is assigned a non-negative real number \\(\mathbb{P}[A]\\). This number \\(\mathbb{P}[A]\\) is called the probability of the event A.
-4. \\(\mathbb{P}[E] = 1\\)
+1. \\(\\sigma\\) is a field of sets
+2. \\(\\sigma\\) contains the set \\(\\Omega\\)
+3. To each set A in \\(\\sigma\\) is assigned a non-negative real number \\(\mathbb{P}[A]\\). This number \\(\mathbb{P}[A]\\) is called the probability of the event A.
+4. \\(\mathbb{P}[\\Omega] = 1\\)
 5. If A and B have no element in common, then \\(\mathbb{P}[A] + \mathbb{P}[B] = \mathbb{P}[A \cup B]\\)
 
-The system of sets F, together with the definite assignment of the numbers \\(\\mathbb{P}[A]\\) satisfying these axioms 1-5, is called a field of probability.
+The system of sets \\(\\sigma\\), together with the definite assignment of the numbers \\(\\mathbb{P}[A]\\) satisfying these axioms 1-5, is called a field of probability.
 
 -----
 
@@ -52,9 +52,7 @@ The next three axioms outline the features of our function \\(\mathbb{P}\\). Ele
 
 From my perspective ninety years in the future, there were several pieces of this system that surprised me. the first odd thing was that axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about infinite sums. The second, even more eye-catching thing was that E was assumed to be a *finite* set. This contrasts the modern formulation I'm familiar with, where no claim is made as to the size of E. Of course, this second anomaly explains the first, as one doesn't need to worry about infinite unions when dealing with a finite set.
 
-Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set E, one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't need any additional
-
-
+Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set E, one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't use any additional axioms...
 ### A more modern presentation of the axioms
 
 ------
@@ -65,3 +63,4 @@ Let \\((\Omega, \sigma\\)) be a measurable space. A probability measure is a tot
 3. \\(\mathbb{P}[\bigcup_{n=1}^{\infty}A_n]=\sum_{n=1}^{\infty}\mathbb{P}[A_n]\\) for a sequence \\((A_n)_{n \geq 1}\\) of sets in \\(\sigma\\)
 ------
 
+One may notice that the first two axioms in Kolgomorov's text got eaten up by the first paragraph of our new presentation. This is a fun effect of the inexorable progress of time. Information and concepts that have proven repeatedly useful get squished and compressed into ever more deformed shorthands. Over time, 
