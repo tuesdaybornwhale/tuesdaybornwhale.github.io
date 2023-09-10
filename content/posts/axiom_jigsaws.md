@@ -74,5 +74,9 @@ The more substantive difference here is that Swan tries to directly define proba
 ## The Mysterious sixth axiom
 
 ------
+6. For a decreasing sequence of events \
+\\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) of \\(sigma\\) for which \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\) \
+the following equation holds: 
+\\(\lim{n \to \infty} \mathbb{P}[A_n] = 0\\)
 
 ------
