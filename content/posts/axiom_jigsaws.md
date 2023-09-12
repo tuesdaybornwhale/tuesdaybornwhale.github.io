@@ -106,14 +106,31 @@ Let \\(\Omega = \mathbb{R}\\) and let \\(\sigma = \mathbb{B}(\mathbb{R})\\), the
 
 What this candidate monster is saying is that no matter how small you make \\(A_n\\) by making n larger, the probability of our experiment landing on that increasingly small member of \\(\sigma\\) will still be 1. Axiom 4 isn't contradicted, because we can perfectly say that \\(\mathbb{P}[\Omega - A_1] = 0 \\). In our example, this would mean that the probability of landing outside of the interval \\(\left[0,1\right]\\) is 0.
 
-Perhaps we can attempt to fend off our monster using the fifth axiom. What we're trying to do more or less is:
+Perhaps we can attempt to fend off our monster using the fifth axiom. The general idea of our proof is that if each \\(A_n\\) has a probability of one, then the probability of \\(A_1 - A_n\\) must be zero. If we can express \\(A_1\\) as a disjoint union of things that *kind of* look like the \\(A_1 - A_n\\) expression, we can show that the probability of each one of those things is zero, and therefore that \\(\mathbb{P}[A_1] = 0\\) and not 1!
 
-1. describe \\(A_n\\) in terms of the members of our sequence\\((A_n)_{n \geq 1}\\). This description should also be made of *disjoint* unions so we can use axiom 5.
-2. use axiom 5 to turn the probability of this union of sets into a sum of probabilities.
-3. Smell around for a contradiction.
-
- First, let's  describe \\(A_1\\) in terms of unions of disjoint sets. Since our sequence is decreasing, we can make a *disjoint* union of sets that equals \\(A_1\\) by taking the nth element to be 'whatever is in the nth element of \\((A_n)_n \geq 1\\) , but not in the (n+1)th element. For example, we could describe the interval \\(\left[0,1 \right] \\) as the infinite union: \\(\left[\frac{1}{2}, 1 \right] \cup \left[ \frac{1}{3}, \frac{1}{2}\right) \cup \left[\frac{1}{4}, \frac{1}{3} \right) \cup ... \cup \left[\frac{1}{n}, \frac{1}{n-1} \right) \cup ... \\) 
+*Proof:* First, let's  describe \\(A_1\\) in terms of unions of disjoint sets. Since our sequence is decreasing, we can make a *disjoint* union of sets that equals \\(A_1\\) by taking the nth element to be 'whatever is in the nth element of \\((A_n)_{n \geq 1}\\) , but not in the (n+1)th element. For example, we could describe the interval \\(\left[0,1 \right] \\) as the infinite union: \\(\left[\frac{1}{2}, 1 \right] \cup \left[ \frac{1}{3}, \frac{1}{2}\right) \cup \left[\frac{1}{4}, \frac{1}{3} \right) \cup ... \cup \left[\frac{1}{n}, \frac{1}{n-1} \right) \cup ... \\) 
 
 Formally, we can write this union as: \\(A_1 = (A_1 - A_2) \cup (A_2 - A_3) \cup ... \cup (A_n - A_{n+1}) \cup ...\\)
 
-The problem with this union is that even though its countable, it's still infinite! This means we can't use Kolmogorov's axiom 5 on it. In fact, the broader problem we have is that if \\(A_1\\) is an infinitely large set, we can't fully describe it 
+For all n, we can show that \\(\mathbb{P}[A_n - A_{n+1}]\\) = 0. This is because given that \\(\mathbb{P}[A_{n+1}] = 1\\), then the probability of the part of \\(A_n\\) that is *not* contained in \\(A_{n+1}\\) must be zero, since otherwise the probability of their disjoint union would overshoot the probability of \\(A_1\\). Now, we can use axiom 5 to say that
+
+ \\(\mathbb{P}[A_1] = \mathbb{P}[(A_1 - A_2) \cup (A_2 - A_3) \cup ... \cup (A_n - A_{n+1}) \cup ...] = \\) 
+\\( = \mathbb{P}[A_1-A_2] + \mathbb{P}[A_2-A_3] + ... + \mathbb{P}[A_n-A_{n+1}] + ... = \\) \
+\\( = \sum_{n=1}^{\infty} \mathbb{P}[A_n-A_{n+1}]\\)
+
+Since each one of the members of our sum is zero, \\(\mathbb{P}[A_1] = 0\\), but this contradicts that \\(\mathbb{P}[A_n] = 1\\). We have then that this probability function \\(\mathbb{P}\\) isn't a valid function after all!  \\(\blacksquare\\)
+
+One may have noticed that I put my thumb on the scale while writing that proof. Specifically, I used axiom 5 for to turn a *countably infinite* union into a countably infinite sum. Kolmogorov's original axioms only assumed this additive property for finite unions of disjoint sets.
+
+What this means for our little proof is that we can't make the step of turning the infinite union into an infinite sum. To deal with our monster, we would have to be able to describe 
+\\(A_1\\) in terms of a finite union of members of all the members of our infinite sequence of sets \\(A_1, A_2, ..., A_n, ... \\)  All we can do is impotently flail our arms, taking the union of arbitrarily large - but finite - sets. Each time we exclaim that \\(\sum_{n=1}^{n} \mathbb{P}[A_n-A_{n+1}] = 0 \\) and beg our monster to acknowledge that if we can make n so large and still have a probability zero, then surely the probability of \\(A_1\\) is also zero. Each time, the monster leers at us and insists we trust its claim that the probability of \\(A_1\\) is indeed 1. After all, we haven't fully described \\(A_1\\) with our pathetically finite union, so how can we be sure?
+
+### Fending off the monster: the two options
+
+Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer the approach of the system I learned in my probability course. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but as it turns out we can also prove axiom 6 and even more from our strengthened system.
+
+*Theorem:* Let \\((\Omega, \sigma, \mathbb{P})\\) be a probability space. Let \\((A_n)_{n \geq 1}\\) be a decreasing sequence of sets in \\(\sigma\\).
+
+ Then: 
+\\(\lim_{n \to \infty} \mathbb{P}[A_n] = \bigcap_{n = 1}^{\infty} A_n\\)
+
