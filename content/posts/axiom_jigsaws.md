@@ -127,10 +127,39 @@ What this means for our little proof is that we can't make the step of turning t
 
 ### Fending off the monster: the two options
 
-Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer the approach of the system I learned in my probability course. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but as it turns out we can also prove axiom 6 and even more from our strengthened system.
+Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer the approach of the system I learned in my probability course. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it's even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability set that the sequence tends towards is also the limit of the probabilities of the members of the set.
 
-*Theorem:* Let \\((\Omega, \sigma, \mathbb{P})\\) be a probability space. Let \\((A_n)_{n \geq 1}\\) be a decreasing sequence of sets in \\(\sigma\\).
+To prove this, we will be using the same trick as before of expressing our sequence as a union of disjoint sets, to allow us to turn the union into an infinite sum.
 
- Then: 
-\\(\lim_{n \to \infty} \mathbb{P}[A_n] = \bigcap_{n = 1}^{\infty} A_n\\)
+---
 
+*Theorem:* Let \\((\Omega, \sigma, \mathbb{P})\\) be a probability space. Let \\((D\_n)\_{n \geq 1} \\) be a decreasing sequence of sets in \\(\sigma\\), and let \\((C\_n)\_{n \geq 1}\\) be an increasing sequence of sets.
+
+Then: 
+
+1. \\(\lim_{n \to \infty} \mathbb{P}[C_n] = \mathbb{P}[\bigcup_{n = 1}^{\infty} C_n]\\) and
+
+2. \\(\lim_{n \to \infty} \mathbb{P}[D_n] = \mathbb{P}[\bigcap_{n = 1}^{\infty} D_n]\\)
+
+---
+
+*Proof:*
+
+1. \\(\mathbb{P}[\bigcup_{n = 1}^{\infty} C_n] \stackrel{(1)}{=} \mathbb{P}[\bigcup_{n = 1}^{\infty} (C_n \cap C_{n-1}^C)] \\)
+\
+\\(\stackrel{(2)}{=} \sum_{n=1}^{\infty} \mathbb{P}[(C_n \cap C_{n-1}^C)] \\) 
+\
+\\(\stackrel{(3)}{=} \lim_{N \to \infty} \sum_{n=1}^{N} \mathbb{P}[(C_n \cap C_{n-1}^C)] \\) 
+\
+\\(\stackrel{(4)}{=} \lim_{N \to \infty} \mathbb{P}[\bigcup_{n=1}^{N} (C_n \cap C_{n-1}^C)] \\)
+\
+\\(\stackrel{(5)}{=} \lim_{N \to \infty} \mathbb{P}[\bigcup_{n=1}^{N} C_n] = \lim_{N \to \infty} \mathbb{P}[C_n]\\)
+
+For increasing sequences, one good way to express \\(\bigcup_{n=1}^{\infty} C_n\\) as a disjoint unions is to, for each n, add 'the part of \\(C_n\\) which is not in the next elements of the set.' For example, suppose we had the increasing sequence \\((C\_n)\_{n \geq 1} =(\left[\frac{1}{2},1\right], \left[\frac{1}{4},1\right] , ... , \left[\frac{1}{2^n},1\right], ...\\) we could express the union of all the elements in \\(C_n\\), which is the interval \\(\left[0,1\right]\\), as the disjoint union: \\(\left[\frac{1}{2},1\right] \cup \left[\frac{1}{4},\frac{1}{2}\right] \cup \left[\frac{1}{8},\frac{1}{4}\right] \cup ... \cup \left[\frac{1}{2^{n}},\frac{1}{2^{n-1}}\right] \cup ... \\) 
+
+
+Formally, that is just equation (1). Next, we use our powered up axiom 5 to pull the disjoint union into a sum in equation (2). The clever trick is to turn that infinite sum into a limit with (3), then use axiom 5 again in (4), to turn the sum into a union again. Finally, we turn our funky disjoint union back into \\(C_n\\) to get the limit of the probabilities of the union. Since \\((C\_n)\_{n \geq 1}\\) is an increasing sequence, the union of the elements in the sequence up to \\(C_n\\) is simply \\(C_n\\), and we're done! \\(\space \blacksquare \\)
+
+2. We could write a proof for this second result that's very similar to the first, but we can make it easier for ourselves by using the first result as a short-cut. If \\((D\_n)\_{n \geq 1}\\) is a decreasing sequence, then the sequence of the complements of the sequence, \\((D\_{n}^{C})\_{n \geq 1}\\) is actually an increasing sequence! We can therefore use the first part to say that \\(\lim_{n \to \infty} \mathbb{P}[D\_{n}^{C}] = \mathbb{P}[\bigcup_{n=1}^{\infty} D\_{n}^{C}]\\), and since \\(\mathbb{}\\)
+
+---
