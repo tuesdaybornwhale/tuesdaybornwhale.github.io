@@ -160,6 +160,17 @@ For increasing sequences, one good way to express \\(\bigcup_{n=1}^{\infty} C_n\
 
 Formally, that is just equation (1). Next, we use our powered up axiom 5 to pull the disjoint union into a sum in equation (2). The clever trick is to turn that infinite sum into a limit with (3), then use axiom 5 again in (4), to turn the sum into a union again. Finally, we turn our funky disjoint union back into \\(C_n\\) to get the limit of the probabilities of the union. Since \\((C\_n)\_{n \geq 1}\\) is an increasing sequence, the union of the elements in the sequence up to \\(C_n\\) is simply \\(C_n\\), and we're done! \\(\space \blacksquare \\)
 
-2. We could write a proof for this second result that's very similar to the first, but we can make it easier for ourselves by using the first result as a short-cut. If \\((D\_n)\_{n \geq 1}\\) is a decreasing sequence, then the sequence of the complements of the sequence, \\((D\_{n}^{C})\_{n \geq 1}\\) is actually an increasing sequence! We can therefore use the first part to say that \\(\lim_{n \to \infty} \mathbb{P}[D\_{n}^{C}] = \mathbb{P}[\bigcup_{n=1}^{\infty} D\_{n}^{C}]\\), and since \\(\mathbb{}\\)
+2. We could write a proof for this second result that's very similar to the first, but we can make it easier for ourselves by using the first result as a short-cut. The idea for this proof can be found by playing around with the expression \\(\mathbb{P}[\bigcap_{n=1}^{\infty}D_n]\\) and the De Morgan laws, which one might think of doing because we want to turn intersections into unions in order to maybe apply axiom 5: \
+\\(\mathbb{P}[\bigcap_{n=1}^{\infty} D_n] = \mathbb{P}[(\bigcup_{n=1}^{\infty} D\_{n}^{C})^C] \relstack{(1)}{=} 1- \mathbb{P}[\bigcup_{n=1}^{\infty} D\_{n}^{C}] \\).
+But here is when we notice that \\((D\_n)\_{n \geq 1}\\) is an *increasing* sequence, and so we can apply our first result:
+\\( = 1 - \lim_{n \to \infty} \mathbb{P}[D\_{n}^{C}] = 1- (1- \lim_{n \to \infty} \mathbb{P}[D_n] \\) 
+\\(= \lim_{n \to \infty} \mathbb{P}[D_n]\\), this is the desired result. \\( \space \blacksquare \\)
+
+The reader may perhaps guess that I did not just 'get lucky' that 
+
+---
+
+If \\((D\_n)\_{n \geq 1}\\) is a decreasing sequence, then the sequence of the complements of the sequence, \\((D\_{n}^{C})\_{n \geq 1}\\) is actually an increasing sequence! We can therefore use the first part to say that:
+
 
 ---
