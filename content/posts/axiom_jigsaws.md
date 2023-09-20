@@ -10,7 +10,7 @@ draft: true
  *'Anytime someone finds a problem with your axioms, you just say "oh, but of course that's not what I meant," and you change the axioms.'* - Yvik Swan, professor @ ULB
 
 ## Intro
-I recently came across the ['Foundations of the Theory of Probability,'](https://archive.org/details/kolmogorov_202112) a 1933 paper by A.N. Kolmogorov which outlines the 'canonical' formalization of probability theory which we know(?) and love(?) today. I took a probability course last semester and expected the content of Kolmogorov's paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are *substantively* different from the ones I am used to.
+I recently came across the ['Foundations of the Theory of Probability,'](https://archive.org/details/kolmogorov_202112) a 1933 paper by A.N. Kolmogorov which outlines the 'canonical' formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov's paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are *substantively* different from the ones I am used to.
 
 In this post I analyze the subtly fascinating differences between these axiomatizations. I take apart the systems by examining the role each axiom is fulfilling. The goal ultimately is to understand the reasoning and historical context behind different choices of axioms, and to see how different jigsaw pieces come together to make more or less the same image of probability theory.
 
@@ -30,7 +30,7 @@ Fortunately, there exist objects in set theory that have these properties, and w
 
 Finally, there's some properties that a probability function should really have. Suppose that there are two  events which are *mutually exclusive*, that is to say that one happening means the other cannot. For example, 'the die rolled an even number' and 'the die rolled an odd number' are mutually exclusive. The probability that one of these two events happens should be the sum of the probabilities that each one of them happens.
  
-There are many other properties we would like our function to have, such as the probability of A should be one minus the probability of 'not A.' Fortunately, many of these properties can be derived from the properties we had already stated above, so we won't have to explictly state them in our axioms. Ideally, our axiomatic system should be simple, minimalistic and avoid logically 'repeating' itself.
+There are many other properties we would like our function to have, such as the probability of A should be one minus the probability of 'not A.' Fortunately, many of these properties can be derived from those we have already stated above, so we won't have to explictly state them. Ideally, our axiomatic system should be simple, minimalistic and avoid logically 'repeating' itself.
 
 ### Kolmogorov's axioms
 
@@ -80,7 +80,7 @@ The more substantive difference here is that Swan tries to directly define proba
 
 ________
 
-6. For a decreasing[^4] sequence of events \\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) of \\(\sigma\\) for which \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\), the following equation holds: \
+6. (Axiom of continuity) For a decreasing[^4] sequence of events \\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) of \\(\sigma\\) for which \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\), the following equation holds: \
 \
 \\(\lim_{n \to \infty} \mathbb{P}[A_n] = 0\\)
 ________
@@ -126,7 +126,7 @@ Since each one of the members of our sum is zero, \\(\mathbb{P}[A_1] = 0\\), but
 It could be observed that I put my thumb on the scale while writing that proof. Specifically, I used axiom 5 for to turn a *countably infinite* union into a countably infinite sum. Kolmogorov's original axioms only assumed this additive property for finite unions of disjoint sets.
 
 What this means for our little proof is that we can't make the step of turning the infinite union into an infinite sum. To deal with our monster, we would have to be able to describe 
-\\(A_1\\) in terms of a finite union of members of all the members of our infinite sequence of sets \\(A_1, A_2, ..., A_n, ... \\)  All we can do is impotently flail our arms, taking the union of arbitrarily large - but finite - sets. Each time we exclaim that \\(\sum_{n=1}^{n} \mathbb{P}[A_n-A_{n+1}] = 0 \\), and beg our monster to acknowledge that if we can make n so large and still have a probability zero, then surely the probability of \\(A_1\\) is also zero. Each time, the monster leers at us and insists that the probability of \\(A\_1\\) is indeed 1. After all, we haven't fully described \\(A\_1\\) with our pathetically finite union, so how can we be sure? Maybe we just haven't looked far enough...
+\\(A_1\\) in terms of a finite union of members of all the members of our infinite sequence of sets \\(A_1, A_2, ..., A_n, ... \\)  All we can do is impotently flail our arms, taking the union of arbitrarily large - but finite - sets. Each time we exclaim that \\(\sum_{n=1}^{n} \mathbb{P}[A_n-A_{n+1}] = 0 \\). We beg our monster to acknowledge that if we can make n so large and still have a probability of zero, then surely the probability of \\(A_1\\) is also zero. Each time, the monster leers at us and insists that the probability of \\(A\_1\\) is indeed 1. After all, we haven't fully described \\(A\_1\\) with our pathetically finite union, so how can we be sure? Maybe we just haven't looked far enough...
 
 ### Defeating the monster: two options
 
@@ -173,14 +173,19 @@ The reader may perhaps guess that I did not just 'get lucky' that \\(D\_{n}^{C}\
 
 ______
 
-Once we have the lovely result from *theorem 2,* our monster from *definition 1* and others like it are easily dispelled. *Theorem 2* tells us that if there's a decreasing sequence of sets \\((D\_n)\_{n \geq 1}\\), the limit of the probabilites of the members of the sequence is necessarily the probability of \\(\bigcap_{n=1}^{\infty} D_n\\). In particular, if we have a decreasing sequence that gets smaller and smaller and tends towards the empty set, as our monster does, our theorem indeed confirms that the probability of the memebers of the set *must* tend towards zero, and the monster is defeated. 
+Once we have the lovely result from *theorem 2,* our monster from *definition 1* and others like it are easily dispelled. *Theorem 2* tells us that if there's a decreasing sequence of sets \\((D\_n)\_{n \geq 1}\\), the limit of the probabilites of the members of the sequence is necessarily the probability of \\(\bigcap_{n=1}^{\infty} D_n\\). Kolmogorov's continuity axiom thus follows from *theorem 2.*
 
-*Theorem 2* also opens the door to even more elegant results. Using the definition of the [set-theoretic limit](https://en.wikipedia.org/wiki/Set-theoretic_limit), we can prove in general that if a sequence \\((A\_{n})\_{n \geq 1}\\) has a limit, then: \\(\mathbb{P}[\lim_{n \to \infty} A\_n] = \lim_{n \to \infty} \mathbb{P}[A\_n] \\). This result proves extremely useful when we think about what how probabilities behave in the limit.
+In particular, if we have a decreasing sequence that gets smaller and smaller and tends towards the empty set, as our monster does, our theorem indeed confirms that the probability of the memebers of the set *must* tend towards zero, and the monster is defeated. 
 
-## Historical notes
+*Theorem 2* also opens the door to even more elegant results. Using the definition of the [set-theoretic limit](https://en.wikipedia.org/wiki/Set-theoretic_limit), we can prove in general that if a sequence \\((A\_{n})\_{n \geq 1}\\) has a limit, then: \\(\mathbb{P}[\lim_{n \to \infty} A\_n] = \lim_{n \to \infty} \mathbb{P}[A\_n] \\). This result is generally referred to as the theorem of continuity of measures of probability, and it's extremely useful for defining all kinds of useful notions in probability down the road. 
 
-### why did kolmogorov use axiom 6? how did axiom system change over time?
+### Why?
 
+Immediately after defining the continuity axiom, Kolmogorov gives a proof that it implies our strengthened axiom 5 for infinite unions. As they are logically equivalent, the question left to ask is why choose one or the other.
+
+To me, the answer seems obvious. Strengthening axiom 5 seems like a more simple, elegant solution to the type of monster we looked at. As we saw, it also allows us to deduce the powerful theorem of continuity of measures of probability. 
+
+So why did Kolmogorov bring in his sixth axiom? At first I was tempted to think that he had missed that a strengthened axiom 5 is a sufficient condition for his sixth axiom. However, this seems hard to believe. For starters, the set-theoretic limit was already well known by the time he published his paper. It's even on a very early page of the [set theory] book 
 
 ## Conclusion
 
@@ -191,4 +196,4 @@ Once we have the lovely result from *theorem 2,* our monster from *definition 1*
 
 [^3]: Axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an [early 20th century book on set theory](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
 
-[^4]: A decreasing sequence of sets is one such that the (n+1)th element is a subset of the nth. Similarly, increasing sequences are such that each element is a subset of the next.
+[^4]: A decreasing sequence of sets is one such that each element is a superset of the next. Conversely, increasing sequences are such that each element is a subset of the next.
