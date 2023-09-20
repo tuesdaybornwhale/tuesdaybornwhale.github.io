@@ -24,7 +24,7 @@ Probabilities are our way of describing and dealing with uncertainty in the worl
 
 In short, what our brains are doing when we think of probabilities is mapping certain events onto certain unique numbers. Math actually has a name for that: probabilities are just functions! What's left to do in our axioms is to describe these functions a little more concretely. Namely, we'd like to know what the inputs and outputs actually are, as well as any important rules our probability functions should follow in order that they behave the ways probabilities in our heads do.
 
-On the output side, this is pretty easy: a probability function should always spit out a number between zero and one. Moreover, the probability that *something* happens when we run an experiment (e.g. throwing a die) is 1, and the probability that nothing happens is 0. What we want out of our inputs is a bit harder to formalize, but essentially we want to be able to manipulate these inputs by taking their intersection, union, etc... and still be able to meaningfully assign a probability to the resulting event. For example, if we throw a six-sided die, we might not just want to be able to describe what the probability of rolling a six is, we might also want to know what the probability of rolling an even number is; that's the same as asking what the probability that the die lands on a 2, 4 or 6, which set-theoretically speaking is the same as asking whether it lands on \\(\\{2\\} \cup \\{4\\} \cup \\{6\\}\\). 
+On the output side, this is pretty easy: a probability function should always spit out a number between zero and one. Moreover, the probability that *something* happens when we run an experiment (e.g. throwing a die) is 1, and the probability that nothing happens is 0. What we want out of our inputs is a bit harder to formalize, but essentially we want to be able to manipulate these inputs by taking their intersection, union, etc... and still be able to meaningfully assign a probability to the resulting event. For example, if we throw a six-sided die, we might not just want to be able to describe what the probability of rolling a six is, we might also want to know what the probability of rolling an even number is; that's the same as asking what the probability that the die lands on a 2, 4 or 6, which set-theoretically speaking is the same as asking whether it lands on $$ {2} \cup {4} \cup {6} $$ 
 
 Fortunately, there exist objects in set theory that have these properties, and we will use these objects as the domains for our function. One of the really clever things Kolmogorov did in his paper was recycle these already-existing concepts in set theory and measure theory for his axioms, instead of going the scenic route by reinventing the wheel himself.
 
@@ -32,11 +32,11 @@ Finally, there's some properties that a probability function should really have.
  
 There are many other properties we would like our function to have, such as the probability of A should be one minus the probability of 'not A.' Fortunately, many of these properties can be derived from the properties we had already stated above, so we won't have to explictly state them in our axioms. Ideally, our axiomatic system should be simple, minimalistic and avoid logically 'repeating' itself.
 
-[^1]: The numbers 1 and 0 are an arbitrary convention, these  may as well be 100 or \\(\pi\\) or anything else
+[^1]: The numbers 1 and 0 are an arbitrary convention, these  may as well be 100 or $$ \pi $$ or anything else
 
 ### Kolmogorov's axioms
 
-----
+________
 
 Let \\(\Omega\\) be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),..., which we shall call elementary events, and \\(\sigma\\) a set of subsets of \\(\Omega\\) ; the elements of the set \\(\sigma\\) will be called random events.
 
@@ -50,7 +50,7 @@ The system of sets \\(\sigma\\), together with the definite assignment of the nu
 
 [^3]: axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an [early 20th century book on set theory](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
 
------
+________
 
 In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. \\(\Omega\\) is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \\(\Omega=\\{1,2,3,4,5,6\\}\\). \\(\sigma\\) is a subset of the power set of \\(\Omega\\), which means in our example that it could contain elements such as \\(\\{1\\}, \\{3\\}, \\{1,3\\}\\), \\(\\{1,2,3,4\\}\\), or \\(\Omega\\) itself. We are interested in assigning probabilities to members of \\(\sigma\\) rather than members of \\(\Omega\\). This is becuase we might be just as excited to discuss, for example, what the probability of a die landing a prime or an even number as the probability of it landing a specific number. Importantly, \\(\sigma\\) is assumed to be a field, which means we can happily operate[^2] on the sets in \\(\sigma\\) and be assured that the result is actually still in \\(\sigma\\) and therefore has a probability assigned to it. For example, if \\(\\{1\\} \\in \sigma \\space and \\space \\{3\\} \\in \sigma\\), then \\(\\{1,3\\}\\in \sigma\\). 
 
@@ -66,7 +66,7 @@ Kolmogorov acknowledges the incompleteness of this system, and claims that in or
 
 ### A more modern presentation of the axioms
 
-------
+________
 Let \\((\Omega, \sigma\\)) be a measurable space. A probability measure is a total function \\(\mathbb{P}:\sigma \rightarrow \mathbb{R} \\) such that:
 
 1. \\(\forall A \in \sigma, \space \mathbb{P}[A]\geq 0\\)
@@ -75,7 +75,8 @@ Let \\((\Omega, \sigma\\)) be a measurable space. A probability measure is a tot
 
 For a \\(\mathbb{P}\\) satisfying these axioms, we call \\((\Omega, \sigma, \mathbb{P})\\) a probability space.
 
-------
+________
+
 
 One may notice that the first two axioms in Kolgomorov's text got eaten up by the first paragraph of our new presentation. This is, I suspect, an amusing effect of the inexorable progress of time. Information and concepts that have proven repeatedly useful get squished and compressed into ever more deformed shorthands. Over time, the information that \\(\Omega\\) is a set and that \\(\sigma\\) is a \\(\sigma\\)-algebra over that set got flattened into '\\((\Omega, \sigma\\)) is a measurable space.'
 
@@ -83,11 +84,13 @@ The more substantive difference here is that Swan tries to directly define proba
 
 ## The Mysterious sixth axiom
 
-------
+________
+
 6. For a decreasing sequence of events \\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) of \\(\sigma\\) for which \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\), the following equation holds: \
 \
 \\(\lim_{n \to \infty} \mathbb{P}[A_n] = 0\\)
-------
+________
+
 
 This axiom is one of those that is so glaringly obvious that its necessity is slightly disconcerting. Intuitively, the intersection of all these sets is \\(\emptyset\\), this should mean that no element of \\(\Omega\\) is actually contained in all of them, and therefore that any probability assigned to any elementary event in \\(\Omega\\) won't 'make it' into the limit probability of the sequence.
 
@@ -99,7 +102,7 @@ To understand this problem better, I constructed a monster: an example of a prob
 
 I figured that my search for a monster could start by directly contradicting the sixth axiom and seeing what happens:
 
----
+________
 #### Definition 1:
 
 Let \\(\sigma\\) be a field over \\(\Omega\\). Let \\(\mathbb{P}\\) be a probability field over \\(\sigma\\). Satisfying Kolmogorov's first five axioms. We define \\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) to be a decreasing sequence of elements of \\(\sigma\\) such that \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\), and such that for all n, \\(\mathbb{P}[A_n] = 1\\). Since all members of our sequence have a probability of one, \\(\lim_{n \to \infty} \mathbb{P}[A_n] = 1 \neq 0 \\), which contradicts axiom 6. 
@@ -108,7 +111,7 @@ Let \\(\sigma\\) be a field over \\(\Omega\\). Let \\(\mathbb{P}\\) be a probabi
 
 Let \\(\Omega = \mathbb{R}\\) and let \\(\sigma = \mathbb{B}(\mathbb{R})\\), the Borel \\(\sigma\\)-algebra over the real numbers. Let \\((A_n)_{n \geq 1}\\) be a sequence of sets \\([0,1], [0, \frac{1}{2}], ..., [0, \frac{1}{n}], ... \\) Let's define \\(\mathbb{P}\\) such that \\(\mathbb{P}[A_n] = 1\\) for all n.
 
----
+________
 
 What this candidate monster is saying is that no matter how small you make \\(A_n\\) by making n larger, the probability of our experiment landing on that increasingly small member of \\(\sigma\\) will still be 1. Axiom 4 isn't contradicted, because we can perfectly say that \\(\mathbb{P}[\Omega - A_1] = 0 \\). In our example, this would mean that the probability of landing outside of the interval \\(\left[0,1\right]\\) is 0.
 
@@ -168,15 +171,15 @@ Formally, that is just equation (1). Next, we use our powered up axiom 5 to pull
 
 2. We could write a proof for this second result that's very similar to the first, but we can make it easier for ourselves by using the first result as a short-cut. The idea for this proof can be found by playing around with the expression \\(\mathbb{P}[\bigcap_{n=1}^{\infty}D_n]\\) and the De Morgan laws, which one might think of doing because we want to turn intersections into unions in order to maybe apply axiom 5: \
 \\(\mathbb{P}[\bigcap_{n=1}^{\infty} D_n] = \mathbb{P}[(\bigcup_{n=1}^{\infty} D\_{n}^{C})^C] \stackrel{(1)}{=} 1- \mathbb{P}[\bigcup_{n=1}^{\infty} D\_{n}^{C}] \\).
-But here is when we notice that \\((D\_n)\_{n \geq 1}\\) is an *increasing* sequence, and so we can apply our first result:
+But here is when we notice that \\((D\_{n}^{C})\_{n \geq 1}\\) is an *increasing* sequence, and so we can apply our first result:
 \\( = 1 - \lim_{n \to \infty} \mathbb{P}[D\_{n}^{C}] = 1- (1- \lim_{n \to \infty} \mathbb{P}[D_n] \\) 
 \\(= \lim_{n \to \infty} \mathbb{P}[D_n]\\), this is the desired result. \\( \space \blacksquare \\)
 
-The reader may perhaps guess that I did not just 'get lucky' that \\(D\_{n}^{C}\\) is an increasing sequence. I originally tried to prove the second part of our result, then realized after getting to equality (1) that I could easily prove the second part if I had already proved the first part. 
+The reader may perhaps guess that I did not just 'get lucky' that \\(D\_{n}^{C}\\) is an increasing sequence. I originally tried to prove the second part of our result. However, I then realized after getting to equality (1) that I could easily prove the second part if I had already proved the first part. This explains the apparently arbitrary choice of proving result 1. before result 2.
 
 ---
 
-Once we have the lovely result from *theorem 2,* our monster from *definition 1* and others like it are easily dispelled as particular cases of our general theorem. *Theorem 2* tells us that if there's a decreasing sequence of sets \\((D\_n)\_{n \geq 1}\\), the limit of the probabilites of the members of the sequence is necessarily the probability of \\(\bigcap_{n=1}^{\infty} D_n\\). In particular, if we have a decreasing sequence that gets smaller and smaller and tends towards the empty set, as our monster does, our theorem indeed confirms that the probability of the memebers of the set *must* tend towards zero, and the monster is dispelled. 
+Once we have the lovely result from *theorem 2,* our monster from *definition 1* and others like it are easily dispelled. *Theorem 2* tells us that if there's a decreasing sequence of sets \\((D\_n)\_{n \geq 1}\\), the limit of the probabilites of the members of the sequence is necessarily the probability of \\(\bigcap_{n=1}^{\infty} D_n\\). In particular, if we have a decreasing sequence that gets smaller and smaller and tends towards the empty set, as our monster does, our theorem indeed confirms that the probability of the memebers of the set *must* tend towards zero, and the monster is defeated. 
 
 ### Even more beauty
 
