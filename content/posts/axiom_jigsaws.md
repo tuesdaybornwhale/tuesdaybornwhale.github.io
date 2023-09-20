@@ -24,15 +24,13 @@ Probabilities are our way of describing and dealing with uncertainty in the worl
 
 In short, what our brains are doing when we think of probabilities is mapping certain events onto certain unique numbers. Math actually has a name for that: probabilities are just functions! What's left to do in our axioms is to describe these functions a little more concretely. Namely, we'd like to know what the inputs and outputs actually are, as well as any important rules our probability functions should follow in order that they behave the ways probabilities in our heads do.
 
-On the output side, this is pretty easy: a probability function should always spit out a number between zero and one. Moreover, the probability that *something* happens when we run an experiment (e.g. throwing a die) is 1, and the probability that nothing happens is 0. What we want out of our inputs is a bit harder to formalize, but essentially we want to be able to manipulate these inputs by taking their intersection, union, etc... and still be able to meaningfully assign a probability to the resulting event. For example, if we throw a six-sided die, we might not just want to be able to describe what the probability of rolling a six is, we might also want to know what the probability of rolling an even number is; that's the same as asking what the probability that the die lands on a 2, 4 or 6, which set-theoretically speaking is the same as asking whether it lands on $$ {2} \cup {4} \cup {6} $$ 
+On the output side, this is pretty easy: a probability function should always spit out a number between zero and one. Moreover, the probability that *something* happens when we run an experiment (e.g. throwing a die) is 1, and the probability that nothing happens is 0. What we want out of our inputs is a bit harder to formalize, but essentially we want to be able to manipulate these inputs by taking their intersection, union, etc... and still be able to meaningfully assign a probability to the resulting event. For example, if we throw a six-sided die, we might not just want to be able to describe what the probability of rolling a six is, we might also want to know what the probability of rolling an even number is; that's the same as asking what the probability that the die lands on a 2, 4 or 6, which set-theoretically speaking is the same as asking whether it lands on \\( \\{2\\} \cup \\{4\\} \cup \\{6\\} \\)
 
 Fortunately, there exist objects in set theory that have these properties, and we will use these objects as the domains for our function. One of the really clever things Kolmogorov did in his paper was recycle these already-existing concepts in set theory and measure theory for his axioms, instead of going the scenic route by reinventing the wheel himself.
 
 Finally, there's some properties that a probability function should really have. Suppose that there are two  events which are *mutually exclusive*, that is to say that one happening means the other cannot. For example, 'the die rolled an even number' and 'the die rolled an odd number' are mutually exclusive. The probability that one of these two events happens should be the sum of the probabilities that each one of them happens.
  
 There are many other properties we would like our function to have, such as the probability of A should be one minus the probability of 'not A.' Fortunately, many of these properties can be derived from the properties we had already stated above, so we won't have to explictly state them in our axioms. Ideally, our axiomatic system should be simple, minimalistic and avoid logically 'repeating' itself.
-
-[^1]: The numbers 1 and 0 are an arbitrary convention, these  may as well be 100 or $$ \pi $$ or anything else
 
 ### Kolmogorov's axioms
 
@@ -48,8 +46,6 @@ Let \\(\Omega\\) be a collection of elements \\(\xi\\), \\(\eta\\), \\(\zeta\\),
 
 The system of sets \\(\sigma\\), together with the definite assignment of the numbers \\(\\mathbb{P}[A]\\) satisfying these axioms 1-5, is called a field of probability.
 
-[^3]: axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an [early 20th century book on set theory](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
-
 ________
 
 In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. \\(\Omega\\) is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \\(\Omega=\\{1,2,3,4,5,6\\}\\). \\(\sigma\\) is a subset of the power set of \\(\Omega\\), which means in our example that it could contain elements such as \\(\\{1\\}, \\{3\\}, \\{1,3\\}\\), \\(\\{1,2,3,4\\}\\), or \\(\Omega\\) itself. We are interested in assigning probabilities to members of \\(\sigma\\) rather than members of \\(\Omega\\). This is becuase we might be just as excited to discuss, for example, what the probability of a die landing a prime or an even number as the probability of it landing a specific number. Importantly, \\(\sigma\\) is assumed to be a field, which means we can happily operate[^2] on the sets in \\(\sigma\\) and be assured that the result is actually still in \\(\sigma\\) and therefore has a probability assigned to it. For example, if \\(\\{1\\} \\in \sigma \\space and \\space \\{3\\} \\in \sigma\\), then \\(\\{1,3\\}\\in \sigma\\). 
@@ -62,9 +58,7 @@ From my perspective ninety years in the future, there were several pieces of thi
 
 Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set \\(\Omega\\), one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't use any additional axioms to feel like it properly dealt with infinite sets...
 
-[^2]: The main operations we're concerned with are the union \\((\cup) \\), intersection \\((\cap) \\), and difference \\( (-) \\) of elements in \\(\sigma\\), but also the [complement](https://en.wikipedia.org/wiki/Complement_(set_theory)) \\((A^C)\\) of an element A with respect to \\(\Omega\\).
-
-### A more modern presentation of the axioms
+### A modern presentation
 
 ________
 Let \\((\Omega, \sigma\\)) be a measurable space. A probability measure is a total function \\(\mathbb{P}:\sigma \rightarrow \mathbb{R} \\) such that:
@@ -86,7 +80,7 @@ The more substantive difference here is that Swan tries to directly define proba
 
 ________
 
-6. For a decreasing sequence of events \\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) of \\(\sigma\\) for which \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\), the following equation holds: \
+6. For a decreasing[^4] sequence of events \\(A_1 \supset A_2 \supset ... \supset A_n \supset ...\\) of \\(\sigma\\) for which \\(\bigcap_{n=1}^{\infty}A_n = \emptyset \\), the following equation holds: \
 \
 \\(\lim_{n \to \infty} \mathbb{P}[A_n] = 0\\)
 ________
@@ -129,18 +123,18 @@ For all n, we can show that \\(\mathbb{P}[A_n - A_{n+1}]\\) = 0. This is because
 
 Since each one of the members of our sum is zero, \\(\mathbb{P}[A_1] = 0\\), but this contradicts that \\(\mathbb{P}[A_n] = 1\\). We have then that this probability function \\(\mathbb{P}\\) isn't a valid function after all!  \\(\blacksquare\\)
 
-One may have noticed that I put my thumb on the scale while writing that proof. Specifically, I used axiom 5 for to turn a *countably infinite* union into a countably infinite sum. Kolmogorov's original axioms only assumed this additive property for finite unions of disjoint sets.
+It could be observed that I put my thumb on the scale while writing that proof. Specifically, I used axiom 5 for to turn a *countably infinite* union into a countably infinite sum. Kolmogorov's original axioms only assumed this additive property for finite unions of disjoint sets.
 
 What this means for our little proof is that we can't make the step of turning the infinite union into an infinite sum. To deal with our monster, we would have to be able to describe 
-\\(A_1\\) in terms of a finite union of members of all the members of our infinite sequence of sets \\(A_1, A_2, ..., A_n, ... \\)  All we can do is impotently flail our arms, taking the union of arbitrarily large - but finite - sets. Each time we exclaim that \\(\sum_{n=1}^{n} \mathbb{P}[A_n-A_{n+1}] = 0 \\) and beg our monster to acknowledge that if we can make n so large and still have a probability zero, then surely the probability of \\(A_1\\) is also zero. Each time, the monster leers at us and insists we trust its claim that the probability of \\(A_1\\) is indeed 1. After all, we haven't fully described \\(A_1\\) with our pathetically finite union, so how can we be sure?
+\\(A_1\\) in terms of a finite union of members of all the members of our infinite sequence of sets \\(A_1, A_2, ..., A_n, ... \\)  All we can do is impotently flail our arms, taking the union of arbitrarily large - but finite - sets. Each time we exclaim that \\(\sum_{n=1}^{n} \mathbb{P}[A_n-A_{n+1}] = 0 \\), and beg our monster to acknowledge that if we can make n so large and still have a probability zero, then surely the probability of \\(A_1\\) is also zero. Each time, the monster leers at us and insists that the probability of \\(A\_1\\) is indeed 1. After all, we haven't fully described \\(A\_1\\) with our pathetically finite union, so how can we be sure? Maybe we just haven't looked far enough...
 
-### Fending off the monster: the two options
+### Defeating the monster: two options
 
 Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer the approach of the system I learned in my probability course. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it's even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability set that the sequence tends towards is also the limit of the probabilities of the members of the set.
 
 To prove this, we will be using the same trick as before of expressing our sequence as a union of disjoint sets, to allow us to turn the union into an infinite sum.
 
----
+___
 
 *Theorem 2:* Let \\((\Omega, \sigma, \mathbb{P})\\) be a probability space. Let \\((D\_n)\_{n \geq 1} \\) be a decreasing sequence of sets in \\(\sigma\\), and let \\((C\_n)\_{n \geq 1}\\) be an increasing sequence of sets.
 
@@ -150,7 +144,7 @@ Then:
 
 2. \\(\lim_{n \to \infty} \mathbb{P}[D_n] = \mathbb{P}[\bigcap_{n = 1}^{\infty} D_n]\\)
 
----
+___
 
 *Proof:*
 
@@ -169,7 +163,7 @@ For increasing sequences, one good way to express \\(\bigcup_{n=1}^{\infty} C_n\
 
 Formally, that is just equation (1). Next, we use our powered up axiom 5 to pull the disjoint union into a sum in equation (2). The clever trick is to turn that infinite sum into a limit with (3), then use axiom 5 again in (4), to turn the sum into a union again. Finally, we turn our funky disjoint union back into \\(C_n\\) to get the limit of the probabilities of the union. Since \\((C\_n)\_{n \geq 1}\\) is an increasing sequence, the union of the elements in the sequence up to \\(C_n\\) is simply \\(C_n\\), and we're done! \\(\space \blacksquare \\)
 
-2. We could write a proof for this second result that's very similar to the first, but we can make it easier for ourselves by using the first result as a short-cut. The idea for this proof can be found by playing around with the expression \\(\mathbb{P}[\bigcap_{n=1}^{\infty}D_n]\\) and the De Morgan laws, which one might think of doing because we want to turn intersections into unions in order to maybe apply axiom 5: \
+2. We could write a proof for this second result that's very similar to the first, but we can actually use the first result as a shortcut. The idea for this proof can be found by playing around with the expression \\(\mathbb{P}[\bigcap_{n=1}^{\infty}D_n]\\) and the De Morgan laws, which one might think of doing because we want to turn intersections into unions in order to maybe apply axiom 5: \
 \\(\mathbb{P}[\bigcap_{n=1}^{\infty} D_n] = \mathbb{P}[(\bigcup_{n=1}^{\infty} D\_{n}^{C})^C] \stackrel{(1)}{=} 1- \mathbb{P}[\bigcup_{n=1}^{\infty} D\_{n}^{C}] \\).
 But here is when we notice that \\((D\_{n}^{C})\_{n \geq 1}\\) is an *increasing* sequence, and so we can apply our first result:
 \\( = 1 - \lim_{n \to \infty} \mathbb{P}[D\_{n}^{C}] = 1- (1- \lim_{n \to \infty} \mathbb{P}[D_n] \\) 
@@ -177,13 +171,11 @@ But here is when we notice that \\((D\_{n}^{C})\_{n \geq 1}\\) is an *increasing
 
 The reader may perhaps guess that I did not just 'get lucky' that \\(D\_{n}^{C}\\) is an increasing sequence. I originally tried to prove the second part of our result. However, I then realized after getting to equality (1) that I could easily prove the second part if I had already proved the first part. This explains the apparently arbitrary choice of proving result 1. before result 2.
 
----
+______
 
 Once we have the lovely result from *theorem 2,* our monster from *definition 1* and others like it are easily dispelled. *Theorem 2* tells us that if there's a decreasing sequence of sets \\((D\_n)\_{n \geq 1}\\), the limit of the probabilites of the members of the sequence is necessarily the probability of \\(\bigcap_{n=1}^{\infty} D_n\\). In particular, if we have a decreasing sequence that gets smaller and smaller and tends towards the empty set, as our monster does, our theorem indeed confirms that the probability of the memebers of the set *must* tend towards zero, and the monster is defeated. 
 
-### Even more beauty
-
-(point out generalized theorem of continuity of probabilities using set theoretic defintion of a limit)
+*Theorem 2* also opens the door to even more elegant results. Using the definition of the [set-theoretic limit](https://en.wikipedia.org/wiki/Set-theoretic_limit), we can prove in general that if a sequence \\((A\_{n})\_{n \geq 1}\\) has a limit, then: \\(\mathbb{P}[\lim_{n \to \infty} A\_n] = \lim_{n \to \infty} \mathbb{P}[A\_n] \\). This result proves extremely useful when we think about what how probabilities behave in the limit.
 
 ## Historical notes
 
@@ -191,3 +183,12 @@ Once we have the lovely result from *theorem 2,* our monster from *definition 1*
 
 
 ## Conclusion
+
+
+[^1]: The numbers 1 and 0 are an arbitrary convention, these  may as well be 100 or \\(\pi\\) or anything else
+
+[^2]: The main operations we're concerned with are the union \\((\cup) \\), intersection \\((\cap) \\), and difference \\( (-) \\) of elements in \\(\sigma\\), but also the complement \\((A^C)\\) of an element A with respect to \\(\Omega\\).
+
+[^3]: Axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an [early 20th century book on set theory](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
+
+[^4]: A decreasing sequence of sets is one such that the (n+1)th element is a subset of the nth. Similarly, increasing sequences are such that each element is a subset of the next.
