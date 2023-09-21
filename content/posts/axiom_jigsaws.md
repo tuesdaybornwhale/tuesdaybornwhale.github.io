@@ -185,15 +185,22 @@ Immediately after defining the continuity axiom, Kolmogorov gives a proof that i
 
 To me, the answer seems obvious. Strengthening axiom 5 seems like a more simple, elegant solution to the type of monster we looked at. As we saw, it also allows us to deduce the powerful theorem of continuity of measures of probability. 
 
-So why did Kolmogorov bring in his sixth axiom? At first I was tempted to think that he had missed that a strengthened axiom 5 is a sufficient condition for his sixth axiom. However, this seems hard to believe. For starters, the set-theoretic limit was already well known by the time he published his paper. It's even on a very early page of the [set theory] book 
+So why did Kolmogorov bring in his sixth axiom? At first I was tempted to think that he had missed that a strengthened axiom 5 is a sufficient, and not just a necessary condition for his sixth axiom. However, this seems hard to believe. For starters, the set-theoretic limit was already well known by the time he published his paper. In fact, it's given in the Hausdorf's set theory [book](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false) that Kolmogorov cites multiple times. All this given, it would be surprising if the relatively simple proofs for *theorem 2* and the corollary that \\(\mathbb{P}[\lim_{n \to \infty} A\_n] = \lim_{n \to \infty} \mathbb{P}[A\_n] \\) had been missed. I can't find evidence either way.
+
+Suppose Kolmogorov had been aware of the double implication and merely made a stylistic choice, then I would find that less interesting. However, suppose he had missed it, when was it discovered and by who? 
+
+editor's note: I will look a bit longer but in worst case will publish this with my current state of knowledge.
 
 ## Conclusion
+
+to be written.
+
 
 
 [^1]: The numbers 1 and 0 are an arbitrary convention, these  may as well be 100 or \\(\pi\\) or anything else
 
 [^2]: The main operations we're concerned with are the union \\((\cup) \\), intersection \\((\cap) \\), and difference \\( (-) \\) of elements in \\(\sigma\\), but also the complement \\((A^C)\\) of an element A with respect to \\(\Omega\\).
 
-[^3]: Axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an [early 20th century book on set theory](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
+[^3]: Axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an early 20th century [book](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
 
 [^4]: A decreasing sequence of sets is one such that each element is a superset of the next. Conversely, increasing sequences are such that each element is a subset of the next.
