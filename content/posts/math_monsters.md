@@ -61,5 +61,6 @@ In this post we'll go over various types of monstrous companions which help us t
 
 ### Contrarians
 
+- proofs by contradiction (think of some)
 
 [^1]: The Peano axioms, as they are called, are usually presented more formally attempting to properly define things like equality between elements of the set of natural numbers and what the successor functiton is. You can even get into what it means for something to be true if you're really picky. Given in this post is a simplified version so you get the gist without getting lost in the detail
