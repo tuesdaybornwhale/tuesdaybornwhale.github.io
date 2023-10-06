@@ -69,20 +69,20 @@ My opening example for this post was an instance of Chesterton's axiom. When I c
 
 ### New objects
 
-In the 18th and 17th centuries, many notions in calculus were defined more intuitively and less logically than they are today. While pioneers like Newton and Leibniz originated many of calculus' intuitive fundamentals, they were fuzzy on the details - especially around infinitesimals and limits. What exactly went on with functions and limits as things got 'infinitely small' was reputedly not very well defined. 
+In the 18th and 17th centuries, many notions in calculus were defined more intuitively and less logically than they are today. Newton and Leibniz originated many of calculus' intuitive fundamentals, but they were fuzzy on the details - especially around infinitesimals and limits. What exactly went on with functions and limits as things got 'infinitely small' was reputedly not very well defined. 
 
-Weierstrass is well-known for 
+Weierstrass is known for formalizing many of those fuzzy concepts and helping calculus become less hand-wavy. One of his most revolutionary contributions involved upending mathematicians' intuitions of continuity, differentiability, and the relationship between them. 
 
+Previously, the consensus was that every continuous function was also differentiable at all but a finite number of points. Intuitively, while a continuous function can[^2] have some jagged points where the derivative isn't defined, it will be 'smooth' nearly[^4] all the time. This set the stage for Weierstrass to publish a function which was everywhere continuous, but nowhere differentiable. His paper challenged not just the state-of-the-art in mathematics at the time, but also the intuitive foundations upon which Calculus had been built. Pioneers like Newton had invented calculus with well-behaved physical objects in mind, such as the apocryphal apple falling from a tree. Most phenomena in mechanics are modelled by nice functions that are clearly both continuous and differentiable. As such, it was considered natural that continuous functions were fundamentally smooth. 
 
-. Weierstrass is known for formalizing many of those fuzzy concepts and helping induce a reformation of calculus to be more rigorous and formal.
-
-One of 
+The context into which Weiestrass' function was released led to a *mixed* reception. While I can find no evidence of the result's rigour or correctness being challenged, some mathematicians of the day were quick to label it a pathological, pesky abomination - a MONSTER. Hermite famously referred to functions like it as a scourge[^5], 
+(add caviat to Hermite comment)
 
 [interesting article about Weierstrass' monster](https://nautil.us/maths-beautiful-monsters-234859/)
 
 [weierstrass OG paper (german) with fractal function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71)
 
-[Poincaré roasting monsters 125](https://archive.org/details/b21974123/page/124/mode/2up)
+
 
 [hermite also roasting weierstrass 318](https://archive.org/details/correspondanced01bourgoog/page/n335/mode/2up)
 
@@ -97,3 +97,7 @@ Sometimes, finding mat
 - proofs by contradiction (think of some)
 
 [^1]: The Peano axioms, as they are called, are usually presented more formally attempting to properly define things like equality between elements of the set of natural numbers and what the successor functiton is. You can even get into what it means for something to be true if you're really picky. Given in this post is a simplified version so you get the gist without getting lost in the detail
+
+[^2]: For an example of this, you can convince yourself that the absolute value function on the real number, \\(|x|\\), is continuous at 0, but that it's hard to meaningfully assign a slope to the function at 0.
+
+[^5]: [Poincaré roasting monsters page 125](https://archive.org/details/b21974123/page/124/mode/2up)
