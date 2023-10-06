@@ -69,7 +69,16 @@ My opening example for this post was an instance of Chesterton's axiom. When I c
 
 ### New objects
 
-In [interesting article about Weierstrass' monster](https://nautil.us/maths-beautiful-monsters-234859/)
+In the 18th and 17th centuries, many notions in calculus were defined more intuitively and less logically than they are today. While pioneers like Newton and Leibniz originated many of calculus' intuitive fundamentals, they were fuzzy on the details - especially around infinitesimals and limits. What exactly went on with functions and limits as things got 'infinitely small' was reputedly not very well defined. 
+
+Weierstrass is well-known for 
+
+
+. Weierstrass is known for formalizing many of those fuzzy concepts and helping induce a reformation of calculus to be more rigorous and formal.
+
+One of 
+
+[interesting article about Weierstrass' monster](https://nautil.us/maths-beautiful-monsters-234859/)
 
 [weierstrass OG paper (german) with fractal function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71)
 
