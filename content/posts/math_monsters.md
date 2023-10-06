@@ -14,7 +14,7 @@ Suppose you encounter, on your merry mathematical way, an object such as:
 
 You might back sit and marvel at the beauty of the object, or investigate its elegant corollaries and its real-world applications. You may, on the other hand be tempted to test the fragility of the object.
 
-### Example: natural numbers
+### Example: axiomatizing natural numbers
 
 Many introductory university level courses will give you a definition of the natural numbers that goes something like this[^1]:
 
@@ -32,7 +32,7 @@ The natural numbers are a set of objects which satisfy the following axioms:
 
 ____
 
-The first time I read through these axioms, I was confused by the Principle of Mathematical Induction (PMI) axiom. I frowned to myself that PMI seems to be formalizing something that is already quite obvious - aren't proofs by induction already rigorous without having to make PMI an axiom? 
+The first time I read through these axioms, I was confused by the Principle of Mathematical Induction (PMI) axiom. I frowned to myself that PMI seems to be formalizing something that is already quite obvious - aren't proofs by induction already rigorous all on their own?
 
 Months later, I tried taking out the PMI axiom to see what would happen to my set of
 'natural numbers.' Initially, nothing seemed off at all. 0 is still the first natural numbers. Natural numbers still follow and preceed each other just as one would expect them to. 'the number line behaves just like it should,' I thought. 
@@ -45,15 +45,39 @@ With this MONSTER in mind, we introduce the PMI axiom. Suppose our set of 'natur
 
 ### Philosophy of THE MONSTER
 
-Mathematical MONSTERS are delightful creatures which mischievously comply with a set of axioms, a definition, or the hypotheses for a theorem - while defying the intention behind the rules they are complying with. Monsters are sometimes annoying objects that get in the way of whatever we're trying to do. On the other hand, they are also our helpers. When I couldn't understand why the induction axiom was needed for the natural numbers, removing it birthed a MONSTER which helped me realize why the axiom was there in the first place.
+Mathematical MONSTERS are delightful creatures which mischievously comply with the rules of a mathematical object, while obviously defying their intention. Monsters are sometimes annoying objects that get in the way of whatever we're trying to do. Our defined or axiomatized system may cease to behave how we want it to, or the conclusion of our theorem may no longer be true. Secretly, however, MONSTERS are actually our helpers. 
+
+<!--- 
+When I couldn't understand why the induction axiom was needed for the natural numbers, removing it birthed a MONSTER which helped me realize why the axiom was there in the first place. 
+-->
 
 In this post we'll go over various types of monstrous companions which help us think about math.
 
 ### Chesterton's axiom
 
+One principle I find helpful for thinking about systematic change is *Chesterton's fence.* Suppose you happen upon a fence in a field. It appears to have no purpose, so you may consider simply removing the useless fence. However, Chesterton's argument suggests that you shoud be careful about removing seemingly useless fences in seemingly innocent fields. After all, someone put up that fence with a reason in mind. For all you know, the fence could be protecting the owner's crops from wildlife, or containing an angry bull. Chesterton concluded that unless you understand why a fence was put up in the first place, removing it is a risky business.
+
+With this in mind, I'll introduce our first type of helpful MONSTER. In our analogy, the axioms for an object or the hypotheses for a theorem are fences. The MONSTER is the angry bull that impales us with its horns after we foolishly remove part of a fence. In our thought experiment, we can remove the fence and intenionally seek out the bull. Once we find it in our mind's eye and have been metaphorically impaled, we can mentally restore the fence with no harm done.
+
+By finding this angry bull, we hope to figure out why our fence was there in the first place, and gain a new understanding and appreciation for our system.
+
+My opening example for this post was an instance of Chesterton's axiom. When I couldn't understand why PMI was a necessary axiom for the natural numbers, the thought experiment of removing it helped me understand the purpose it serves. Here are some more of my favourite examples...
+
+#### Examples
+
 
 
 ### New objects
+
+In [interesting article about Weierstrass' monster](https://nautil.us/maths-beautiful-monsters-234859/)
+
+[weierstrass OG paper (german) with fractal function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71)
+
+[Poincaré roasting monsters 125](https://archive.org/details/b21974123/page/124/mode/2up)
+
+[hermite also roasting weierstrass 318](https://archive.org/details/correspondanced01bourgoog/page/n335/mode/2up)
+
+Sometimes, finding mat
 
 - fractals (functions that are everywhere continuous but never differentiable)
 
