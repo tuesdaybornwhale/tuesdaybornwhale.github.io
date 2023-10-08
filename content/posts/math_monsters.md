@@ -63,7 +63,7 @@ By finding this angry bull, we hope to figure out why our fence was there in the
 
 My opening example for this post was an instance of Chesterton's axiom. When I couldn't understand why PMI was a necessary axiom for the natural numbers, the thought experiment of removing it helped me understand the purpose it serves. Here are some more of my favourite examples...
 
-#### Examples
+#### Examples (maybe will make some if I'm not lazy)
 
 
 
@@ -71,20 +71,24 @@ My opening example for this post was an instance of Chesterton's axiom. When I c
 
 In the 18th and 17th centuries, many notions in calculus were defined more intuitively and less logically than they are today. Newton and Leibniz originated many of calculus' intuitive fundamentals, but they were fuzzy on the details - especially around infinitesimals and limits. What exactly went on with functions and limits as things got 'infinitely small' was reputedly not very well defined. 
 
-Weierstrass is known for formalizing many of those fuzzy concepts and helping calculus become less hand-wavy. One of his most revolutionary contributions involved upending mathematicians' intuitions of continuity, differentiability, and the relationship between them. 
+Karl Weierstrass (1815-1897) is known for formalizing many of those fuzzy concepts and helping calculus become less hand-wavy. One of his most revolutionary contributions[^7] involved upending mathematicians' intuitions of continuity, differentiability, and the relationship between them. 
 
-Previously, the consensus was that every continuous function was also differentiable at all but a finite number of points. Intuitively, while a continuous function can[^2] have some jagged points where the derivative isn't defined, it will be 'smooth' nearly[^4] all the time. This set the stage for Weierstrass to publish a function which was everywhere continuous, but nowhere differentiable. His paper challenged not just the state-of-the-art in mathematics at the time, but also the intuitive foundations upon which Calculus had been built. Pioneers like Newton had invented calculus with well-behaved physical objects in mind, such as the apocryphal apple falling from a tree. Most phenomena in mechanics are modelled by nice functions that are clearly both continuous and differentiable. As such, it was considered natural that continuous functions were fundamentally smooth. 
+Previously, the consensus was that every continuous function was also differentiable at all but a countably finite number of points. Intuitively, while a continuous function can[^2] have some jagged points where the derivative isn't defined, it will be 'smooth' nearly[^4] all the time. This set the stage for Weierstrass to publish a function which was everywhere continuous, but nowhere differentiable. His paper challenged not just the state-of-the-art in mathematics at the time, but also the intuitive foundations upon which Calculus had been built. Pioneers like Newton had invented calculus with well-behaved physical objects in mind, such as the apocryphal apple falling from a tree. Most phenomena in mechanics are modelled by nice functions that are clearly both continuous and differentiable. As such, it was considered natural that continuous functions were fundamentally smooth. 
 
-The context into which Weiestrass' function was released led to a *mixed* reception. While I can find no evidence of the result's rigour or correctness being challenged, some mathematicians of the day were quick to label it a pathological, pesky abomination - a MONSTER. Hermite famously referred to functions like it as a scourge[^5], 
+As such, Weiestrass' pathological function and others like have had a profound impact on the way we think about continuous and differentiable functions. Wikipedia's page on the function will sentationally quote Poincaré calling such functions 'monsters' and Weierstrass' work 'an affront to common sense.' It will also paraphrase Hermite calling them a 'lamentable scourge.' These citations make Weierstrass' contemporaries seem like close-minded traditionalists that considered his mathematical discoveries to be heresy. I was therefore saddened when I actually checked the primary sources[^5] [^6], to find that both mathematicians were quoted rather out of context. 
+
+The Hermite quote comes from his correspondence with Steltjes. In his letter, Hermite was discussing one such function, and apparently found a humorous way of expressing his annoyance at its problematic properties. 
+
+The Poincaré quote comes from an interesting book he published on the scientific method. The quote hails from a chapter christened 'Definitions and Educations' which is a highly thoughtful and interesting piece of mathematical philosophy which I thoroughly enjoyed reading. In it, Poincaré explicitly praises Weierstrass' logical formalizations of analysis. He acknowledges that many results were previously considered true weren't formalized explictly enough to prove them. While many of them had turned out to be true, many were proven not to be. 
+
+some mathematicians of the day were quick to label it a pathological, pesky abomination - a MONSTER. Hermite famously referred to functions like it as a scourge[^5]. This famous comment seems to be taken somewhat out of context. Hermite actually brought up such functions in the context of 
 (add caviat to Hermite comment)
 
 [interesting article about Weierstrass' monster](https://nautil.us/maths-beautiful-monsters-234859/)
 
-[weierstrass OG paper (german) with fractal function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71)
 
 
 
-[hermite also roasting weierstrass 318](https://archive.org/details/correspondanced01bourgoog/page/n335/mode/2up)
 
 Sometimes, finding mat
 
@@ -100,4 +104,12 @@ Sometimes, finding mat
 
 [^2]: For an example of this, you can convince yourself that the absolute value function on the real number, \\(|x|\\), is continuous at 0, but that it's hard to meaningfully assign a slope to the function at 0.
 
-[^5]: [Poincaré roasting monsters page 125](https://archive.org/details/b21974123/page/124/mode/2up)
+
+[^4]: formally, nearly all the time means for all except a finite, or depending on the context, infite but countable number of points. In this case, we would rather mean coutable, as its easy to compose a function that is everywhere continuous, but isn't differentiable at at a countable number of points. One such example is: \\(f: \mathbb{R} \rightarrow \mathbb{R} : f(x) = (\lvert x \rvert - \lfloor \lvert x \rvert \rfloor)\_{\mathbb{I}(2 \mid \lfloor x \rfloor)} +  (- \lvert x \rvert + \lfloor \lvert x \rvert \rfloor + 1)\_{\mathbb{I}(2 (\neg \mid) \lfloor x \rfloor}) \\) It is everywhere continuous but not differentiable at any of the integers.
+
+
+[^5]: [Hermite's letters with Steltjes, page 318](https://archive.org/details/correspondanced01bourgoog/page/n335/mode/2up)
+
+[^6]: [Science and method, 1899 Poincaré (1914 translation). Page 125.](https://archive.org/details/b21974123/page/124/mode/2up)
+
+[^7]: [weierstrass OG paper (german) with fractal function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71)
