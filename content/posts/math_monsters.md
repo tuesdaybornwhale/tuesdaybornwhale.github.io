@@ -69,13 +69,15 @@ My opening example for this post was an instance of Chesterton's axiom. When I c
 
 ### New objects
 
+Sometimes, MONSTERS appear to be joyless mathematical objects that merely get in the way of what we are trying to do. However, they can sometimes surprise us by evolving to yield perspectives and applications that we would never have expected were there at all! Let's look at an example.
+
 In the 18th and 17th centuries, many notions in calculus were defined more intuitively and less logically than they are today. Newton and Leibniz originated many of calculus' intuitive fundamentals, but they were fuzzy on the details - especially around infinitesimals and limits. What exactly went on with functions and limits as things got 'infinitely small' was reputedly not very well defined. 
 
 Karl Weierstrass (1815-1897) is known for formalizing many of those fuzzy concepts and helping calculus become less hand-wavy. One of his most revolutionary contributions[^7] involved upending mathematicians' intuitions of continuity, differentiability, and the relationship between them. 
 
 Previously, the consensus was that every continuous function was also differentiable at all but a countably infinite number of points. Intuitively, while a continuous function can[^2] have some jagged points where the derivative isn't defined, it will be 'smooth' nearly[^4] all the time. This set the stage for Weierstrass to publish[^7] a function which was everywhere continuous, but nowhere differentiable. This idea challenged not just the state-of-the-art in mathematics at the time, but also the intuitive foundations upon which Calculus had been built. Pioneers like Newton had invented calculus with well-behaved physical objects in mind, such as the apocryphal apple falling from a tree or the movement of planetary bodies. Most phenomena in mechanics are modelled by nice functions that are clearly both continuous and differentiable. As such, it was considered natural that continuous functions were fundamentally smooth. 
 
-As such, Weiestrass' pathological function and others like have had a profound impact on the way we think about continuous and differentiable functions, and eventually the natural world. Wikipedia's page on the function will sentationally quote Poincaré calling such functions 'monsters' and Weierstrass' work 'an affront to common sense.' It will also paraphrase Hermite calling them a 'lamentable scourge.' These citations make Weierstrass' contemporaries seem like close-minded traditionalists that saw his mathematical discoveries as heresy. I was therefore disappointed when I actually sought out the primary sources[^5] [^6], and found both mathematicians were taken rather out of context. The mathematical beef was not quite as juicy as I had been led to believe!
+As such, Weiestrass' pathological function and others like have had a profound impact on the way we think about continuous and differentiable functions, and eventually the natural world. Wikipedia's page on the function will sentationally quote Poincaré calling such functions 'monsters' and Weierstrass' work 'an affront to common sense.' It will also paraphrase Hermite calling them a 'lamentable scourge.' These citations make Weierstrass' contemporaries seem like close-minded traditionalists that saw his mathematical discoveries as heresy. I was therefore disappointed when I actually sought out the primary sources,[^5] [^6] and found both mathematicians were taken rather out of context. The mathematical beef was not quite as juicy as I had been led to believe, though it is likely that reception to the MONSTER was still mixed.
 
 The Hermite quote comes from his correspondence with Steltjes. In his letter, Hermite was discussing one such function, and apparently found a humorous way of expressing his annoyance at its problematic properties. Hermite's language does, however, suggest that such functions made math significantly more confusing for him!
 
@@ -89,19 +91,27 @@ In short, Poincaré argues that an 'intuitionist's' approach, grounded in the re
 
 'Logic teaches us that on such and such a road we are sure of not meeting an obstacle, but it does not tell us which is the road that leads to the desired end.'
 
-This context is what gives rise Poincarés use of MONSTER[^8] to describe objects like the Weierstrass function. Poincaré was clearly not disputing either the correctness or the relevance of logical mathematics. Instead, he was acknowledging its importance while reminding us of the intuitively repugnant conclusions implied by such a MONSTER. It was hard to reconcile such an object with the intuitionist, physical roots of calculus. 
+This context is what gives rise Poincarés use of MONSTER[^8] to describe objects like the Weierstrass function. Poincaré was clearly not disputing either the correctness or the relevance of logical mathematics. Instead, he was acknowledging its importance while reminding us of the intuitively repugnant conclusions implied by such a MONSTER. Poincaré did, on the other hand, go too far. He furthermore claimed that the Weierstrass function and others like it strayed too far from reality. According to him, functions which were everywhere continuous but nowhere differentiable had no proper use. They were contrarians which proved previous mathematicians wrong, without adding to our understanding of the physical world. 
 
+This assertion seems short-sighted in retrospect, but at the time it was reasonable if strongly worded. Functions that are continuous but not differentiable at a point are jagged. As such, you can try to imagine a function that is everywhere continuous but nowhere differentiable as infinitely jagged, no matter how closely you zoom into them. This must have been extremely hard to visualize or understand intuitively. When Poincaré published his book, there hadn't to my knowledge even been a reasonable attempt to sketch the graph of one. This MONSTER was so ugly that it only existed in the realm of logic. It couldn't be expressed in relation to the physical world, or even on a graph!
 
+It is nevertheless clear to me that while Weistrass' function was not universally well-received, it led to meaninful reflection on what continuity and differentiation really meant. It would have contributed to math even if it had just been a muse for Poincarés philosophical reflections in 'Science and Method.' 
 
-Nevertheless, Poincaré did err in that he thought that the Weierstrass function and others like it strayed too far from reality and too . It led us to question, reexamine and reflect on the meaning of continuity and differentiability. Happily, Poincaré's reflections on how such MONSTERS can be reconciled with our intuitions of the world also saw some closure in the coming century. 
+However, the happy ending to this story is that the gloomy future Poincaré predicted for such functions did not come to pass. These MONSTERS were birthed as pesky abstract contrarians, but they soon found rich applications in physics and other fields, and their study has branched into a diverse mathematical field. It has been found that many physical and social phenomena can best be modeled with such pathologically behaved curves. I don't understand these applications myself, but I'll trust the general consensus that many fractal-like phenomena exist. Example include Brownian motion in physics, the structure of cells in biology, and even the behaviour of markets under certain conditions in economics!
 
-
-[interesting article about Weierstrass' monster](`https://nautil.us/maths-beautiful-monsters-234859/)`
+I find this a touching example of a class of MONSTERS which was in danger of being rejected, but found its way to help us anyway. Originally considered by at least some as an ugly freak of logic with no relationship to the real world, these MONSTERS became an important part of how we understand math and the world
 
 
 ### Contrarians
 
 - proofs by contradiction (think of some)
+
+
+-----
+author's resource
+[interesting but factually sloppy article about Weierstrass' monster. wikipedia uses this as a source](`https://nautil.us/maths-beautiful-monsters-234859/)`
+
+----
 
 [^1]: The Peano axioms, as they are called, are usually presented more formally attempting to properly define things like equality between elements of the set of natural numbers and what the successor functiton is. You can even get into what it means for something to be true if you're really picky. Given in this post is a simplified version so you get the gist without getting lost in the detail
 
