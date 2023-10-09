@@ -73,28 +73,31 @@ In the 18th and 17th centuries, many notions in calculus were defined more intui
 
 Karl Weierstrass (1815-1897) is known for formalizing many of those fuzzy concepts and helping calculus become less hand-wavy. One of his most revolutionary contributions[^7] involved upending mathematicians' intuitions of continuity, differentiability, and the relationship between them. 
 
-Previously, the consensus was that every continuous function was also differentiable at all but a countably finite number of points. Intuitively, while a continuous function can[^2] have some jagged points where the derivative isn't defined, it will be 'smooth' nearly[^4] all the time. This set the stage for Weierstrass to publish a function which was everywhere continuous, but nowhere differentiable. His paper challenged not just the state-of-the-art in mathematics at the time, but also the intuitive foundations upon which Calculus had been built. Pioneers like Newton had invented calculus with well-behaved physical objects in mind, such as the apocryphal apple falling from a tree. Most phenomena in mechanics are modelled by nice functions that are clearly both continuous and differentiable. As such, it was considered natural that continuous functions were fundamentally smooth. 
+Previously, the consensus was that every continuous function was also differentiable at all but a countably infinite number of points. Intuitively, while a continuous function can[^2] have some jagged points where the derivative isn't defined, it will be 'smooth' nearly[^4] all the time. This set the stage for Weierstrass to publish[^7] a function which was everywhere continuous, but nowhere differentiable. This idea challenged not just the state-of-the-art in mathematics at the time, but also the intuitive foundations upon which Calculus had been built. Pioneers like Newton had invented calculus with well-behaved physical objects in mind, such as the apocryphal apple falling from a tree or the movement of planetary bodies. Most phenomena in mechanics are modelled by nice functions that are clearly both continuous and differentiable. As such, it was considered natural that continuous functions were fundamentally smooth. 
 
-As such, Weiestrass' pathological function and others like have had a profound impact on the way we think about continuous and differentiable functions. Wikipedia's page on the function will sentationally quote Poincaré calling such functions 'monsters' and Weierstrass' work 'an affront to common sense.' It will also paraphrase Hermite calling them a 'lamentable scourge.' These citations make Weierstrass' contemporaries seem like close-minded traditionalists that considered his mathematical discoveries to be heresy. I was therefore saddened when I actually checked the primary sources[^5] [^6], to find that both mathematicians were quoted rather out of context. 
+As such, Weiestrass' pathological function and others like have had a profound impact on the way we think about continuous and differentiable functions, and eventually the natural world. Wikipedia's page on the function will sentationally quote Poincaré calling such functions 'monsters' and Weierstrass' work 'an affront to common sense.' It will also paraphrase Hermite calling them a 'lamentable scourge.' These citations make Weierstrass' contemporaries seem like close-minded traditionalists that saw his mathematical discoveries as heresy. I was therefore disappointed when I actually sought out the primary sources[^5] [^6], and found both mathematicians were taken rather out of context. The mathematical beef was not quite as juicy as I had been led to believe!
 
-The Hermite quote comes from his correspondence with Steltjes. In his letter, Hermite was discussing one such function, and apparently found a humorous way of expressing his annoyance at its problematic properties. 
+The Hermite quote comes from his correspondence with Steltjes. In his letter, Hermite was discussing one such function, and apparently found a humorous way of expressing his annoyance at its problematic properties. Hermite's language does, however, suggest that such functions made math significantly more confusing for him!
 
-The Poincaré quote comes from an interesting book he published on the scientific method. The quote hails from a chapter christened 'Definitions and Educations' which is a highly thoughtful and interesting piece of mathematical philosophy which I thoroughly enjoyed reading. In it, Poincaré explicitly praises Weierstrass' logical formalizations of analysis. He acknowledges that many results were previously considered true weren't formalized explictly enough to prove them. While many of them had turned out to be true, many were proven not to be. 
+I was unable to track Poincaré's 'affront to common sense' quote to a primary source. The trail ran cold at the citationless blogpost that wikipedia sloppily referenced. I was, however, able to find the 'monster' quote in a book Poincaré published on the scientific method in 1899. The quote hails from the chapter 'Definitions and Educations' which is a highly thoughtful piece of mathematical philosophy that I strongly recommend. In it, Poincaré explicitly praises Weierstrass' logical formalizations of analysis. He acknowledges that many results that were considered true weren't formalized explictly enough to prove them properly. While many of them had turned out to be true, many were instead shown not to be once they were stated clearly and examined more closely. Formal logic had, no doubt, helped mathematics advance in many ways.
 
-some mathematicians of the day were quick to label it a pathological, pesky abomination - a MONSTER. Hermite famously referred to functions like it as a scourge[^5]. This famous comment seems to be taken somewhat out of context. Hermite actually brought up such functions in the context of 
-(add caviat to Hermite comment)
+At the same time, Poincaré laments the loss of intuition that comes with formalizing mathematics. 
 
-[interesting article about Weierstrass' monster](https://nautil.us/maths-beautiful-monsters-234859/)
+Firstly, he discusses the challenge of teaching formal math to students, as opposed to pedagogy based on intuition. I strongly related to this point, as it brought me back to the most daunting summit of my early university studies. Modern Analysis texbooks and other materials often employ a dry, joyless style of communication. They make heavy use of the logician's definitions and proofs that Weierstrass helped become the convention. While the best materials will bring the inanimate logic to life with vivid geometric or real-world intuitions, many will leave this vital task as an exercise to the reader. As such, much of my time in early university was spent trying to weave the incomplete threads of intuition I would get into a narrative I could relate to something that felt tangible and real.
+
+In short, Poincaré argues that an 'intuitionist's' approach, grounded in the real world, is absolutely vital in math communication - even if it's not the most rigourous. Furthermore, he says that an approach based on intuition is needed not just for pupils, but also for their teachers. He suggests that the pure logician's perspective on math is in some sense limited. They are surely able to prove many results and expand the bounds of knowledge. However, the logical connectors and syllogisms they use only give us a view of the small moving parts of a system. It's only when we zoom out and look at the whole that we understand what this logic means for the physical world we inhabit. While we can prove many results with logic and formalism, it is only with intuition and a feel for math's relationship to the world that we know which results we want to prove. To quote Poincaré:
+
+'Logic teaches us that on such and such a road we are sure of not meeting an obstacle, but it does not tell us which is the road that leads to the desired end.'
+
+This context is what gives rise Poincarés use of MONSTER[^8] to describe objects like the Weierstrass function. Poincaré was clearly not disputing either the correctness or the relevance of logical mathematics. Instead, he was acknowledging its importance while reminding us of the intuitively repugnant conclusions implied by such a MONSTER. It was hard to reconcile such an object with the intuitionist, physical roots of calculus. 
 
 
 
+Nevertheless, Poincaré did err in that he thought that the Weierstrass function and others like it strayed too far from reality and too . It led us to question, reexamine and reflect on the meaning of continuity and differentiability. Happily, Poincaré's reflections on how such MONSTERS can be reconciled with our intuitions of the world also saw some closure in the coming century. 
 
 
-Sometimes, finding mat
+[interesting article about Weierstrass' monster](`https://nautil.us/maths-beautiful-monsters-234859/)`
 
-- fractals (functions that are everywhere continuous but never differentiable)
-
-- completing rational numbers into a set that contains all the limits of its sequences.
 
 ### Contrarians
 
@@ -110,6 +113,10 @@ Sometimes, finding mat
 
 [^5]: [Hermite's letters with Steltjes, page 318](https://archive.org/details/correspondanced01bourgoog/page/n335/mode/2up)
 
-[^6]: [Science and method, 1899 Poincaré (1914 translation). Page 125.](https://archive.org/details/b21974123/page/124/mode/2up)
+[^6]: [Science and method, 1908 Poincaré (1914 translation). Page 125.](https://archive.org/details/b21974123/page/124/mode/2up)
 
-[^7]: [weierstrass OG paper (german) with fractal function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71)
+[^7]: [weierstrass original paper (german) with the pathological function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71). It's worth noting that Weierstrass wasn't the first to concoct such a MONSTER, but he is the first known to have published a complete, proven example.
+
+[^8]: As is often the case, one is sometimes enamoured by an original mathematical idea, only to find that someone else had already had the idea before. Not only had someone used the term 'monster' before, I'm over a century late to the party!
+
+note: weierstrass function was probably publicly announced in 1872 but not published until 1895
