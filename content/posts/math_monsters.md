@@ -7,16 +7,13 @@ draft: true
 
 ## Introduction
 
-Suppose you encounter, on your merry mathematical way, an object such as:
-- a system of axioms for an object such as the natural numbers or probabilities
-- a theorem with a few preconditions which satisfy a cool result
-- a definition for a satisfying object such as the limit 
+Suppose you encounter, on your merry mathematical way, an object such as a cool theorem, or a formal definition of a object (such as the natural numbers)
 
 You might back sit and marvel at the beauty of the object, or investigate its elegant corollaries and its real-world applications. You may, on the other hand be tempted to test the fragility of the object.
 
 ### Example: axiomatizing natural numbers
 
-Many introductory university level courses will give you a definition of the natural numbers that goes something like this[^1]:
+In math, we often start out by defining objects whose existence and properties seem obvious and common place. For example, many introductory university level courses will go out of their way to define the natural numbers. As mundane as it seems, I like the mental motion of formalizing such obvious objects. Every time I do it, I realize how much I know about natural numbers, without even knowing I know it! The process exposes to me how much of my world-view is just implictly baked into my sub-conscious.
 
 ____
 
@@ -59,9 +56,11 @@ One principle I find helpful for thinking about systematic change is *Chesterton
 
 With this in mind, I'll introduce our first type of helpful MONSTER. In our analogy, the axioms for an object or the hypotheses for a theorem are fences. The MONSTER is the angry bull that impales us with its horns after we foolishly remove part of a fence. In our thought experiment, we can remove the fence and intenionally seek out the bull. Once we find it in our mind's eye and have been metaphorically impaled, we can mentally restore the fence with no harm done.
 
-By finding this angry bull, we hope to figure out why our fence was there in the first place, and gain a new understanding and appreciation for our system.
+By finding this angry bull, we hope to figure out why our fence was there in the first place, and gain a new understanding and appreciation for the intricacies of what we're thinking about.
 
-My opening example for this post was an instance of Chesterton's axiom. When I couldn't understand why PMI was a necessary axiom for the natural numbers, the thought experiment of removing it helped me understand the purpose it serves. Here are some more of my favourite examples...
+My opening example for this post was an instance of Chesterton's axiom. The fact that the number line is, well... a line was drilled so deep in my psyche that I didn't remember I need to write it down! In fact, in an alternative world, I could have eaten up a definition of the naturals which includes ony axioms 0, 1 and 2, without realizing it's incomplete.
+
+In the end, only the thought experiment of removing PMI gave me that 'aha' moment that I actually hadn't finished describing what I was trying to describe. The MONSTER helped me unlock a greater understanding of a very fundamental object, and it helped me realize something about how my brain works. 
 
 #### Examples (maybe will make some if I'm not lazy)
 
@@ -85,19 +84,19 @@ I was unable to track Poincaré's 'affront to common sense' quote to a primary s
 
 At the same time, Poincaré laments the loss of intuition that comes with formalizing mathematics. 
 
-Firstly, he discusses the challenge of teaching formal math to students, as opposed to pedagogy based on intuition. I strongly related to this point, as it brought me back to the most daunting summit of my early university studies. Modern Analysis texbooks and other materials often employ a dry, joyless style of communication. They make heavy use of the logician's definitions and proofs that Weierstrass helped become the convention. While the best materials will bring the inanimate logic to life with vivid geometric or real-world intuitions, many will leave this vital task as an exercise to the reader. As such, much of my time in early university was spent trying to weave the incomplete threads of intuition I would get into a narrative I could relate to something that felt tangible and real.
+Firstly, he discusses the challenge of teaching formal math to students, as opposed to pedagogy based on intuition. I strongly related to this point, as it brought me back to the most daunting summit of my early university studies. Modern Analysis texbooks and other materials often employ a dry, joyless style of communication. They make heavy use of the logician's definitions and proofs that Weierstrass helped introduce. The best materials will additionally bring the inanimate logic to life with vivid geometric or real-world intuitions. On the other hand, many will implicitly leave this vital task as an exercise to the reader. As such, much of my time in early university was spent trying to weave the incomplete threads of intuition I would get into a narrative I could relate to something that felt tangible and real.
 
 In short, Poincaré argues that an 'intuitionist's' approach, grounded in the real world, is absolutely vital in math communication - even if it's not the most rigourous. Furthermore, he says that an approach based on intuition is needed not just for pupils, but also for their teachers. He suggests that the pure logician's perspective on math is in some sense limited. They are surely able to prove many results and expand the bounds of knowledge. However, the logical connectors and syllogisms they use only give us a view of the small moving parts of a system. It's only when we zoom out and look at the whole that we understand what this logic means for the physical world we inhabit. While we can prove many results with logic and formalism, it is only with intuition and a feel for math's relationship to the world that we know which results we want to prove. To quote Poincaré:
 
 'Logic teaches us that on such and such a road we are sure of not meeting an obstacle, but it does not tell us which is the road that leads to the desired end.'
 
-This context is what gives rise Poincarés use of MONSTER[^8] to describe objects like the Weierstrass function. Poincaré was clearly not disputing either the correctness or the relevance of logical mathematics. Instead, he was acknowledging its importance while reminding us of the intuitively repugnant conclusions implied by such a MONSTER. Poincaré did, on the other hand, go too far. He furthermore claimed that the Weierstrass function and others like it strayed too far from reality. According to him, functions which were everywhere continuous but nowhere differentiable had no proper use. They were contrarians which proved previous mathematicians wrong, without adding to our understanding of the physical world. 
+This context is what gives rise Poincarés use of MONSTER[^8] to describe objects like the Weierstrass function. Poincaré was clearly not disputing either the correctness or the relevance of logical mathematics. Instead, he was acknowledging its importance while reminding us of the intuitively repugnant conclusions implied by such a MONSTER. Poincaré did, on the other hand, go too far. He claimed that the Weierstrass function and others like it strayed too far from reality. According to him, functions which were everywhere continuous but nowhere differentiable had no proper use. They were contrarians which proved previous mathematicians wrong, without adding to our understanding of the physical world. 
 
-This assertion seems short-sighted in retrospect, but at the time it was reasonable if strongly worded. Functions that are continuous but not differentiable at a point are jagged. As such, you can try to imagine a function that is everywhere continuous but nowhere differentiable as infinitely jagged, no matter how closely you zoom into them. This must have been extremely hard to visualize or understand intuitively. When Poincaré published his book, there hadn't to my knowledge even been a reasonable attempt to sketch the graph of one. This MONSTER was so ugly that it only existed in the realm of logic. It couldn't be expressed in relation to the physical world, or even on a graph!
+This assertion seems short-sighted in retrospect, but at the time it was reasonable if strongly worded. You can think of functions that are continuous but not differentiable everywhere are jagged everywhere. In other words, the function is infinitely detailed, no matter how much you zoom in. This must have been extremely hard to visualize or understand intuitively. When Poincaré published his book, there hadn't to my knowledge even been a reasonable attempt to sketch the graph of one of these. This MONSTER was so ugly that it only existed in the realm of logic. It couldn't be expressed in relation to the physical world, or even expressed visually on a graph!
 
-It is nevertheless clear to me that while Weistrass' function was not universally well-received, it led to meaninful reflection on what continuity and differentiation really meant. It would have contributed to math even if it had just been a muse for Poincarés philosophical reflections in 'Science and Method.' 
+Even despite the Weierstrass' function mixed reception and at-the-time lack of practical applications, I would argue it was still useful for math as a pedagogical device. Ironically, the very work in which Poincaré criticizes the MONSTER was a more fruitful, reflective and interesting piece due to the MONSTER's existence. In general, it led to meaninful reflection on what continuity and differentiation really meant. 
 
-However, the happy ending to this story is that the gloomy future Poincaré predicted for such functions did not come to pass. These MONSTERS were birthed as pesky abstract contrarians, but they soon found rich applications in physics and other fields, and their study has branched into a diverse mathematical field. It has been found that many physical and social phenomena can best be modeled with such pathologically behaved curves. I don't understand these applications myself, but I'll trust the general consensus that many fractal-like phenomena exist. Example include Brownian motion in physics, the structure of cells in biology, and even the behaviour of markets under certain conditions in economics!
+However, the happy ending to this story is that the gloomy future Poincaré predicted for the practical aplications of such functions did not come to pass. These MONSTERS were birthed as pesky abstract contrarians, but they soon found rich applications in physics and other fields, and their study has branched into a diverse mathematical field. It has been found that many physical and social phenomena can best be modeled with such pathologically behaved curves. I don't understand these applications myself, but I'll trust the general consensus that many fractal-like phenomena exist. Example include Brownian motion in physics, the structure of cells in biology, and even the behaviour of markets under certain conditions in economics!
 
 I find this a touching example of a class of MONSTERS which was in danger of being rejected, but found its way to help us anyway. Originally considered by at least some as an ugly freak of logic with no relationship to the real world, these MONSTERS became an important part of how we understand math and the world
 
