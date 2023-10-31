@@ -62,7 +62,10 @@ My opening example for this post was an instance of Chesterton's axiom. The fact
 
 In the end, only the thought experiment of removing PMI gave me that 'aha' moment that I actually hadn't finished describing what I was trying to describe. The MONSTER helped me unlock a greater understanding of a very fundamental object, and it helped me realize something about how my brain works. 
 
-#### Examples (maybe will make some if I'm not lazy)
+#### Example: continuity and differentiability
+
+
+
 
 
 
@@ -103,7 +106,21 @@ I find this a touching example of a class of MONSTERS which was in danger of bei
 
 ### Contrarians
 
-- proofs by contradiction (think of some)
+Often, if you want to prove a statement false, you can start by assuming it is true. This is useful because sometimes, there's a monster lurking in the shadows that will help you make the statement's absurdness obvious.
+
+#### Example: The square root of two is irrational
+
+One property of fractions is that you can always reduce them such that the numerator and the denominator have no common factors. For example, since 6 and 4 are both divisible by 2, then \\(\frac{4}{6} = \frac{2}{3}\\). We're going to assume that the square root of two can be written as such a quotient, then show that this quotient is a MONSTER. 
+
+*Proof:*
+
+Suppose that the square root of two is rational. Then, we could find integers p and q such that \\(\sqrt[]2 = \frac{p}{q} \\). We can also reduce this fraction until p and q have no common divisors. Since \\(\sqrt[]2 = \frac{p}{q} \\), then \\(2 = \frac{p^2}{q^2}\\), which means that \\(2q^2 = p^2\\). This means that p^2 must be an even number, but therefore p must be an even number. This means that we could write p as \\(p=2k\\), where k is some integer. Therefore: \\(2q^2 = (2k)^2 = 4k^2\\), now we can divide both sides by two to see that \\(q^2 = 2k^2\\), so therefore q is even. Now that we've shown that q and p are even, our MONSTER rears its head! Since they have a common factor of two, we could always reduce the fraction \\(\frac{p}{q}\\) by dividing both sides by two. On the other hand, we already previously assumed that \\(\frac{p}{q}\\) couldn't be reduced anymore, so our fraction has two contracting properties.  \\(\blacksquare\\)
+
+
+(not a good example)
+
+
+#### Example: 
 
 
 -----
