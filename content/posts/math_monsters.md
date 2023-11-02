@@ -31,8 +31,7 @@ ____
 
 The first time I read through these axioms, I was confused by the Principle of Mathematical Induction (PMI) axiom. I frowned to myself that PMI seems to be formalizing something that is already quite obvious - aren't proofs by induction already rigorous all on their own?
 
-Months later, I tried taking out the PMI axiom to see what would happen to my set of
-'natural numbers.' Initially, nothing seemed off at all. 0 is still the first natural numbers. Natural numbers still follow and preceed each other just as one would expect them to. 'the number line behaves just like it should,' I thought. 
+Months later, I tried taking out the PMI axiom to see what would happen to my set of 'natural numbers.' Initially, nothing seemed off at all. 0 is still the first natural numbers. Natural numbers still follow and preceed each other just as one would expect them to. 'the number line behaves just like it should,' I thought. 
 
 But hold on... why is it **the only** number line?
  
@@ -60,7 +59,7 @@ By finding this angry bull, we hope to figure out why our fence was there in the
 
 My opening example for this post was an instance of Chesterton's axiom. The fact that the number line is, well... a line was drilled so deep in my psyche that I didn't remember I need to write it down! In fact, in an alternative world, I could have eaten up a definition of the naturals which includes ony axioms 0, 1 and 2, without realizing it's incomplete.
 
-In the end, only the thought experiment of removing PMI gave me that 'aha' moment that I actually hadn't finished describing what I was trying to describe. The MONSTER helped me unlock a greater understanding of a very fundamental object, and it helped me realize something about how my brain works. 
+In the end, only the thought experiment of removing PMI gave me that 'aha' moment that I actually hadn't finished describing what I was trying to describe. The MONSTER helped me unlock a greater understanding of a very fundamental object, and also a better understanding of what kinds of important gems are buried in my subconscious. I think that's pretty cool.
 
 ### Contrarians
 
@@ -74,7 +73,11 @@ One property of fractions is that you can always reduce them to the lowest term,
 
 Suppose that the square root of two is rational. Then, we could find integers p and q such that \\(\sqrt[]2 = \frac{p}{q} \\). We can also reduce this fraction until p and q have no common divisors. Because p and q have no common divisors, they both cannot be even.
 
-Since \\(\sqrt[]2 = \frac{p}{q} \\), then \\(2 = \frac{p^2}{q^2}\\), which means that \\(2q^2 = p^2\\). This means that \\(p^2\\) must be an even number, but therefore p must be an even number. This means that we could write p as \\(p=2k\\), where k is some integer. Therefore: \\(2q^2 = (2k)^2 = 4k^2\\), now we can divide both sides by two to see that \\(q^2 = 2k^2\\), so therefore q is even. Now that we've shown that q and p are even, our MONSTER rears its head! Since they have a common factor of two, we could always reduce the fraction \\(\frac{p}{q}\\) by dividing both sides by two. On the other hand, we already previously assumed that \\(\frac{p}{q}\\) couldn't be reduced anymore, so our fraction has two contradicting properties.  \\(\blacksquare\\)
+Since \\(\sqrt[]2 = \frac{p}{q} \\), then \\(2 = \frac{p^2}{q^2}\\), which means that \\(2q^2 = p^2\\). This means that \\(p^2\\) must be an even number, but therefore p must be an even number. This means that we could write p as \\(p=2k\\), where k is some integer. Therefore: \\(2q^2 = (2k)^2 = 4k^2\\), now we can divide both sides by two to see that \\(q^2 = 2k^2\\), so therefore q is even. Now that we've shown that q and p are even, our MONSTER rears its head! Since they have a common factor of two, we could always reduce the fraction \\(\frac{p}{q}\\) by dividing both sides by two. On the other hand, we already previously assumed that \\(\frac{p}{q}\\) couldn't be reduced anymore, so our fraction has two contradicting properties.  \\(\blacksquare\\).
+
+----
+
+Another way you may come accross a contrarian is revealed by the way logical connectors. (insert analysis proof around closeness)
 
 ### New objects
 
