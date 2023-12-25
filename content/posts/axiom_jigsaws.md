@@ -2,7 +2,7 @@
 title: "Axiomatic jigsaw puzzles: probability"
 date: 2023-09-06T20:58:03+02:00
 layout: math_post
-draft: true
+draft: false
 ---
 
 {{< math_post >}}
@@ -10,7 +10,7 @@ draft: true
 *'Anytime someone finds a problem with your axioms, you just say "oh, but of course that's not what I meant," and you change the axioms.'* - cool math prof
 
 ## Intro
-I recently came across the ['Foundations of the Theory of Probability,'](https://archive.org/details/kolmogorov_202112) a 1933 paper by A.N. Kolmogorov which outlines the 'canonical' formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov's paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are *substantively* different from the ones I am used to.
+I recently came across the ['Foundations of the Theory of Probability,'](https://archive.org/details/kolmogorov_202112) a 1933 paper by A.N. Kolmogorov which outlines the 'canonical' formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov's paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are substantially different from the ones I am used to.
 
 In this post I analyze the subtly fascinating differences between these axiomatizations. I take apart the systems by examining the role each axiom is fulfilling. The goal ultimately is to understand the reasoning and historical context behind different choices of axioms, and to see how different jigsaw pieces come together to make more or less the same image of probability theory.
 
@@ -195,13 +195,11 @@ Suppose Kolmogorov had been aware of the double implication and merely made a st
 
 ## Conclusion
 
-to be written properly. Outline:
-
 In the end these axiom systems are logically equivalent, so why go to all the trouble of analysing them?
 
-I gained more of an understanding of probability from this project. Thinking about why the axioms are there and the role they fulfill made me reflect on what probabilities really are in our heads and what about them we want to formalize. It also gives an opportunity to do a 
+I gained more of an understanding of probability from this project. Thinking about why each axiom is there and the role each fulfills made me reflect on what probabilities really are in our heads and what about them we want to formalize. Moreover, researching the historical context and development of these mathematical theories also gives them a more meaningful flavour. I can see why people found them interesting or appealing, and peek at the rationale behind certain choices in research. 
 
-- meta point on why I find the mental motion of axiom jigsaw puzzles cool. I want to do jigsaw puzzles for all kinds of other mathematical objects (e.g. taking out or changing/replacing a hypothesis in a theorem and seeing which objects don't behave we want to anymore,)
+On a more meta level, I find the mental motion of axiomatic jigsaw puzzles cool. Taking a system or idea apart and understanding its pieces, both within a historical context and on it's own, is a rewarding process that I apply to many other pieces of math. I recommend it!
 
 
 
@@ -215,4 +213,4 @@ I gained more of an understanding of probability from this project. Thinking abo
 
 [^5]: beware: the math from now on is my own and is not peer-reviewed, unless stated otherwise.
 
-[^6]: the proof itself is heavily inspired by the proof I read in my probability course. The 'explanation' of the proof is mine.
+[^6]: the proof itself is borrowed from my probability course and is standard probability course material. The 'explanation' of the proof is mine.
