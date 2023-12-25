@@ -211,6 +211,6 @@ On a more meta level, I find the mental motion of axiomatic jigsaw puzzles cool.
 
 [^4]: A decreasing sequence of sets is one such that each element is a superset of the next. Conversely, increasing sequences are such that each element is a subset of the next.
 
-[^5]: beware: the math from now on is my own and is not peer-reviewed, unless stated otherwise.
+[^5]: beware: the math from now on is my own and is not peer-reviewed, unless stated otherwise. Feedback appreciated.
 
 [^6]: the proof itself is borrowed from my probability course and is standard probability course material. The 'explanation' of the proof is mine.
