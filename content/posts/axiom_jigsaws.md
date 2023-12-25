@@ -7,7 +7,7 @@ draft: true
 
 {{< math_post >}}
 
-*'Anytime someone finds a problem with your axioms, you just say "oh, but of course that's not what I meant," and you change the axioms.'* - Yvik Swan, professor @ ULB
+*'Anytime someone finds a problem with your axioms, you just say "oh, but of course that's not what I meant," and you change the axioms.'* - cool math prof
 
 ## Intro
 I recently came across the ['Foundations of the Theory of Probability,'](https://archive.org/details/kolmogorov_202112) a 1933 paper by A.N. Kolmogorov which outlines the 'canonical' formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov's paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are *substantively* different from the ones I am used to.
@@ -20,7 +20,7 @@ In this post I analyze the subtly fascinating differences between these axiomati
 
 Before we go into the formal axioms, it would behoove us to reflect shortly on what these axioms are actually *for* and what exactly we want to formalize.
 
-Probabilities are our way of describing and dealing with uncertainty in the world. Colloquially, an event having probability 1 is the same as saying that its virtually certain, whereas an event having probability 0[^1] is math-speak for saying that we can go about our lives more or less assuming it won't happen. For everything else, we assign a number between zero and one that tries to convey the 'likelihood' that it will happen. What exactly this likelihood means is an ever-enduring philosophical debate that we won't go into in this post.
+Probabilities are our way of describing and dealing with uncertainty in the world. Colloquially, an event having probability 1 is the same as saying that its virtually certain, whereas an event having probability 0[^1] is math-speak for saying that we can go about our lives more or less assuming it won't happen. For everything else, we assign a number between zero and one that tries to convey the 'likelihood' that it will happen. What exactly this likelihood means is an ever-enduring philosophical debate that we won't go into in this post (sorry M).
 
 In short, what our brains are doing when we think of probabilities is mapping certain events onto certain unique numbers. Math actually has a name for that: probabilities are just functions! What's left to do in our axioms is to describe these functions a little more concretely. Namely, we'd like to know what the inputs and outputs actually are, as well as any important rules our probability functions should follow in order that they behave the ways probabilities in our heads do.
 
@@ -96,7 +96,7 @@ The problem with this informal line of reasoning is that it seems impossible to 
 
 To understand this problem better, I constructed a monster: an example of a probability field which fits Kolmogorov's five axioms but clearly doesn't work the way we would want probabilities to work.
 
-### The Monster
+### The Monster[^5]
 
 I figured that my search for a monster could start by directly contradicting the sixth axiom and seeing what happens:
 
@@ -134,7 +134,7 @@ What this means for our little proof is that we can't make the step of turning t
 
 ### Defeating the monster: two options
 
-Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer Swan's approach. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it's even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability set that the sequence tends towards is also the limit of the probabilities of the members of the set.
+Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer Swan's approach. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it's even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability of the limit set is also the limit of the probabilities of the members of the set.
 
 To prove this, we will be using the same trick as before of expressing our sequence as a union of disjoint sets, to allow us to turn the union into an infinite sum.
 
@@ -150,7 +150,7 @@ Then:
 
 ___
 
-*Proof:*
+*Proof:*[^6]
 
 1. \\(\mathbb{P}[\bigcup_{n = 1}^{\infty} C_n] \stackrel{(1)}{=} \mathbb{P}[\bigcup_{n = 1}^{\infty} (C_n \cap C_{n-1}^C)] \\)
 \
@@ -191,16 +191,15 @@ To me, the answer seems obvious. Strengthening axiom 5 seems like a more simple,
 
 So why did Kolmogorov bring in his sixth axiom? At first I was tempted to think that he had missed that a strengthened axiom 5 is a sufficient, and not just a necessary condition for his sixth axiom. However, this seems hard to believe. For starters, the set-theoretic limit was already well known by the time he published his paper. In fact, it's given in the Hausdorf's set theory [book](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false) that Kolmogorov cites multiple times. All this given, it would be surprising if the relatively simple proofs for *theorem 2* and the corollary that \\(\mathbb{P}[\lim_{n \to \infty} A\_n] = \lim_{n \to \infty} \mathbb{P}[A\_n] \\) had been missed. I can't find evidence either way.
 
-Suppose Kolmogorov had been aware of the double implication and merely made a stylistic choice, then I would find that less interesting. However, suppose he had missed it, when was it discovered and by who? 
-
-editor's note: I will look a bit longer but in worst case will publish this with my current state of knowledge.
+Suppose Kolmogorov had been aware of the double implication and merely made a stylistic choice, then I would find that less interesting. However, suppose he had missed it, when was it discovered and by who? I don't know...
 
 ## Conclusion
 
 to be written properly. Outline:
 
-- in the end these axiom systems are logically equivalent, so why go to all the trouble of analysing them?
-    - We gained more of an understanding of probability from this project. Thinking about why the axioms are there and the role they fulfill made us reflect on what probabilities really are in our heads and what about them we want to formalize. This helps us deepen our understanding of whatever we're thinking about, and hopefully gives us a peek into what it's like to actually invent math for oneself (genealogy shit)
+In the end these axiom systems are logically equivalent, so why go to all the trouble of analysing them?
+
+I gained more of an understanding of probability from this project. Thinking about why the axioms are there and the role they fulfill made me reflect on what probabilities really are in our heads and what about them we want to formalize. It also gives an opportunity to do a 
 
 - meta point on why I find the mental motion of axiom jigsaw puzzles cool. I want to do jigsaw puzzles for all kinds of other mathematical objects (e.g. taking out or changing/replacing a hypothesis in a theorem and seeing which objects don't behave we want to anymore,)
 
@@ -213,3 +212,7 @@ to be written properly. Outline:
 [^3]: Axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an early 20th century [book](https://books.google.de/books?id=TFA_EAAAQBAJ&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false). Hausdorf's 'field' equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.
 
 [^4]: A decreasing sequence of sets is one such that each element is a superset of the next. Conversely, increasing sequences are such that each element is a subset of the next.
+
+[^5]: beware: the math from now on is my own and is not peer-reviewed, unless stated otherwise.
+
+[^6]: the proof itself is heavily inspired by the proof I read in my probability course. The 'explanation' of the proof is mine.
