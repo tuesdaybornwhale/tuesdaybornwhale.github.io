@@ -4,6 +4,8 @@ date: 2024-02-17T20:58:34+01:00
 draft: true
 ---
 
+old notes (maybe useful)
+
 In this post we'll go over various types of monstrous companions which help us think about math.
 
 ### Chesterton's axiom

@@ -53,7 +53,7 @@ One must to an extent sympathise with the frustration of the monster-barrers. As
 
 Poincaré argues along these lines in his 1907 book[^6] in relation to Weierstrass' monsters, lamenting that some monsters do nothing but prove our mathematical ancestors wrong without providing insight. He writes [insert quote].
 
-I do sympathise with the frustration  
+I sympathise with the frustration described by such monster-barrers. I also sympathize with the appeal of having a perfectly, platonically-defined mathematical object which flawlessely describes exactly what we want it to. Nevertheless, what I'm here to do is not actually to take the side of the monster-barrers, but rather to argue *for* the value of monsters and of their use being, in good faith, key to advancing our understanding of math.
 
 
 Secretly, however, MONSTERS are actually our helpers. 
