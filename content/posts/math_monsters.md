@@ -55,6 +55,10 @@ Poincaré argues along these lines in his 1907 book[^6] in relation to Weierstra
 
 I sympathise with the frustration described by such monster-barrers. I also sympathize with the appeal of having a perfectly, platonically-defined mathematical object which flawlessely describes exactly what we want it to. Nevertheless, what I'm here to do is not actually to take the side of the monster-barrers, but rather to argue *for* the value of monsters and of their use being, in good faith, key to advancing our understanding of math.
 
+### Reframing the itch
+
+use vector spaces as an example... etc...
+
 
 Secretly, however, MONSTERS are actually our helpers. 
 
