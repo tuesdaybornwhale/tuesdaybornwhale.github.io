@@ -60,9 +60,9 @@ I sympathise with the frustration described by such monster-barrers. I also symp
 use vector spaces as an example... etc...
 
 
-Secretly, however, MONSTERS are actually our helpers. 
+<!--- Secretly, however, MONSTERS are actually our helpers. 
 
-<!--- 
+
 When I couldn't understand why the induction axiom was needed for the natural numbers, removing it birthed a MONSTER which helped me realize why the axiom was there in the first place. 
 -->
 
