@@ -5,13 +5,7 @@ draft: true
 ---
 {{< math_post >}}
 
-## Introduction
-
-Suppose you encounter, on your merry mathematical way, an object such as a cool theorem, or a formal definition of a object (such as the natural numbers)
-
-You might back sit and marvel at the beauty of the object, or investigate its elegant corollaries and its real-world applications. You may, on the other hand be tempted to test the fragility of the object.
-
-### Example: axiomatizing natural numbers
+### Introduction: axiomatizing natural numbers
 
 In math, we often start out by defining objects whose existence and properties seem obvious and common place. For example, many introductory university level courses will go out of their way to define the natural numbers. As mundane as it seems, I like the mental motion of formalizing such obvious objects. Every time I do it, I realize how much I know about natural numbers, without even knowing I know it! The process exposes to me how much of my world-view is just implictly baked into my sub-conscious.
 
@@ -41,7 +35,28 @@ With this MONSTER in mind, we introduce the PMI axiom. Suppose our set of 'natur
 
 ### Philosophy of THE MONSTER
 
-Mathematical MONSTERS are delightful creatures which mischievously comply with the rules of a mathematical object, while obviously defying their intention. Monsters are sometimes annoying objects that get in the way of whatever we're trying to do. Our defined or axiomatized system may cease to behave how we want it to, or the conclusion of our theorem may no longer be true. Secretly, however, MONSTERS are actually our helpers. 
+Mathematical MONSTERS are delightful creatures which mischievously comply with the rules of a mathematical object, while obviously defying their intention. Monsters are sometimes annoying objects that get in the way of whatever we're trying to do. Our defined or axiomatized system may cease to behave how we want it to, as, for example, a statement like 'all natural numbers have property X' may not be true if there are some pathological 'natural numbers' that we merely failed to define out of the category.
+
+As a result, one chronic condition of some mathematicians is the compulsion to expel monsters by introducing more restrictions and caveats to one's definitions for an object. Mathematical history is filled with meticulous pedants such as [name from proofs and refutations] who devoted large parts of their mathematical careers to defining the perfect object by systematically slaying monster after monster.
+
+The problem with this, of course, is that each restriction is nothing but an ad-hoc adjustment that slays one *particular* monster, but not all of them in generality. This inevitably leaves the monster-barrer in a perpetual state of uncertainty as to whether their mathematical objects are actually safe from monsters or not. For example, I may have banished the apendage of a circular \\(\alpha- \beta- \gamma\\) tumour to my beautiful number line, but nothing guarantees me that there isn't another monster waiting in the shadows. I call this state of limbo *the itch.*
+
+On the other hand, there exist the natural counterparts to the monster-barrers: those mathematicians who, rather than treating *the itch* as an ailment, consider it an inspiration to create monsters which seek to challenge or invalidate accepted frameworks and results. Karl Weierstrass (1815-1897) was a well-known and celebrated creator of monsters. In particular, he is held responsible for the first published[^7] instance of a function which is everywhere continuous but nowhere differentiable, an object which challenged the consensus that continuitity implied differentiability at almost[^4] all points.
+
+There are examples across history of legendary struggles between monster-barrers and monster-breeders.
+
+These struggles are often unhelpful. The monster-barrers contort their definitions of objects into increasingly ugly and unintuitive forms, explicitly or implicitly barring a growing list of exceptions and asterrisks. On the other hand, the monster-breeders come up with increasingly convoluted, 'technically correct' monsters whose validity often depends on exploiting, in bad faith, imprecise wording or other technicalities to create pathological objects.
+
+Some such struggles are both documented and parodied brilliantly in 'Proofs and Refutations,' by Imre Lakatos. It's a fantastic read I thoroughly recommend.
+
+One must to an extent sympathise with the frustration of the monster-barrers. As an analogy to their situation, you can imagine sitting down and trying to formally define what a chair is. You might start with: 'a chair is something you can sit down on.' Then, a contrarian, asks you whether a log of wood is a chair, since you can technically sit down on it. You might amend your definition by adding the restriction that a chair needs to have legs, but the contrarian might persist by inquiring whether a bed is a chair by your definition, and so on. For every restriction you introduce that you hope bars all the exceptions, the contrarian might come up with a new monster which obeys all the rules of chair-dom, but clearly isn't a chair! Such a conversation could be very frustrating indeed, mostly because we all *know* what a chair is, and the contrarian's exceptions seem motivated not by a desire for insight, but rather a desire to get one over on you. Such a discussion would be a waste of time indeed! 
+
+Poincaré argues along these lines in his 1907 book[^6] in relation to Weierstrass' monsters, lamenting that some monsters do nothing but prove our mathematical ancestors wrong without providing insight. He writes [insert quote].
+
+I do sympathise with the frustration  
+
+
+Secretly, however, MONSTERS are actually our helpers. 
 
 <!--- 
 When I couldn't understand why the induction axiom was needed for the natural numbers, removing it birthed a MONSTER which helped me realize why the axiom was there in the first place. 
