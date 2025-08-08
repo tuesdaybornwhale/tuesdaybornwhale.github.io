@@ -1,7 +1,7 @@
 ---
 title: "Making Mathematical MONSTERS"
 date: 2023-09-11T16:54:54+02:00
-draft: true
+draft: false
 ---
 {{< math_post >}}
 
@@ -36,21 +36,21 @@ With this MONSTER in mind, we introduce the PMI axiom. Suppose our set of 'natur
 
 Mathematical MONSTERS are delightful creatures which mischievously comply with the rules of a mathematical object, while obviously defying their intention. Monsters are sometimes annoying objects because they can get in the way of whatever we're trying to do. Our defined or axiomatized system may cease to behave how we want it to. For instance, a statement like 'all natural numbers have property X' may not be true if there are some impostor 'natural numbers' that we merely failed to define out of the category.
 
-As a result, a chronic condition suffered by some mathematicians is the compulsion to expel monsters in search of platonic, perfectly defined mathematical objects. History is filled with meticulous pedants such as [name from proofs and refutations] who devoted large parts of their mathematical careers to refining their definitions of object by systematically slaying monster after monster.
+As a result, a chronic condition suffered by some mathematicians is the compulsion to expel monsters in search of platonic, perfectly defined mathematical objects. History is filled with meticulous pedants who devoted large parts of their mathematical careers to refining their definitions of object by systematically slaying monster after monster.
 
 The problem with this approach is that each restriction is nothing but an ad-hoc adjustment that slays one *particular* monster, but never all possible monsters in generality. This inevitably leaves the monster-barrer in a perpetual state of uncertainty as to whether their mathematical objects are actually safe from monsters or not. For example, I may have banished the apendage of a circular \\((\alpha,\beta,\gamma)\\) tumour to my beautiful number line, but nothing guarantees me that there isn't *some other* monster waiting in the shadows. I call this state of limbo *the itch.*
 
-On the other side of the political aisle, there exist the natural counterparts to the monster-barrers: those mathematicians who, rather than treating *the itch* as an ailment, see in it an inspiration to create monsters which seek to challenge or invalidate accepted frameworks and results. Karl Weierstrass (1815-1897) was a celebrated creator of monsters. In particular, he is held responsible for the first published[^7] instance of a function which is everywhere continuous but nowhere differentiable. This object which challenged the consensus that continuitity implied differentiability at almost all points, even invalidating existing (incorrect) proofs[^10] that had been previously been accepted by the general mathematical community.
+On the other side of the political aisle, there exist the natural counterparts to the monster-barrers: those mathematicians who, rather than treating *the itch* as an ailment, see in it an inspiration to create monsters which seek to challenge or invalidate accepted frameworks and results. Karl Weierstrass (1815-1897) was a celebrated creator of monsters. In particular, he is held responsible for the first published[^7] instance of a function which is everywhere continuous but nowhere differentiable. This object challenged the consensus that continuitity implied differentiability at almost all points, even invalidating existing (incorrect) proofs[^10] that had been previously been accepted by the general mathematical community.
 
 History features some legendary struggles between monster-barrers and monster-makers. Some such conflicts are both documented and parodied brilliantly in *Proofs and Refutations by Imre Lakatos,*[^8] which uses fictional dialogues between a teacher and their students to caricature and discuss real characters and debates from mathematical history. I copied the paradigm of dividing mathematicians into monster-barrers and monster-makers from the book, and this whole section is inspired by its critique of these two archetypes.
 
 Unfortunately, as Lakatos' dialogues illustrate, these struggles can be as unproductive as they are amusing. Monster-barrers risk contorting their definitions of objects into increasingly ugly and unintuitive forms, explicitly or implicitly barring a growing, unwieldy list of exceptions and asterrisks. On the other hand, Monster-makers can end up concocting hopelessly convoluted, 'technically correct' monsters whose validity often depends on exploiting, in bad faith, imprecise wording or other technicalities to create repulsive pathological objects.
 
-It's easy to sympathise with the frustration of the monster-barrers. As an analogy to their situation, you can imagine sitting down and trying to formally define what a chair is. You might start with: 'a chair is something you can sit down on.' Then, a contrarian comes along and asks you whether a log of wood is a chair, since you can technically sit down on it. You might improve your definition by adding the restriction that a chair needs to have legs, but they might persist by inquiring whether a bed is a chair by your definition. You may then amend your definition anew, but the contrarian will inevitably generate another outrageous counter-example, and so on.  <!--- For every restriction you introduce that you hope bars all the exceptions, the contrarian might come up with a new monster which obeys all the rules of chair-dom, but clearly isn't a chair! -->
+It's easy to sympathise with the woes of the monster-barrers. As an analogy to their situation, you can imagine sitting down and trying to formally define what a chair is. You might start with: 'a chair is something you can sit down on.' Then, a contrarian comes along and asks you whether a log of wood is a chair, since you can technically sit down on it. You might improve your definition by adding the restriction that a chair needs to have legs, but they might persist by inquiring whether a bed is a chair by your definition. You may then amend your definition anew, but the contrarian will inevitably generate another outrageous counter-example, and so on.  
 
 I can imagine this being very frustrating because we all *know* what a chair is. The contrarian (probably) doesn't actually disagree with you about whether a given object is a chair or not. This makes their contrarianism seem motivated not by a drive for insight, but rather a conviction to annoy you or to appear clever. Such a discussion would be a waste of time indeed! 
 
-Poincaré argues along these lines in his 1907 book[^6], where he discusses and censures Weierstrass' pathological continuous-but-not-differentiable functions. The book laments that some monsters do nothing but prove our mathematical ancestors techically wrong without providing real insight. He writes: "Formerly, when a new function was invented, it was in view of some practical end. To-day they are invented on purpose to show our ancestors’ reasonings at fault, and we shall never get anything more than that out of them."
+Poincaré argues along these lines in his 1907 book[^6], where he discusses and censures Weierstrass' pathological continuous-but-not-differentiable functions. The book laments that some monsters do nothing but prove our mathematical ancestors techically wrong without providing real insight. He writes: "Formerly, when a new function was invented, it was in view of some practical end. Today they are invented on purpose to show our ancestors’ reasonings at fault, and we shall never get anything more than that out of them."
 
 In further support of the monster-barrer's view, there's an undeniable appeal to having a perfectly-defined mathematical object which flawlessely, unambiguously describes exactly what we want it to. Nevertheless, I'm not actually here to take the side of the monster-barrers, but rather to argue *for* the value of monsters and of their use, in good faith, being key to advancing our understanding of math.
 
@@ -68,14 +68,7 @@ However, it is precisely here that the ideology of the categorizing monster-barr
 
 To return to an early example, the really compelling reason to introduce the Principle of mathematical induction *is not* that we simply can't stand the idea of having an \\((\alpha,\beta,\gamma)\\) system in our natural numbers. Instead, we are motivated by the intuition PMI is a neat, cool property for an object to have. Our goal is not to strictly categorize the natural numbers, but rather to set up a framework where we can meaningfully talk about them. In this light, I can say that the possibility that there might exist another 'monster' somewhere isn't too concerning. My axioms are already powerful enough to tell me a lot about 'the natural numbers' as they are. Crucially, the possibility that my axioms could describe other, unintended objects is at least as much an opportunity as it is a threat.
 
-In conclusion, we reframe *the itch* not as a threat to a world where categories are inherently desirable, but instead as the drive to generalize by connecting concepts with each other - to develop languages through which we can understand many different but related things at once. The intrigue of mathematics lies not in restricting what we can say about the world. Its power actually comes from making meaningful connections *between* concepts and using their shared qualities find a richer way of seeing the world.
-
-<!--- Secretly, however, MONSTERS are actually our helpers. 
-
-
-When I couldn't understand why the induction axiom was needed for the natural numbers, removing it birthed a MONSTER which helped me realize why the axiom was there in the first place. 
--->
-
+In conclusion, we reframe *the itch* not as a threat to a world where categories are inherently desirable, but instead as the drive to generalize by connecting concepts with each other - to develop languages through which we can understand many different but related things at once. The intrigue of mathematics lies not in restricting what we can say about the world, but rather from making meaningful connections *between* concepts to build a rich model of the world.
 
 ----
 
@@ -83,10 +76,10 @@ When I couldn't understand why the induction axiom was needed for the natural nu
 
 [^6]: [Science and method, 1908 Poincaré (1914 translation). Page 125.](https://archive.org/details/b21974123/page/124/mode/2up)
 
-[^7]: [weierstrass original paper (german) with the pathological function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71). According to wikipedia, Weierstrass wasn't the first to concoct such a MONSTER according, but he is the first known to have published a complete, proven example.
+[^7]: [weierstrass original paper (german) with the pathological function defined](https://books.google.com/books?id=1FhtAAAAMAAJ&pg=PA71). According to [wikipedia](https://en.wikipedia.org/wiki/Weierstrass_function#cite_ref-1), Weierstrass wasn't the first to concoct such a MONSTER, but he is the first known to have published a complete, proven example.
 
 [^8]: Lakatos, Imre, Proofs and Refutations: The Logic of Mathematical Discovery. 1976.
 
 [^9]: To paraphrase a mathematician I know: math is all about learning that there's an even more generalized vesion of the last generalization you managed to wrap your head around.
 
-[^10]:
+[^10]: The original false proof is attributed to Ampère in 'Recherches sur quelques points de la théorie des fonctions dérivées etc', published in 1806.
