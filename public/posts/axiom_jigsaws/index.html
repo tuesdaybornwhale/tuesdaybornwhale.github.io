@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Axiomatic jigsaw puzzles: probability | TuesdayBornWhale</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="&lsquo;Anytime someone finds a problem with your axioms, you just say &ldquo;oh, but of course that&rsquo;s not what I meant,&rdquo; and you change the axioms.&rsquo; - cool math prof
+Intro I recently came across the &lsquo;Foundations of the Theory of Probability,&rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &lsquo;canonical&rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&rsquo;s paper to be very similar to what I had learned.">
+    <meta name="generator" content="Hugo 0.117.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Axiomatic jigsaw puzzles: probability" />
+<meta property="og:description" content="&lsquo;Anytime someone finds a problem with your axioms, you just say &ldquo;oh, but of course that&rsquo;s not what I meant,&rdquo; and you change the axioms.&rsquo; - cool math prof
+Intro I recently came across the &lsquo;Foundations of the Theory of Probability,&rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &lsquo;canonical&rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&rsquo;s paper to be very similar to what I had learned." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-06T20:58:03+02:00" />
+<meta property="article:modified_time" content="2023-09-06T20:58:03+02:00" />
+<meta itemprop="name" content="Axiomatic jigsaw puzzles: probability">
+<meta itemprop="description" content="&lsquo;Anytime someone finds a problem with your axioms, you just say &ldquo;oh, but of course that&rsquo;s not what I meant,&rdquo; and you change the axioms.&rsquo; - cool math prof
+Intro I recently came across the &lsquo;Foundations of the Theory of Probability,&rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &lsquo;canonical&rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&rsquo;s paper to be very similar to what I had learned."><meta itemprop="datePublished" content="2023-09-06T20:58:03+02:00" />
+<meta itemprop="dateModified" content="2023-09-06T20:58:03+02:00" />
+<meta itemprop="wordCount" content="4050">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Axiomatic jigsaw puzzles: probability"/>
+<meta name="twitter:description" content="&lsquo;Anytime someone finds a problem with your axioms, you just say &ldquo;oh, but of course that&rsquo;s not what I meant,&rdquo; and you change the axioms.&rsquo; - cool math prof
+Intro I recently came across the &lsquo;Foundations of the Theory of Probability,&rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &lsquo;canonical&rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&rsquo;s paper to be very similar to what I had learned."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        TuesdayBornWhale
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Axiomatic jigsaw puzzles: probability</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-09-06T20:58:03+02:00">September 6, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l">
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<p><em>&lsquo;Anytime someone finds a problem with your axioms, you just say &ldquo;oh, but of course that&rsquo;s not what I meant,&rdquo; and you change the axioms.&rsquo;</em> - cool math prof</p>
+<h2 id="intro">Intro</h2>
+<p>I recently came across the <a href="https://archive.org/details/kolmogorov_202112">&lsquo;Foundations of the Theory of Probability,&rsquo;</a> a 1933 paper by A.N. Kolmogorov which outlines the &lsquo;canonical&rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&rsquo;s paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are substantially different from the ones I am used to.</p>
+<p>In this post I analyze the subtly fascinating differences between these axiomatizations. I take apart the systems by examining the role each axiom is fulfilling. The goal ultimately is to understand the reasoning and historical context behind different choices of axioms, and to see how different jigsaw pieces come together to make more or less the same image of probability theory.</p>
+<h2 id="the-axioms">The axioms</h2>
+<h3 id="what-are-these-axioms-trying-to-do">What are these axioms trying to do?</h3>
+<p>Before we go into the formal axioms, it would behoove us to reflect shortly on what these axioms are actually <em>for</em> and what exactly we want to formalize.</p>
+<p>Probabilities are our way of describing and dealing with uncertainty in the world. Colloquially, an event having probability 1 is the same as saying that its virtually certain, whereas an event having probability 0<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> is math-speak for saying that we can go about our lives more or less assuming it won&rsquo;t happen. For everything else, we assign a number between zero and one that tries to convey the &rsquo;likelihood&rsquo; that it will happen. What exactly this likelihood means is an ever-enduring philosophical debate that we won&rsquo;t go into in this post (sorry M).</p>
+<p>In short, what our brains are doing when we think of probabilities is mapping certain events onto certain unique numbers. Math actually has a name for that: probabilities are just functions! What&rsquo;s left to do in our axioms is to describe these functions a little more concretely. Namely, we&rsquo;d like to know what the inputs and outputs actually are, as well as any important rules our probability functions should follow in order that they behave the ways probabilities in our heads do.</p>
+<p>On the output side, this is pretty easy: a probability function should always spit out a number between zero and one. Moreover, the probability that <em>something</em> happens when we run an experiment (e.g. throwing a die) is 1, and the probability that nothing happens is 0. What we want out of our inputs is a bit harder to formalize, but essentially we want to be able to manipulate these inputs by taking their intersection, union, etc&hellip; and still be able to meaningfully assign a probability to the resulting event. For example, if we throw a six-sided die, we might not just want to be able to describe what the probability of rolling a six is, we might also want to know what the probability of rolling an even number is; that&rsquo;s the same as asking what the probability that the die lands on a 2, 4 or 6, which set-theoretically speaking is the same as asking whether it lands on \( \{2\} \cup \{4\} \cup \{6\} \)</p>
+<p>Fortunately, there exist objects in set theory that have these properties, and we will use these objects as the domains for our function. One of the really clever things Kolmogorov did in his paper was recycle these already-existing concepts in set theory theory for his axioms. Instead of inventing a new mathematical wheel, he recognized that he could use already existing frameworks in math for defining probabilities.</p>
+<p>Finally, there are some properties that a probability function should really have. Suppose that there are two  events which are <em>mutually exclusive</em>, that is to say that one happening means the other cannot. For example, &rsquo;the die rolled an even number&rsquo; and &rsquo;the die rolled an odd number&rsquo; are mutually exclusive. The probability that one of these two events happens should be the sum of the probabilities that each one of them happens.</p>
+<p>There are many other properties we would like our function to have, such as the probability of A should be one minus the probability of &rsquo;not A.&rsquo; Fortunately, many of these properties can be derived from those we have already stated above, so we won&rsquo;t have to explictly state them. Ideally, our axiomatic system should be simple, minimalistic and avoid logically &lsquo;repeating&rsquo; itself.</p>
+<h3 id="kolmogorovs-axioms">Kolmogorov&rsquo;s axioms</h3>
+<hr>
+<p>Let \(\Omega\) be a collection of elements \(\xi\), \(\eta\), \(\zeta\),&hellip;, which we shall call elementary events, and \(\sigma\) a set of subsets of \(\Omega\) ; the elements of the set \(\sigma\) will be called random events.</p>
+<ol>
+<li>\(\sigma\) is a <a href="https://en.wikipedia.org/wiki/Field_of_sets">field of sets</a></li>
+<li>\(\sigma\) contains the set \(\Omega\)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li>To each set A in \(\sigma\) is assigned a non-negative real number \(\mathbb{P}[A]\). This number \(\mathbb{P}[A]\) is called the probability of the event A.</li>
+<li>\(\mathbb{P}[\Omega] = 1\)</li>
+<li>If A and B have no element in common, then \(\mathbb{P}[A] + \mathbb{P}[B] = \mathbb{P}[A \cup B]\)</li>
+</ol>
+<p>The system of sets \(\sigma\), together with the definite assignment of the numbers \(\mathbb{P}[A]\) satisfying these axioms 1-5, is called a field of probability.</p>
+<hr>
+<p>In the first paragraph and the first two axioms, Kolmogorov takes care of our input set. \(\Omega\) is the set of events that could happen in the world following some experiment like the roll of a die. In that case, \(\Omega=\{1,2,3,4,5,6\}\). \(\sigma\) is a subset of the power set of \(\Omega\), which means in our example that it could contain elements such as \(\{1\}, \{3\}, \{1,3\}\), \(\{1,2,3,4\}\), or \(\Omega\) itself. We are interested in assigning probabilities to members of \(\sigma\) rather than members of \(\Omega\). This is becuase we might be just as excited to discuss, for example, what the probability of a die landing a prime or an even number as the probability of it landing a specific number. Importantly, \(\sigma\) is assumed to be a field, which means we can happily operate<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> on the sets in \(\sigma\) and be assured that the result is actually still in \(\sigma\) and therefore has a probability assigned to it. For example, if \(\{1\} \in \sigma \space and \space \{3\} \in \sigma\), then we know that \(\{1,3\}\) is in \(\sigma\). The complements \(\Omega - \{3\}\), \(\Omega - \{1\}\) and \(\Omega - \{1,3\}\) are also in \(\sigma\), and so on&hellip;</p>
+<p>The next three axioms outline the features of our function \(\mathbb{P}\). Most of the heavy lifting is done by the confluence of axioms 4 and 5. For example, since \(\mathbb{P}[\Omega] = 1\), and \(\Omega = \Omega \cup \emptyset\) and \(\Omega\) and \(\emptyset \) have no intersection, axiom 5 tells us that \(\mathbb{P}[\Omega] = \mathbb{P}[\Omega \cup \emptyset] = \mathbb{P}[\Omega] + \mathbb{P}[\emptyset]\), from which follows that \(\mathbb{P}[\emptyset] = 0\). This reflects our intuition that when we experience a random event, the probability that none of the possible outcomes happens is zero.</p>
+<p>Elegantly, these three simple claims allow us to deduce many, many more of the features of probabilities that we would like to be true. You can try and prove some yourself or check the proofs on <a href="https://en.wikipedia.org/wiki/Probability_axioms#Consequences">wikipedia</a> or wherever else you can find them. Importantly for the purposes of this post, it can be shown that if \(A \subseteq B\) for any \(A, B \in \sigma\), then \(\mathbb{P}[A] \leq \mathbb{P}[B]\).</p>
+<p>From my perspective ninety years in the future, there were several pieces of this system that surprised me. Firstly, axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about infinite sums. Secondly, \(\sigma\) is a field, whereas I am used to it being a <a href="https://en.wikipedia.org/wiki/%CE%A3-algebra">Borel field</a> a.k.a a \(\sigma\)-algebra. \(\sigma\)-algebras are meaningfully different from &rsquo;normal&rsquo; fields because the first are closed by infinite unions, whereas the last aren&rsquo;t. Finally and most eye-catching of all, \(\Omega\) is assumed to be a <em>finite</em> set. This contrasts the modern formulation I&rsquo;m familiar with, where no claim is made as to the size of \(\Omega\). The third anomaly actually explains the first two, as one doesn&rsquo;t need to worry about infinite unions when dealing with a finite set.</p>
+<p>Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set \(\Omega\), one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn&rsquo;t use any additional axioms to feel like it properly dealt with infinite sets&hellip;</p>
+<h3 id="a-modern-presentation">A modern presentation</h3>
+<hr>
+<p>Let \((\Omega, \sigma\)) be a measurable space. A probability measure is a total function \(\mathbb{P}:\sigma \rightarrow \mathbb{R} \) such that:</p>
+<ol>
+<li>\(\forall A \in \sigma, \space \mathbb{P}[A]\geq 0\)</li>
+<li>\(\mathbb{P}[\Omega] = 1\)</li>
+<li>(additivity) \(\mathbb{P}[\bigcup_{n=1}^{\infty}A_n]=\sum_{n=1}^{\infty}\mathbb{P}[A_n]\) for a sequence \((A_n)_{n \geq 1}\) of sets in \(\sigma\)</li>
+</ol>
+<p>For a \(\mathbb{P}\) satisfying these axioms, we call \((\Omega, \sigma, \mathbb{P})\) a probability space.</p>
+<p>Henceforth I will refer to this modern presentation as &lsquo;Swan,&rsquo; after the professor whose probability course I took.</p>
+<hr>
+<p>One may notice that the first two axioms in Kolgomorov&rsquo;s text got eaten up by the first paragraph of our new presentation. This is, I suspect, an amusing effect of the inexorable progress of time. Information and concepts that have proven repeatedly useful get squished and compressed into ever more deformed shorthands. Over time, the information that \(\Omega\) is a set and that \(\sigma\) is a \(\sigma\)-algebra over that set got flattened into &lsquo;\((\Omega, \sigma\)) is a measurable space.&rsquo;</p>
+<p>The more substantive difference here is that Swan tries to directly define probabilities for sets that are not necessarily finite, without the use of an auxilliary axiom. It does this by making \(\sigma\) closed under infinite unions as well as finite ones, and secondly by defining the additivity axiom for infinite unions. The question this post seeks to answer next is what is the hole, inconsistency or pathological example that these modifications are undoubtedly papering over. Moreover, how did Kolmogorov deal with this hole and why did he choose to add a sixth axiom instead of modifying the first five until no holes were left.</p>
+<h2 id="the-mysterious-sixth-axiom">The Mysterious sixth axiom</h2>
+<hr>
+<ol start="6">
+<li>(Axiom of continuity) For a decreasing<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> sequence of events \(A_1 \supset A_2 \supset &hellip; \supset A_n \supset &hellip;\) of \(\sigma\) for which \(\bigcap_{n=1}^{\infty}A_n = \emptyset \), the following equation holds: <br>
+<br>
+\(\lim_{n \to \infty} \mathbb{P}[A_n] = 0\)</li>
+</ol>
+<p>Shortly after stating the sixth axiom, Komogorov&rsquo;s paper also introduces what he calls borel probability fields, which are probability functions over a set \(sigma\) that is a \(\sigma\)-algebra and not just a field. He acknowledges that in order to make sure probabilities are assigned to all our events over an infinite world \(Omega\), a \(sigma\)-algebra is indeed needed over a normal field. This clears up one of our confusions from earlier.</p>
+<hr>
+<p>The axiom of continuity is one of those that is so glaringly obvious that its necessity is slightly disconcerting. Intuitively, the intersection of all these sets is \(\emptyset\), this should mean that no element of \(\Omega\) is actually contained in all of them, and therefore that any probability assigned to any elementary event in \(\Omega\) won&rsquo;t &lsquo;make it&rsquo; into the limit probability of the sequence.</p>
+<p>The problem with this informal line of reasoning is that it seems impossible to prove with our original five axioms. It&rsquo;s obviously something we <em>want</em> to be true about probabilities, but our system of axioms doesn&rsquo;t quite reflect that yet.</p>
+<p>To understand this problem better, I constructed a monster: an example of a probability field which fits Kolmogorov&rsquo;s five axioms but clearly doesn&rsquo;t work the way we would want probabilities to work.</p>
+<h3 id="the-monster5">The Monster<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></h3>
+<p>I figured that my search for a monster could start by directly contradicting the sixth axiom and seeing what happens:</p>
+<hr>
+<h4 id="definition-1">Definition 1:</h4>
+<p>Let \(\sigma\) be a field over \(\Omega\). Let \(\mathbb{P}\) be a probability field over \(\sigma\). Satisfying Kolmogorov&rsquo;s first five axioms. We define \(A_1 \supset A_2 \supset &hellip; \supset A_n \supset &hellip;\) to be a decreasing sequence of elements of \(\sigma\) such that \(\bigcap_{n=1}^{\infty}A_n = \emptyset \), and such that for all n, \(\mathbb{P}[A_n] = 1\). Since all members of our sequence have a probability of one, \(\lim_{n \to \infty} \mathbb{P}[A_n] = 1 \neq 0 \), which contradicts axiom 6.</p>
+<h4 id="example">Example:</h4>
+<p>Let \(\Omega = \mathbb{R}\) and let \(\sigma = \mathbb{B}(\mathbb{R})\), the Borel \(\sigma\)-algebra over the real numbers. Let \((A_n)_{n \geq 1}\) be a sequence of sets \([0,1], [0, \frac{1}{2}], &hellip;, [0, \frac{1}{n}], &hellip; \) Let&rsquo;s define \(\mathbb{P}\) such that \(\mathbb{P}[A_n] = 1\) for all n.</p>
+<hr>
+<p>What this candidate monster is saying is that no matter how small you make \(A_n\) by making n larger, the probability of our experiment landing on that increasingly small member of \(\sigma\) will still be 1. Axiom 4 isn&rsquo;t contradicted, because we can perfectly say that \(\mathbb{P}[\Omega - A_1] = 0 \). In our example, this would mean that the probability of landing outside of the interval \(\left[0,1\right]\) is 0.</p>
+<p>Perhaps we can attempt to fend off our monster using the fifth axiom. The general idea of our proof is that if each \(A_n\) has a probability of one, then the probability of \(A_1 - A_n\) must be zero. If we can express \(A_1\) as a disjoint union of things that <em>kind of</em> look like the \(A_1 - A_n\) expression, we can show that the probability of each one of those things is zero, and therefore that \(\mathbb{P}[A_1] = 0\) and not 1!</p>
+<p><em>Proof:</em> First, let&rsquo;s  describe \(A_1\) in terms of unions of disjoint sets. Since our sequence is decreasing, we can make a <em>disjoint</em> union of sets that equals \(A_1\) by taking the nth element to be &lsquo;whatever is in the nth element of \((A_n)_{n \geq 1}\) , but not in the (n+1)th element. For example, we could describe the interval \(\left[0,1 \right] \) as the infinite union: \(\left[\frac{1}{2}, 1 \right] \cup \left[ \frac{1}{3}, \frac{1}{2}\right) \cup \left[\frac{1}{4}, \frac{1}{3} \right) \cup &hellip; \cup \left[\frac{1}{n}, \frac{1}{n-1} \right) \cup &hellip; \)</p>
+<p>Formally, we can write this union as: \(A_1 = (A_1 - A_2) \cup (A_2 - A_3) \cup &hellip; \cup (A_n - A_{n+1}) \cup &hellip;\)</p>
+<p>For all n, we can show that \(\mathbb{P}[A_n - A_{n+1}]\) = 0. This is because given that \(\mathbb{P}[A_{n+1}] = 1\), then the probability of the part of \(A_n\) that is <em>not</em> contained in \(A_{n+1}\) must be zero, since otherwise the probability of their disjoint union would overshoot the probability of \(A_1\). Now, we can use axiom 5 to say that</p>
+<p>\(\mathbb{P}[A_1] = \mathbb{P}[(A_1 - A_2) \cup (A_2 - A_3) \cup &hellip; \cup (A_n - A_{n+1}) \cup &hellip;] = \)
+\( = \mathbb{P}[A_1-A_2] + \mathbb{P}[A_2-A_3] + &hellip; + \mathbb{P}[A_n-A_{n+1}] + &hellip; = \) <br>
+\( = \sum_{n=1}^{\infty} \mathbb{P}[A_n-A_{n+1}]\)</p>
+<p>Since each one of the members of our sum is zero, \(\mathbb{P}[A_1] = 0\), but this contradicts that \(\mathbb{P}[A_n] = 1\). We have then that this probability function \(\mathbb{P}\) isn&rsquo;t a valid function after all!  \(\blacksquare\)</p>
+<p>It could be observed that I put my thumb on the scale while writing that proof. Specifically, I used axiom 5 for to turn a <em>countably infinite</em> union into a countably infinite sum. Kolmogorov&rsquo;s original axioms only assumed this additive property for finite unions of disjoint sets.</p>
+<p>What this means for our little proof is that we can&rsquo;t make the step of turning the infinite union into an infinite sum. To deal with our monster, we would have to be able to describe
+\(A_1\) in terms of a finite union of members of all the members of our infinite sequence of sets \(A_1, A_2, &hellip;, A_n, &hellip; \)  All we can do is impotently flail our arms, taking the union of arbitrarily large - but finite - sets. Each time we exclaim that \(\sum_{n=1}^{n} \mathbb{P}[A_n-A_{n+1}] = 0 \). We beg our monster to acknowledge that if we can make n so large and still have a probability of zero, then surely the probability of \(A_1\) is also zero. Each time, the monster leers at us and insists that the probability of \(A_1\) is indeed 1. After all, we haven&rsquo;t fully described \(A_1\) with our pathetically finite union, so how can we be sure? Maybe we just haven&rsquo;t looked far enough&hellip;</p>
+<h3 id="defeating-the-monster-two-options">Defeating the monster: two options</h3>
+<p>Kolmogorov&rsquo;s original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: &rsquo;that monster is not a probability field because I said so.&rsquo; While this option no doubt &lsquo;works,&rsquo; I prefer Swan&rsquo;s approach. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it&rsquo;s even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability of the limit set is also the limit of the probabilities of the members of the set.</p>
+<p>To prove this, we will be using the same trick as before of expressing our sequence as a union of disjoint sets, to allow us to turn the union into an infinite sum.</p>
+<hr>
+<p><em>Theorem 2:</em> Let \((\Omega, \sigma, \mathbb{P})\) be a probability space. Let \((D_n)_{n \geq 1} \) be a decreasing sequence of sets in \(\sigma\), and let \((C_n)_{n \geq 1}\) be an increasing sequence of sets.</p>
+<p>Then:</p>
+<ol>
+<li>
+<p>\(\lim_{n \to \infty} \mathbb{P}[C_n] = \mathbb{P}[\bigcup_{n = 1}^{\infty} C_n]\) and</p>
+</li>
+<li>
+<p>\(\lim_{n \to \infty} \mathbb{P}[D_n] = \mathbb{P}[\bigcap_{n = 1}^{\infty} D_n]\)</p>
+</li>
+</ol>
+<hr>
+<p><em>Proof:</em><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
+<ol>
+<li>\(\mathbb{P}[\bigcup_{n = 1}^{\infty} C_n] \stackrel{(1)}{=} \mathbb{P}[\bigcup_{n = 1}^{\infty} (C_n \cap C_{n-1}^C)] \)
+<br>
+\(\stackrel{(2)}{=} \sum_{n=1}^{\infty} \mathbb{P}[(C_n \cap C_{n-1}^C)] \)
+<br>
+\(\stackrel{(3)}{=} \lim_{N \to \infty} \sum_{n=1}^{N} \mathbb{P}[(C_n \cap C_{n-1}^C)] \)
+<br>
+\(\stackrel{(4)}{=} \lim_{N \to \infty} \mathbb{P}[\bigcup_{n=1}^{N} (C_n \cap C_{n-1}^C)] \)
+<br>
+\(\stackrel{(5)}{=} \lim_{N \to \infty} \mathbb{P}[\bigcup_{n=1}^{N} C_n] = \lim_{N \to \infty} \mathbb{P}[C_n]\)</li>
+</ol>
+<p>For increasing sequences, one good way to express \(\bigcup_{n=1}^{\infty} C_n\) as a disjoint unions is to, for each n, add &rsquo;the part of \(C_n\) which is not in the next elements of the set.&rsquo; For example, suppose we had the increasing sequence \((C_n)_{n \geq 1} =(\left[\frac{1}{2},1\right], \left[\frac{1}{4},1\right] , &hellip; , \left[\frac{1}{2^n},1\right], &hellip;\) we could express the union of all the elements in \(C_n\), which is the interval \(\left[0,1\right]\), as the disjoint union: \(\left[\frac{1}{2},1\right] \cup \left[\frac{1}{4},\frac{1}{2}\right] \cup \left[\frac{1}{8},\frac{1}{4}\right] \cup &hellip; \cup \left[\frac{1}{2^{n}},\frac{1}{2^{n-1}}\right] \cup &hellip; \)</p>
+<p>Formally, that is just equation (1). Next, we use our powered up axiom 5 to pull the disjoint union into a sum in equation (2). The clever trick is to turn that infinite sum into a limit with (3), then use axiom 5 again in (4), to turn the sum into a union again. Finally, we turn our funky disjoint union back into \(C_n\) to get the limit of the probabilities of the union. Since \((C_n)_{n \geq 1}\) is an increasing sequence, the union of the elements in the sequence up to \(C_n\) is simply \(C_n\), and we&rsquo;re done! \(\space \blacksquare \)</p>
+<ol start="2">
+<li>We could write a proof for this second result that&rsquo;s very similar to the first, but we can actually use the first result as a shortcut. The idea for this proof can be found by playing around with the expression \(\mathbb{P}[\bigcap_{n=1}^{\infty}D_n]\) and the De Morgan laws, which one might think of doing because we want to turn intersections into unions in order to maybe apply axiom 5: <br>
+\(\mathbb{P}[\bigcap_{n=1}^{\infty} D_n] = \mathbb{P}[(\bigcup_{n=1}^{\infty} D_{n}^{C})^C] \stackrel{(1)}{=} 1- \mathbb{P}[\bigcup_{n=1}^{\infty} D_{n}^{C}] \).
+But here is when we notice that \((D_{n}^{C})_{n \geq 1}\) is an <em>increasing</em> sequence, and so we can apply our first result:
+\( = 1 - \lim_{n \to \infty} \mathbb{P}[D_{n}^{C}] = 1- (1- \lim_{n \to \infty} \mathbb{P}[D_n] \)
+\(= \lim_{n \to \infty} \mathbb{P}[D_n]\), this is the desired result. \( \space \blacksquare \)</li>
+</ol>
+<p>The reader may perhaps guess that I did not just &lsquo;get lucky&rsquo; that \(D_{n}^{C}\) is an increasing sequence. I originally tried to prove the second part of our result. However, I then realized after getting to equality (1) that I could easily prove the second part if I had already proved the first part. This explains the apparently arbitrary choice of proving result 1. before result 2.</p>
+<hr>
+<p>Once we have the lovely result from <em>theorem 2,</em> our monster from <em>definition 1</em> and others like it are easily dispelled. <em>Theorem 2</em> tells us that if there&rsquo;s a decreasing sequence of sets \((D_n)_{n \geq 1}\), the limit of the probabilites of the members of the sequence is necessarily the probability of \(\bigcap_{n=1}^{\infty} D_n\). Kolmogorov&rsquo;s continuity axiom thus follows from <em>theorem 2.</em></p>
+<p>In particular, if we have a decreasing sequence that gets smaller and smaller and tends towards the empty set, as our monster does, our theorem indeed confirms that the probability of the memebers of the set <em>must</em> tend towards zero, and the monster is defeated.</p>
+<p><em>Theorem 2</em> also opens the door to even more elegant results. Using the definition of the <a href="https://en.wikipedia.org/wiki/Set-theoretic_limit">set-theoretic limit</a>, we can prove in general that if a sequence \((A_{n})_{n \geq 1}\) has a limit, then: \(\mathbb{P}[\lim_{n \to \infty} A_n] = \lim_{n \to \infty} \mathbb{P}[A_n] \). This result is generally referred to as the theorem of continuity of measures of probability, and it&rsquo;s extremely useful for defining all kinds of useful notions in probability down the road.</p>
+<h3 id="why">Why?</h3>
+<p>Immediately after defining the continuity axiom, Kolmogorov gives a proof that it implies our strengthened axiom 5 for infinite unions. As they are logically equivalent, the question left to ask is why choose one or the other.</p>
+<p>To me, the answer seems obvious. Strengthening axiom 5 seems like a more simple, elegant solution to the type of monster we looked at. As we saw, it also allows us to deduce the powerful theorem of continuity of measures of probability.</p>
+<p>So why did Kolmogorov bring in his sixth axiom? At first I was tempted to think that he had missed that a strengthened axiom 5 is a sufficient, and not just a necessary condition for his sixth axiom. However, this seems hard to believe. For starters, the set-theoretic limit was already well known by the time he published his paper. In fact, it&rsquo;s given in the Hausdorf&rsquo;s set theory <a href="https://books.google.de/books?id=TFA_EAAAQBAJ&amp;printsec=frontcover&amp;hl=de&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">book</a> that Kolmogorov cites multiple times. All this given, it would be surprising if the relatively simple proofs for <em>theorem 2</em> and the corollary that \(\mathbb{P}[\lim_{n \to \infty} A_n] = \lim_{n \to \infty} \mathbb{P}[A_n] \) had been missed. I can&rsquo;t find evidence either way.</p>
+<p>Suppose Kolmogorov had been aware of the double implication and merely made a stylistic choice, then I would find that less interesting. However, suppose he had missed it, when was it discovered and by who? I don&rsquo;t know&hellip;</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In the end these axiom systems are logically equivalent, so why go to all the trouble of analysing them?</p>
+<p>I gained more of an understanding of probability from this project. Thinking about why each axiom is there and the role each fulfills made me reflect on what probabilities really are in our heads and what about them we want to formalize. Moreover, researching the historical context and development of these mathematical theories also gives them a more meaningful flavour. I can see why people found them interesting or appealing, and peek at the rationale behind certain choices in research.</p>
+<p>On a more meta level, I find the mental motion of axiomatic jigsaw puzzles cool. Taking a system or idea apart and understanding its pieces, both within a historical context and on it&rsquo;s own, is a rewarding process that I apply to many other pieces of math. I recommend it!</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The numbers 1 and 0 are an arbitrary convention, these  may as well be 100 or \(\pi\) or anything else&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Axiom 2 is already implied if you use the definition of a field of sets given on wikipedia, but Kolmogorov uses a slightly different definiton given by Hausdorf in an early 20th century <a href="https://books.google.de/books?id=TFA_EAAAQBAJ&amp;printsec=frontcover&amp;hl=de&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">book</a>. Hausdorf&rsquo;s &lsquo;field&rsquo; equipped with axiom 2 is (I think!), the same object as the field defined on wikipedia.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>The main operations we&rsquo;re concerned with are the union \((\cup) \), intersection \((\cap) \), and difference \( (-) \) of elements in \(\sigma\), but also the complement \((A^C)\) of an element A with respect to \(\Omega\).&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>A decreasing sequence of sets is one such that each element is a superset of the next. Conversely, increasing sequences are such that each element is a subset of the next.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>beware: the math from now on is my own and is not peer-reviewed, unless stated otherwise. Feedback appreciated.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>the proof itself is borrowed from my probability course and is standard probability course material. The &rsquo;explanation&rsquo; of the proof is mine.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://tuesdaybornwhale.github.io/" >
+    &copy;  TuesdayBornWhale 2025 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

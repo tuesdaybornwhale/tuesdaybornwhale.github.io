@@ -2,30 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on TuesdayBornWhale</title>
-    <link>//localhost:1313/posts/</link>
+    <link>https://tuesdaybornwhale.github.io/posts/</link>
     <description>Recent content in Posts on TuesdayBornWhale</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 16:54:54 +0200</lastBuildDate><atom:link href="https://tuesdaybornwhale.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>//localhost:1313/posts/test_post/</link>
-      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      <title>Making Mathematical MONSTERS</title>
+      <link>https://tuesdaybornwhale.github.io/posts/math_monsters/</link>
+      <pubDate>Mon, 11 Sep 2023 16:54:54 +0200</pubDate>
       
-      <guid>//localhost:1313/posts/test_post/</guid>
-      <description>---layout: post---Test Post does this actually work?
-$$ E=mc^2 $$
-$$ \begin{pmatrix} 0 &amp;amp; 1 \\ 0 &amp;amp; 0 \end{pmatrix}\begin{pmatrix} 0 &amp;amp; 0 \\ 1 &amp;amp; 0 \end{pmatrix}=\begin{pmatrix} 1 &amp;amp; 0 \\ 0 &amp;amp; 0 \end{pmatrix} $$</description>
+      <guid>https://tuesdaybornwhale.github.io/posts/math_monsters/</guid>
+      <description>Introduction: axiomatizing natural numbers In math, we often define objects whose existence and properties seem obvious and common place. For example, many introductory university level courses will go out of their way to define the natural numbers. As mundane as this process can seem, I like the mental motion of formalizing such obvious objects. I see at as a sampling of our sub-conscious: a brief taste of the contents of our minds that rarely, if ever, exit the world of the murky and implicit.</description>
     </item>
     
     <item>
-      <title>Math Genealogy</title>
-      <link>//localhost:1313/posts/math_genealogy/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      <title>Axiomatic jigsaw puzzles: probability</title>
+      <link>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</link>
+      <pubDate>Wed, 06 Sep 2023 20:58:03 +0200</pubDate>
       
-      <guid>//localhost:1313/posts/math_genealogy/</guid>
-      <description>Introduction Math genealogy is a pretty cool mental motion I discovered that helps me think about math in ways that are both fun and insightful.
-Motivating examples </description>
+      <guid>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</guid>
+      <description>&amp;lsquo;Anytime someone finds a problem with your axioms, you just say &amp;ldquo;oh, but of course that&amp;rsquo;s not what I meant,&amp;rdquo; and you change the axioms.&amp;rsquo; - cool math prof
+Intro I recently came across the &amp;lsquo;Foundations of the Theory of Probability,&amp;rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &amp;lsquo;canonical&amp;rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&amp;rsquo;s paper to be very similar to what I had learned.</description>
     </item>
     
   </channel>

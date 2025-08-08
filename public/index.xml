@@ -2,9 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TuesdayBornWhale</title>
-    <link>//localhost:1313/</link>
+    <link>https://tuesdaybornwhale.github.io/</link>
     <description>Recent content on TuesdayBornWhale</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Sep 2023 16:54:54 +0200</lastBuildDate><atom:link href="https://tuesdaybornwhale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Mathematical MONSTERS</title>
+      <link>https://tuesdaybornwhale.github.io/posts/math_monsters/</link>
+      <pubDate>Mon, 11 Sep 2023 16:54:54 +0200</pubDate>
+      
+      <guid>https://tuesdaybornwhale.github.io/posts/math_monsters/</guid>
+      <description>Introduction: axiomatizing natural numbers In math, we often define objects whose existence and properties seem obvious and common place. For example, many introductory university level courses will go out of their way to define the natural numbers. As mundane as this process can seem, I like the mental motion of formalizing such obvious objects. I see at as a sampling of our sub-conscious: a brief taste of the contents of our minds that rarely, if ever, exit the world of the murky and implicit.</description>
+    </item>
+    
+    <item>
+      <title>Axiomatic jigsaw puzzles: probability</title>
+      <link>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</link>
+      <pubDate>Wed, 06 Sep 2023 20:58:03 +0200</pubDate>
+      
+      <guid>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</guid>
+      <description>&amp;lsquo;Anytime someone finds a problem with your axioms, you just say &amp;ldquo;oh, but of course that&amp;rsquo;s not what I meant,&amp;rdquo; and you change the axioms.&amp;rsquo; - cool math prof
+Intro I recently came across the &amp;lsquo;Foundations of the Theory of Probability,&amp;rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &amp;lsquo;canonical&amp;rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&amp;rsquo;s paper to be very similar to what I had learned.</description>
+    </item>
+    
   </channel>
 </rss>

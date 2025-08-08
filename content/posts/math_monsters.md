@@ -1,6 +1,7 @@
 ---
 title: "Making Mathematical MONSTERS"
 date: 2023-09-11T16:54:54+02:00
+layout: math_post
 draft: false
 ---
 {{< math_post >}}
