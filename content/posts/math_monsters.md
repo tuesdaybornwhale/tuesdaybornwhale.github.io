@@ -1,8 +1,9 @@
 ---
 title: "Making Mathematical MONSTERS"
-date: 2023-09-11T16:54:54+02:00
+date: 2025-08-08T16:54:54+02:00
 layout: math_post
 draft: false
+tags: ['math']
 ---
 {{< math_post >}}
 

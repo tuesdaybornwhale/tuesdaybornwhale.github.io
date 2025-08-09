@@ -1,8 +1,9 @@
 ---
 title: "Axiomatic jigsaw puzzles: probability"
-date: 2023-09-06T20:58:03+02:00
+date: 2023-12-23T20:58:03+02:00
 layout: math_post
 draft: false
+tags: ['math']
 ---
 
 {{< math_post >}}
