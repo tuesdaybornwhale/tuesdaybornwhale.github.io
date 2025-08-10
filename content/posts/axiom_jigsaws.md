@@ -55,7 +55,7 @@ The next three axioms outline the features of our function \\(\mathbb{P}\\). Mos
 
 Elegantly, these three simple claims allow us to deduce many, many more of the features of probabilities that we would like to be true. You can try and prove some yourself or check the proofs on [wikipedia](https://en.wikipedia.org/wiki/Probability_axioms#Consequences) or wherever else you can find them. Importantly for the purposes of this post, it can be shown that if \\(A \subseteq B\\) for any \\(A, B \in \sigma\\), then \\(\mathbb{P}[A] \leq \mathbb{P}[B]\\).
 
-From my perspective ninety years in the future, there were several pieces of this system that surprised me. Firstly, axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about infinite sums. Secondly, \\(\sigma\\) is a field, whereas I am used to it being a [Borel field](https://en.wikipedia.org/wiki/%CE%A3-algebra) a.k.a a \\(\sigma\\)-algebra. \\(\sigma\\)-algebras are meaningfully different from 'normal' fields because the first are closed by infinite unions, whereas the last aren't. Finally and most eye-catching of all, \\(\Omega\\) is assumed to be a *finite* set. This contrasts the modern formulation I'm familiar with, where no claim is made as to the size of \\(\Omega\\). The third anomaly actually explains the first two, as one doesn't need to worry about infinite unions when dealing with a finite set.
+From my perspective ninety years in the future, there were several pieces of this system that surprised me. Firstly, axiom 5 only makes claims about pairwise unions of sets, whereas my cached version of the axiom made a claim about countable sums. Secondly, \\(\sigma\\) is a field, whereas I am used to it being a [Borel field](https://en.wikipedia.org/wiki/%CE%A3-algebra) a.k.a a \\(\sigma\\)-algebra. \\(\sigma\\)-algebras are meaningfully different from 'normal' fields because the first are closed by countable unions, whereas the last aren't. Finally and most eye-catching of all, \\(\Omega\\) is assumed to be a *finite* set. This contrasts the modern formulation I'm familiar with, where no claim is made as to the size of \\(\Omega\\). The third anomaly actually explains the first two, as one doesn't need to worry about infinite unions when dealing with a finite set.
 
 Kolmogorov acknowledges the incompleteness of this system, and claims that in order to properly define a field of probability over an infinite set \\(\Omega\\), one needs a supplementary sixth axiom. This really turned my head because the modern formalization doesn't use any additional axioms to feel like it properly dealt with infinite sets...
 
@@ -77,7 +77,7 @@ ________
 
 One may notice that the first two axioms in Kolgomorov's text got eaten up by the first paragraph of our new presentation. This is, I suspect, an amusing effect of the inexorable progress of time. Information and concepts that have proven repeatedly useful get squished and compressed into ever more deformed shorthands. Over time, the information that \\(\Omega\\) is a set and that \\(\sigma\\) is a \\(\sigma\\)-algebra over that set got flattened into '\\((\Omega, \sigma\\)) is a measurable space.'
 
-The more substantive difference here is that Swan tries to directly define probabilities for sets that are not necessarily finite, without the use of an auxilliary axiom. It does this by making \\(\sigma\\) closed under infinite unions as well as finite ones, and secondly by defining the additivity axiom for infinite unions. The question this post seeks to answer next is what is the hole, inconsistency or pathological example that these modifications are undoubtedly papering over. Moreover, how did Kolmogorov deal with this hole and why did he choose to add a sixth axiom instead of modifying the first five until no holes were left.
+The more substantive difference here is that Swan tries to directly define probabilities for sets that are not necessarily finite, without the use of an auxilliary axiom. It does this by making \\(\sigma\\) closed under countable unions as well as finite ones, and secondly by defining the additivity axiom for countable unions and sums. The question this post seeks to answer next is what is the hole, inconsistency or pathological example that these modifications are undoubtedly papering over. Moreover, how did Kolmogorov deal with this hole and why did he choose to add a sixth axiom instead of modifying the first five until no holes were left.
 
 ## The Mysterious sixth axiom
 
@@ -135,9 +135,9 @@ What this means for our little proof is that we can't make the step of turning t
 
 ### Defeating the monster: two options
 
-Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer Swan's approach. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include infinite unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it's even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability of the limit set is also the limit of the probabilities of the members of the set.
+Kolmogorov's original paper rather crudely exorcises this kind of monster by explicitly outlawing it with the sixth axiom. It simply says: 'that monster is not a probability field because I said so.' While this option no doubt 'works,' I prefer Swan's approach. Instead of adding a sixth axiom, it simply strengthens axiom 5 to include countable unions. As we saw, this strengthened axiom allows us to comfortably disqualify the monster from before, but it's even more powerful than that. We can show that if we have a monotone (increasing or decreasing) sequence, the probability of the limit set is also the limit of the probabilities of the members of the set.
 
-To prove this, we will be using the same trick as before of expressing our sequence as a union of disjoint sets, to allow us to turn the union into an infinite sum.
+To prove this, we will be using the same trick as before of expressing our sequence as a union of disjoint sets, to allow us to turn the union into an sum.
 
 ___
 
@@ -186,7 +186,7 @@ In particular, if we have a decreasing sequence that gets smaller and smaller an
 
 ### Why?
 
-Immediately after defining the continuity axiom, Kolmogorov gives a proof that it implies our strengthened axiom 5 for infinite unions. As they are logically equivalent, the question left to ask is why choose one or the other.
+Immediately after defining the continuity axiom, Kolmogorov gives a proof that it implies our strengthened axiom 5 for countable unions. As they are logically equivalent, the question left to ask is why choose one or the other.
 
 To me, the answer seems obvious. Strengthening axiom 5 seems like a more simple, elegant solution to the type of monster we looked at. As we saw, it also allows us to deduce the powerful theorem of continuity of measures of probability. 
 

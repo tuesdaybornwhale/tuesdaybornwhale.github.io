@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TuesdayBornWhale</title>
-    <link>https://tuesdaybornwhale.github.io/</link>
-    <description>Recent content on TuesdayBornWhale</description>
+    <title>math on TuesdayBornWhale</title>
+    <link>https://tuesdaybornwhale.github.io/tags/math/</link>
+    <description>Recent content in math on TuesdayBornWhale</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Aug 2025 16:54:54 +0200</lastBuildDate><atom:link href="https://tuesdaybornwhale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 16:54:54 +0200</lastBuildDate><atom:link href="https://tuesdaybornwhale.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making Mathematical MONSTERS</title>
       <link>https://tuesdaybornwhale.github.io/posts/math_monsters/</link>
