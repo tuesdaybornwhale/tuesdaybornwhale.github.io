@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tuesdaybornwhale.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-13T22:47:46+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/superhumanai/</loc>
+    <lastmod>2025-09-13T22:47:46+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-13T22:47:46+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/math_monsters/</loc>
     <lastmod>2025-08-08T16:54:54+02:00</lastmod>
   </url><url>
-    <loc>https://tuesdaybornwhale.github.io/posts/math_monsters/</loc>
+    <loc>http://localhost:1313/tags/math/</loc>
     <lastmod>2025-08-08T16:54:54+02:00</lastmod>
   </url><url>
-    <loc>https://tuesdaybornwhale.github.io/tags/math/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-08-08T16:54:54+02:00</lastmod>
   </url><url>
-    <loc>https://tuesdaybornwhale.github.io/tags/</loc>
-    <lastmod>2025-08-08T16:54:54+02:00</lastmod>
-  </url><url>
-    <loc>https://tuesdaybornwhale.github.io/</loc>
-    <lastmod>2025-08-08T16:54:54+02:00</lastmod>
-  </url><url>
-    <loc>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</loc>
+    <loc>http://localhost:1313/posts/axiom_jigsaws/</loc>
     <lastmod>2023-12-23T20:58:03+02:00</lastmod>
   </url><url>
-    <loc>https://tuesdaybornwhale.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://tuesdaybornwhale.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

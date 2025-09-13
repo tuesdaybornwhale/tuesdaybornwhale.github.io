@@ -1,6 +1,33 @@
 
 <!-- credit to argmin gravitas -->
 
+
+<!--
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],  // allow $...$ for inline
+    displayMath: [['$$', '$$'], ['\\[', '\\]']] // allow $$...$$ for display
+  }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+
+
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script> -->
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  // block
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      // inline
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
 </script>

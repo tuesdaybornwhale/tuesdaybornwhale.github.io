@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math on TuesdayBornWhale</title>
-    <link>https://tuesdaybornwhale.github.io/tags/math/</link>
-    <description>Recent content in math on TuesdayBornWhale</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Math on TuesdayBornWhale</title>
+    <link>http://localhost:1313/tags/math/</link>
+    <description>Recent content in Math on TuesdayBornWhale</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Aug 2025 16:54:54 +0200</lastBuildDate><atom:link href="https://tuesdaybornwhale.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 16:54:54 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making Mathematical MONSTERS</title>
-      <link>https://tuesdaybornwhale.github.io/posts/math_monsters/</link>
+      <link>http://localhost:1313/posts/math_monsters/</link>
       <pubDate>Fri, 08 Aug 2025 16:54:54 +0200</pubDate>
-      
-      <guid>https://tuesdaybornwhale.github.io/posts/math_monsters/</guid>
-      <description>Introduction: axiomatizing natural numbers In math, we often define objects whose existence and properties seem obvious and common place. For example, many introductory university level courses will go out of their way to define the natural numbers. As mundane as this process can seem, I like the mental motion of formalizing such obvious objects. I see at as a sampling of our sub-conscious: a brief taste of the contents of our minds that rarely, if ever, exit the world of the murky and implicit.</description>
+      <guid>http://localhost:1313/posts/math_monsters/</guid>
+      <description>&lt;script id=&#34;MathJax-script&#34; async src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;  MathJax = {&#xD;&#xA;    tex: {&#xD;&#xA;      displayMath: [[&#39;\\[&#39;, &#39;\\]&#39;], [&#39;$$&#39;, &#39;$$&#39;]],  &#xD;&#xA;      inlineMath: [[&#39;\\(&#39;, &#39;\\)&#39;], [&#39;$&#39;, &#39;$&#39;]]      &#xD;&#xA;    },&#xD;&#xA;    loader:{&#xD;&#xA;      load: [&#39;ui/safe&#39;]&#xD;&#xA;    },&#xD;&#xA;  };&#xD;&#xA;&lt;/script&gt;&#xA;&lt;h3 id=&#34;introduction-axiomatizing-natural-numbers&#34;&gt;Introduction: axiomatizing natural numbers&lt;/h3&gt;&#xA;&lt;p&gt;In math, we often define objects whose existence and properties seem obvious and common place. For example, many introductory university level courses will go out of their way to define the natural numbers. As mundane as this process can seem, I like the mental motion of formalizing such obvious objects. I see at as a sampling of our sub-conscious: a brief taste of the contents of our minds that rarely, if ever, exit the world of the murky and implicit.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Axiomatic jigsaw puzzles: probability</title>
-      <link>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</link>
+      <link>http://localhost:1313/posts/axiom_jigsaws/</link>
       <pubDate>Sat, 23 Dec 2023 20:58:03 +0200</pubDate>
-      
-      <guid>https://tuesdaybornwhale.github.io/posts/axiom_jigsaws/</guid>
-      <description>&amp;lsquo;Anytime someone finds a problem with your axioms, you just say &amp;ldquo;oh, but of course that&amp;rsquo;s not what I meant,&amp;rdquo; and you change the axioms.&amp;rsquo; - cool math prof
-Intro I recently came across the &amp;lsquo;Foundations of the Theory of Probability,&amp;rsquo; a 1933 paper by A.N. Kolmogorov which outlines the &amp;lsquo;canonical&amp;rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&amp;rsquo;s paper to be very similar to what I had learned.</description>
+      <guid>http://localhost:1313/posts/axiom_jigsaws/</guid>
+      <description>&lt;script id=&#34;MathJax-script&#34; async src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;  MathJax = {&#xD;&#xA;    tex: {&#xD;&#xA;      displayMath: [[&#39;\\[&#39;, &#39;\\]&#39;], [&#39;$$&#39;, &#39;$$&#39;]],  &#xD;&#xA;      inlineMath: [[&#39;\\(&#39;, &#39;\\)&#39;], [&#39;$&#39;, &#39;$&#39;]]      &#xD;&#xA;    },&#xD;&#xA;    loader:{&#xD;&#xA;      load: [&#39;ui/safe&#39;]&#xD;&#xA;    },&#xD;&#xA;  };&#xD;&#xA;&lt;/script&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;lsquo;Anytime someone finds a problem with your axioms, you just say &amp;ldquo;oh, but of course that&amp;rsquo;s not what I meant,&amp;rdquo; and you change the axioms.&amp;rsquo;&lt;/em&gt; - cool math prof&lt;/p&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;I recently came across the &lt;a href=&#34;https://archive.org/details/kolmogorov_202112&#34;&gt;&amp;lsquo;Foundations of the Theory of Probability,&amp;rsquo;&lt;/a&gt; a 1933 paper by A.N. Kolmogorov which outlines the &amp;lsquo;canonical&amp;rsquo; formalization of probability theory which we know and love(?) today. I took a probability course last semester and expected the content of Kolmogorov&amp;rsquo;s paper to be very similar to what I had learned. It was therefore surprising and delightful to find that the foundational axioms given by Kolmogorov are substantially different from the ones I am used to.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
