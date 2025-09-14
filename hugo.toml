@@ -20,7 +20,6 @@ theme = 'gohugo-theme-ananke'
   email = 'jsmith@example.org'
   name = 'John Smith'
   description = '''Blog dedicated to mostly Math, meta-math and AI safety.
-  math = true
   '''
   show_reading_time = true
   # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
