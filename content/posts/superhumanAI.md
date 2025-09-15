@@ -1,5 +1,5 @@
 ---
-title: "Does superhuman AI improve human performance?"
+title: "Can superhuman AI help us improve?"
 subtitle: "discussing data from the game of go"
 date: 2025-09-13T22:47:46+02:00
 layout: math_post
