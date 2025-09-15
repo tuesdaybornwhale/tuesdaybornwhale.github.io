@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'TuesdayBornWhale'
 theme = 'gohugo-theme-ananke'
 
-
+# [markup] is currently useless, part of a failed attempt to change mathjax delimiters
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -22,6 +22,7 @@ theme = 'gohugo-theme-ananke'
   description = '''Blog dedicated to mostly Math, meta-math and AI safety.
   '''
   show_reading_time = true
+  custom_css = ["custom.css"]
   # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
 
 
