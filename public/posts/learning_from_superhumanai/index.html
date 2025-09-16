@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Can superhuman AI help us improve? | TuesdayBornWhale</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+    
+      
+        Graph showing drop in the gap between human experts and AI in Go since AI. From Shin et. al (2020)
+      
+    
+  
+
+
+As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent  superhuman AI in a domain can instruct and empower humans to improve for themselves.">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+  
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/posts/learning_from_superhumanai/">
+  <meta property="og:site_name" content="TuesdayBornWhale">
+  <meta property="og:title" content="Can superhuman AI help us improve?">
+  <meta property="og:description" content="Graph showing drop in the gap between human experts and AI in Go since AI. From Shin et. al (2020)As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent superhuman AI in a domain can instruct and empower humans to improve for themselves.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-13T22:47:46+02:00">
+    <meta property="article:modified_time" content="2025-09-13T22:47:46+02:00">
+
+  <meta itemprop="name" content="Can superhuman AI help us improve?">
+  <meta itemprop="description" content="Graph showing drop in the gap between human experts and AI in Go since AI. From Shin et. al (2020)As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent superhuman AI in a domain can instruct and empower humans to improve for themselves.">
+  <meta itemprop="datePublished" content="2025-09-13T22:47:46+02:00">
+  <meta itemprop="dateModified" content="2025-09-13T22:47:46+02:00">
+  <meta itemprop="wordCount" content="2770">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Can superhuman AI help us improve?">
+  <meta name="twitter:description" content="Graph showing drop in the gap between human experts and AI in Go since AI. From Shin et. al (2020)As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent superhuman AI in a domain can instruct and empower humans to improve for themselves.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-dark-gray">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        TuesdayBornWhale
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About me page">
+              About me
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        BLOG POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Can superhuman AI help us improve?</h1>
+      
+
+      
+          <h2 class="post-subtitle">discussing data from the game of go</h2>
+        
+        
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-09-13T22:47:46+02:00">September 13, 2025</time>
+      
+
+      
+      
+        <span class="f6 mv4 dib tracked"> - 14 minutes read </span>
+        <span class="f6 mv4 dib tracked"> - 2770 words </span>
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l">
+
+
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)'], ['$', '$']]      
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+
+
+
+
+
+
+
+
+<figure>
+  
+  <img src="/images/human_AI_gap.png" alt="" title="">
+  
+
+  
+    <figcaption>
+      
+        <div class="figure-caption">Graph showing drop in the gap between human experts and AI in Go since AI. From <a href="https://arxiv.org/pdf/2012.15035">Shin et. al (2020)</a></div>
+      
+    </figcaption>
+  
+</figure>
+
+<p>As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent  superhuman AI in a domain can instruct and empower humans to improve for themselves.</p>
+<p>The paper <a href="https://www.pnas.org/doi/10.1073/pnas.2214840120">Superhuman artificial intelligence can improve human decision-making by increasing novelty</a> (Shin et. al), published in 2022, explores precisely this question. The authors choose to examine these impacts through the game of go, as it was famously conquered by computers back in 2016. More importantly, open-source superhuman models have been widely available since 2017, along with interactive UI&rsquo;s that allow players to learn from the models&rsquo; choices. This makes go an interesting candidate to examine the extent to which access to a superhuman entity can help humans evolve and improve.</p>
+<p>As a case study, go is particularly close to my heart as I am myself a competitive go player and regularly use open-source models for practice and game reviews. It is my domain knowledge that leads me to disagree with the conclusions of the paper that there is evidence that humans play better than in the pre-AI era. I think their own data should be interpreted as suggesting that go AI has a minimal impact on human performance, and I&rsquo;d like to argue this point in detail in this post. At the end, I&rsquo;ll zoom out and discuss AI&rsquo;s relationship to human improvement from my personal experience in the competitive scene.</p>
+<h3 id="discussion-on-shin-et-al">Discussion on Shin et. al</h3>
+<h4 id="summarising-their-point">Summarising their point</h4>
+<p>To understand why I think this article&rsquo;s conclusions are unjustified, it&rsquo;s important to lay out what the collected data is, and why the authors think it supports the conclusion stated in the title: that superhuman AI <em>can</em> improve human decision-making.</p>
+<p>The paper uses a database of over one-hundred thousand expert (professional) games. The researchers measure the development of their metrics &lsquo;decision quality&rsquo; (DQ) and &rsquo;novelty&rsquo; in expert games between 1950 and 2021, and observe that both have statistically increased ever since the advent of AI.  Moreover, the authors run a regression analysis which finds a significant positive correlation between the novelty of a move and its decision quality. This, the authors feel, justifies the thesis of the paper - that human decision quality has improved due to AI, and that it has specifically improved because players have become more creative and more novel.</p>
+<h4 id="my-critique">My critique</h4>
+<p>To lay out what my problems with these results and conclusions are, we&rsquo;ll need to dive into the metrics they&rsquo;re using.</p>
+<p>The DQ of a human move k is a score given to it based on how much worse it is (according to AI) than the favourite AI move. It uses the following formula:</p>
+<p>\( DQI(a_{k}^{human}) = 100 - (Q(s_{k}, a_k = a_{k}^{AI}) - Q(s_{k}, a_k = a_{k}^{human})) \)</p>
+<p>where $a_{k}^{human}$ is the action (move) chosen by the player, $a_{k}^{AI}$ is the optimal choice given by AI, and \(Q(s_{k}, a_{k}) \in [0, 100] \) is the &lsquo;Q-value&rsquo; usually referred to by go players as the &lsquo;win-rate&rsquo; of a move $a_k$ from the state (board position) $s_k$. The qualitative meaning of the formula is that a human move that matches the AI will get a DQ score of 100, whereas a human move which doesn&rsquo;t match the favourite AI move will have its DQ penalised by however worse its Q-value was than the &lsquo;optimal&rsquo; AI decision.</p>
+<p>In the appendix to this paper, the researchers justify using previous work that the metric is a &lsquo;good&rsquo; one, in that it robustly seems to hold up against several sanity checks. For example, it distinguishes clearly between human and AI play, and can differentiate an expert from an expert who is cheating with an AI. I indeed agree that DQ more or less measures what it&rsquo;s supposed to measure, and while there <em>is</em> an issue I have with its definition, it is minor to the principal point of this post and shall only be discussed at the end.</p>
+<p>Their measure of novelty will also be important for the rest of this post, because Shin et al. use it in various forms to justify and explain some of their other findings.</p>
+<p>The novelty of a game is defined (suspiciously) simply by Shin et. al. It is simply sixty minus the move number which featured the first move that had never previously been seen. As we will discuss below, this notion of novelty adapts badly from chess, where it is commonly used, to go.</p>
+<p>A very similar variant of DQ was already introduced in a 2020 <a href="https://arxiv.org/pdf/2012.15035">paper</a> (Shin et. al 2020), by a related group of researchers. It was noted that according to the metric, human expert performance had improved, but only up to move 60<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. The researchers use this finding to only consider human play until move 60 in the 2022 paper. This decision makes the research less interesting for a go player. This is because the first sixty moves are almost never decisive and rarely even give players any meaningful advantage. Most of the early game in high-level play is filled with pre-determined theoretical variations (&lsquo;joseki&rsquo;) that players learn by heart. In a typical tournament game, I will have to make no more than five to ten decisions before move 60, and these decisions are much, much less important on average than those made later in the game. For a go player, then, the natural way to interpret the data is that players have not improved in the key stages (post move 60), but have only improved their score in the early game as they are memorising the AI&rsquo;s favourite variations. This explanation clashes with the authors&rsquo; conclusions, and while they test this &lsquo;memorisation&rsquo; hypothesis in several ways and deem it unlikely, I&rsquo;ll discuss why I find none of the rebuttals convincing.</p>
+<p>Shin et al. suggest that if memorisation were a good explanation for increases in decision quality over time, then this increase would no longer be statistically significant for moves after a player <em>deviates</em> from optimal AI choices or plays a novelty. Moreover, according to them, if memorisation explained the increase in quality, then this increase would drop off &rsquo;later&rsquo; in the game<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. They remark that none of these effects occur: their DQ metric still shows statistical improvement in all of the specific cases.</p>
+<p>I argue that all of these tests actually <em>completely miss the point</em>, and this is because their premise fundamentally misunderstands how memorisation works in the game of go. In chess, the entire board position is important to the next decision, and the limited board size makes memorisation of entire board positions both feasible and sensible. Consequently, when a novelty is played in chess, it really is possible that a player is working in a position they either have not memorised or can&rsquo;t remember, and thus observing their &lsquo;reaction&rsquo; to a novel move is a meaningful thing to do.</p>
+<p>Conversely, in go, the center of the board tends to be empty and unimportant during the early game, as players take the corners and sides of the board first. As such, memorising whole board variations just isn&rsquo;t something people do in go at all. Instead, they memorise local variations (josekis) in important sub-regions. While global thinking in go is important, it only becomes complex or crucial way later into the game where memorisation is absolutely infeasible, and thus there exists almost no notion of a &lsquo;full-board variation&rsquo; in go. This means that while a board position on move 21 is technically novel 99%<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> of the time, in the sense that the exact position has never before been observed, expert players at that stage still play the game entirely on autopilot by using their memory to play <em>local</em> variations which do not meaningfully interact with each other in the early stages of the game.</p>
+<p><img src="/images/game_example_superhumanAI.png" alt="insert image"></p>
+<p>As an example, take this position on move 36 from a recent practice game of mine. Even though the game has technically been &rsquo;novel&rsquo; since move 7 according to an online database with 80000 expert games, neither player had up to the point played a move they haven&rsquo;t memorised in its local context.</p>
+<p>This means that the paper&rsquo;s idea of looking at player behaviour after a &rsquo;novelty&rsquo; just doesn&rsquo;t translate to go: the <em>overwhelming</em> majority of those &rsquo;novel&rsquo; decisions are still made in completely normal board positions where all local variations are memorised by both sides, and in my mind there is no evidence that these decisions are in any way less memorised that previous ones.</p>
+<p>The other thing that the researchers seem to misunderstand is that in the early game, there are almost always more than ten moves that are essentially equally favoured by both AI and humans, and moreover humans will be aware more or less of what the AI&rsquo;s equally favoured choices are. It follows that when a move which isn&rsquo;t the AI&rsquo;s top option is played by a human early in the game, so long as it&rsquo;s still one of the top ten moves, the opponent is likely already familiar with that move in a local (joseki) context, and can and do respond based on local moves which are still memorised.</p>
+<p>In general, it&rsquo;s <em>extremely easy</em> for expert go players to make decisions which are approved by AI in the early game, as they can rely on their memory and experience to navigate familiar local positions with little effort. This is why player performance according to the researchers&rsquo; decision quality index drops off <em>after</em> move 60, as local positions become both more complex and more interconnected. This is also why their argument that maintained improvement in decision quality in &rsquo;later&rsquo; moves (20-60) rules out memorisation is equally flawed. Since it is not justified that experts are playing meaningfully novel positions during this part of the game, it becomes pointless to examine how decision quality varies between move 15 and move 30. While Shin et. al recognise in the appendix that their notion of novelty is a bit too simple for go, they underestimate just how misleading it can get, and how thoroughly it puts their thesis into question.</p>
+<h3 id="so-we-arent-getting-better">So&hellip; we aren&rsquo;t getting better?</h3>
+<p>If you had asked me before whether humans are getting measurably better at go in the modern era, I would have said &lsquo;probably a little bit&rsquo;. I&rsquo;m hence surprised and frankly a bit discouraged that human play after move sixty, in the relevant part of the game, hasn&rsquo;t gotten any better since AI became available. Even worse, the way I&rsquo;m most compelled to interpret the &lsquo;improvements&rsquo; seen before move 60 is that humans can copy patterns suggested by AI in the early stages, but don&rsquo;t understand them well enough to play them out any better in the key parts of the game. Expert humans&rsquo; median interaction with AI may well be superficial pattern memorisation that doesn&rsquo;t translate to meaningful understanding.</p>
+<p>One explanation for humanity&rsquo;s apparent stagnation may be that access to AI can <em>hurt</em> some players; I&rsquo;ll illustrate this with an example. A while ago I met an old acquaintance of mine on an online go server. He was a stronger amateur player, but still weaker, for example, than my strongest students and extremely far away from the top level of play. I was surprised to find that his rank on the online server was the highest possible, on par with that of active professionals. He credited his improvement entirely to AI, and explained to me in detail how he claimed he was studying with AI.</p>
+<p>After our conversation, I checked out his games to find, unsurprisingly, that he was clearly cheating. Every. Single. Game.</p>
+<p>This example is one of many I have found of cheaters who seem to believe that even if they&rsquo;re consulting a superhuman AI while playing, they still have agency over which moves they play and in some sense are both still &rsquo;themselves&rsquo; playing and learning. This is, of course, cope. When cheaters consult an AI during their games, they tend to default to always playing its top suggested moves because their opinions are deeply influenced by the AI&rsquo;s superior suggestion. The human is effectively disempowered, having no independent thoughts of their own, and the computer makes all the decisions.</p>
+<p>I claim that this type of disempowerment is most pronounced in cheaters, as they tend to cheat because they&rsquo;re already lazy in the first place. However, I think it&rsquo;s a danger to anyone who chooses to study with AI: I feel myself fighting against the temptation to stop thinking every moment I&rsquo;m using the AI on my computer.</p>
+<p>These are hardly original observations. It is common to critique systems and the people within them for encouraging or participating in superficial learning that involves, for example, copying or memorising theory or problem solutions with no active, curious engagement.  I rather would like to highlight how disturbing it is that the structural habit of human disempowerment may be leading us to empower AI over ourselves. It&rsquo;s the lamest version of cyborgism.</p>
+<h3 id="how-do-we-actually-get-better">How do we <em>actually</em> get better?</h3>
+<p>While the data doesn&rsquo;t seem to suggest that humans are improving on average, I am familiar with specific individual players who have clearly used AI to learn and improve. One question I&rsquo;m working on answering, then, is what separates a successful AI user and learner from an unsuccessful one?</p>
+<hr>
+<h3 id="appendix-a-technical-remark-on-decision-quality">Appendix: a technical remark on decision quality</h3>
+<p>If my above claim that game-critical decisions are made after move 60, then why does Shin et al. 2020, which introduces an almost identical variant of the Decision Quality metric, show clearly that the difference between human and AI moves is the largest between moves 30 and 60? I think the explanation for this lies in the way DQ is defined. Recalling the definition:
+\( DQI(a_{k}^{human}) = 100 - (Q(s_{k}, a_k = a_{k}^{AI}) - Q(s_{k}, a_k = a_{k}^{human})) \)
+we see that this is a linear function in terms of the drop in the Q-value (&lsquo;win-rate&rsquo;). However, a drop in win-rate is not at all a linear indicator of move quality, as is illustrated by the following example. On an empty board, my home computer gives white a 60% win-rate if &lsquo;komi&rsquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> is 7.5, but gives white a 44% win-rate if &lsquo;komi&rsquo; is 6.5. This means that early in a game, mistakes that drop your expected score by one point will often lose you between 10% and 20% in win-rate. Consequently, fluctuations of win-rates between 30% and 70% are totally normal in high-level games, even if the mistakes players are small in terms of the expected change in socre. Contrasting this with a position where one side has a win-rate of 10%, it is first of all impossible for them to make a mistake which is 15% worse than the optimal decision, but it is additionally the case that they must make much worse moves that lose many more points to lose any win-rate at all. This is intuitive if you interpret the Q-value as an estimation of your winning chances. When the game is really close, a one-point mistake may be the difference between a win and a loss. However, if one side is already at a huge advantage, one-point &lsquo;mistakes&rsquo; are not really relevant anymore.</p>
+<p>Since games tend to have more extreme win-rate differences towards their end (as there is a clear likely winner), the DQ measure systematically overestimates the importance of human mistakes in the early stages of the game.</p>
+<p>I would like to make clear that this &lsquo;flaw&rsquo; in DQ as a metric isn&rsquo;t that problematic if you&rsquo;re comparing two moves played at the same stage of the game, as in that case an &lsquo;8% mistake&rsquo; will have a comparable meaning in both cases. I think its rather problematic as a metric to compare decision quality of moves played at different stages of the game, where an &lsquo;8% mistake&rsquo; can mean vastly different things.</p>
+<hr>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>for reference, a usual game lasts around 240 moves if neither player resigns, and the game is played until territory can be scored.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>as was discussed earlier in this post, human improvement after AI <em>does</em> disappear after move 60, the researchers just chose to only consider data up to move 60 for their 2022 paper.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>as described in the appendix of Shin et. al&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>komi is the artificial score added to white&rsquo;s final score at the end of the game. It is meant to compensate the advantage black gets from playing the first move, and is set to either 6.5 or 7.5 in almost all competitive matches.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-dark-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  TuesdayBornWhale 2025 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
