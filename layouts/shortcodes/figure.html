@@ -1,0 +1,25 @@
+{{/* Get parameters */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $title := .Get "title" | markdownify }}
+{{ $caption := .Get "caption" | markdownify }}
+{{ $class := .Get "class" }}
+{{ $link := .Get "link" }}
+
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+  {{ if $link }}
+    <a href="{{ $link }}">
+  {{ end }}
+  <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $title }}">
+  {{ if $link }}
+    </a>
+  {{ end }}
+
+  {{ if or $title $caption }}
+    <figcaption>
+      {{ if $caption }}
+        <div class="figure-caption">{{ $caption }}</div>
+      {{ end }}
+    </figcaption>
+  {{ end }}
+</figure>

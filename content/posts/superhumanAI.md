@@ -2,13 +2,16 @@
 title: "Can superhuman AI help us improve?"
 subtitle: "discussing data from the game of go"
 date: 2025-09-13T22:47:46+02:00
-featured_image: '/images/human_AI_gap.png'
+
 layout: math_post
 draft: false
 ---
 {{< math_post >}}
 
-{{< figure src="/images/human_AI_gap.png" title="graph showing drop in the gap between human experts and AI in go since AI. From Shin et. al [2020](https://arxiv.org/pdf/2012.15035)" >}}
+{{< figure 
+  src="/images/human_AI_gap.png" 
+  caption="Graph showing drop in the gap between human experts and AI in Go since AI. From [Shin et. al (2020)](https://arxiv.org/pdf/2012.15035)" 
+>}}
 
 As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent can superhuman AI in a domain instruct and empower humans to improve for themselves? 
 

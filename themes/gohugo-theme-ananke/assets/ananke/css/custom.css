@@ -1,3 +1,10 @@
 p {
   text-align: left;
 }
+
+.figure-caption {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-size: 0.7em;
+  color: #0c130b;
+}
