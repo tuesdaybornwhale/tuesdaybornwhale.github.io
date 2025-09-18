@@ -1,10 +1,8 @@
 ---
-title: "METR_long_tasks"
+title: "Two red-team objections to METR's research on long tasks "
 date: 2025-09-16T20:32:28+02:00
-draft: true
+draft: false
 ---
-
-## Two red-team objections to METR's research on long tasks 
 
 AI benchmarks are one attempt to track and formalise the progress of AI's developing capabilities. As explained succinctly in the introduction to ["Measuring AI Ability to Complete Long Tasks"](https://arxiv.org/abs/2503.14499), (Kwa et al.) published by METR this year, commonly used benchmarks suffer from a variety of issues. The issue I'm most interested in is that it's hard to track AI progress across time because benchmarks are not often mutually comparable. METR propose a metric which adresses this problem: the X%-(task completion) time horizon, which indicates what is the maximum length of task that an AI can complete X% of the time. I really like this metric as a first attempt to quantitatively come to grips with exactly how quickly AI is developing.
 
