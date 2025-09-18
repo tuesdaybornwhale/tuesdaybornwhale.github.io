@@ -13,7 +13,7 @@ draft: false
   caption="Graph showing drop in the gap between human experts and AI in Go since AI. From [Shin et. al (2020)](https://arxiv.org/pdf/2012.15035)" 
 >}}
 
-As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will domain experts in these tasks. This post aims to explore to what extent  superhuman AI in a domain can instruct and empower humans to improve for themselves. 
+As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will surpass domain experts in these tasks. This post aims to explore to what extent  superhuman AI in a domain can instruct and empower humans to improve for themselves. 
 
 The paper [Superhuman artificial intelligence can improve human decision-making by increasing novelty](https://www.pnas.org/doi/10.1073/pnas.2214840120) (Shin et. al), published in 2022, explores precisely this question. The authors choose to examine these impacts through the game of go, as it was famously conquered by computers back in 2016. More importantly, open-source superhuman models have been widely available since 2017, along with interactive UI's that allow players to learn from the models' choices. This makes go an interesting candidate to examine the extent to which access to a superhuman entity can help humans evolve and improve. 
 
