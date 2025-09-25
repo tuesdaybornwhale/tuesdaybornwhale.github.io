@@ -44,7 +44,7 @@ What I’d love to find out is how much stock Kwa et al. put into the ‘coding 
 
 ## Conclusion
 
-This post presents two objections I have to aspects of METR’s [“Measuring AI Ability to Complete Long Tasks”](https://arxiv.org/abs/2503.14499). My first objection is that the paper measures AI’s coding capabilities in environments with context too low to allow good predictions for when real coding tasks may be automated. AI’s coding should instead be measured in high context environments against high context humans. The other objection concerns how generalisable AI’s progress in software development may be to other types of tasks – I propose that the ‘coding is all you need’ hypothesis is a crux for generalisability and should be tested.
+This post summarises METR’s [“Measuring AI Ability to Complete Long Tasks”](https://arxiv.org/abs/2503.14499), describing why it is valuable research that I'm excited about. I additionally present two criticisms that open up directions for further research. My first objection is that the paper measures AI’s coding capabilities in environments with context too low to allow good predictions for when real coding tasks may be automated. AI’s coding should instead be measured in high context environments against high context humans. The other objection concerns how generalisable AI’s progress in software development may be to other types of tasks – I propose that the ‘coding is all you need’ hypothesis is a crux for generalisability and should be tested.
 
 
 
