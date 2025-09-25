@@ -1,5 +1,5 @@
 ---
-title: "Two red-team objections to METR's research on long tasks "
+title: "Two red-team critiques of METR's research on long tasks"
 date: 2025-09-16T20:32:28+02:00
 draft: false
 ---
@@ -10,7 +10,7 @@ In this paper, the authors make an effort to 'prototype' this metric in a practi
 
 I don't find the object-level results very compelling, as there are many methodological flaws in the way both human baseliners' and AI's performance are measured. Many of these are the result of limitations in resources and funding for a small non-profit like METR, and many are recognised and discussed thoughtfully in the paper. Overall, I see it as an excellent pilot that introduces a good idea for meaningfully tracking AI's progress over time, and lays the groundwork for this metric to be measured robustly with more resources.
 
-In the interest of red-teaming, I've assembled two objections I have to methodological choices and takeaways in the paper. I chose items which I consider aren't sufficiently addressed, and which I think aren't easily covered by just 'scaling up' (e.g. employing more human baseliners).
+In the interest of red-teaming, I've assembled two critiques I have of methodological choices and takeaways in the paper. I chose items which I consider aren't sufficiently addressed, and which I think aren't easily covered by just 'scaling up' (e.g. employing more human baseliners).
 
 ## 1. On context and environment
 
@@ -36,15 +36,15 @@ Is coding all you need – or not? Why or why not?
 
 The suites used by Kwa et al. almost exclusively contain tasks related to software development and machine learning. The paper recognises this limitation, and METR *has* since made [efforts](https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/) to examine time-horizon development across different domains. However, they also suggest[^4] that their findings may generalise at least somewhat to other domains.
 
-I’m not convinced that improvement in the X% time-horizon for coding tasks is likely to translate to other domains. One reason for my skepticism is related to my previous objection on context. Many coding tasks require less context and simpler environments than other ‘economically valuable’[^6] tasks.
+I’m not convinced that improvement in the X% time-horizon for coding tasks is likely to translate to other domains. One reason for my skepticism is related to my previous critique on context. Many coding tasks require less context and simpler environments than other ‘economically valuable’[^6] tasks.
 
 An obvious point in favour of coding capabilities generalising well is the ‘coding is all you need’ hypothesis. It postulates that improvements in AI coding should enable the automation of large parts of AI R&D in all domains. This would speed up AI’s general development as a downstream effect of its improvement in software tasks. The authors nod towards this possibility[^5], describing "substantial AI R&D automation" as likely. However, they also seem willing to explore time-horizon development across other fields, which could be interpreted as hedging against generalisation.
 
-What I’d love to find out is how much stock Kwa et al. put into the ‘coding is all you need’ hypothesis. Moreover, I’m interested in what kind of research can be done into exactly how much AI R&D can be automated as a result of advances in its coding. The reason I am objecting and not merely asking questions is that this hypothesis is a potential crux on which generalisability to other domains stands. Such a crucial hypothesis cannot be assumed, it has to be tested and justified.
+What I’d love to find out is how much stock Kwa et al. put into the ‘coding is all you need’ hypothesis. Moreover, I’m interested in what kind of research can be done into exactly how much AI R&D can be automated as a result of advances in its coding. The reason I am critiquing and not merely asking questions is that this hypothesis is a potential crux on which generalisability to other domains stands. Such a crucial hypothesis should be tested and justified.
 
 ## Conclusion
 
-This post summarises METR’s [“Measuring AI Ability to Complete Long Tasks”](https://arxiv.org/abs/2503.14499), describing why it is valuable research that I'm excited about. I additionally present two criticisms that open up directions for further research. My first objection is that the paper measures AI’s coding capabilities in environments with context too low to allow good predictions for when real coding tasks may be automated. AI’s coding should instead be measured in high context environments against high context humans. The other objection concerns how generalisable AI’s progress in software development may be to other types of tasks – I propose that the ‘coding is all you need’ hypothesis is a crux for generalisability and should be tested.
+This post briefly summarises METR’s [“Measuring AI Ability to Complete Long Tasks”](https://arxiv.org/abs/2503.14499), describing why it is valuable research that I'm excited about. I additionally present two critiques that open up avenues for further research. My first point is that the paper measures AI’s coding capabilities in environments with context too low to allow good predictions for when real coding tasks may be automated. AI’s coding should instead be measured in high context environments against high context humans. The other critique concerns how generalisable AI’s progress in software development may be to other types of tasks – I propose that the ‘coding is all you need’ hypothesis is a crux for generalisability and should be tested.
 
 
 
