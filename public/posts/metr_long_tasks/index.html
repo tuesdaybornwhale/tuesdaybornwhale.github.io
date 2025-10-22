@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Two red-team objections to METR&#39;s research on long tasks  | TuesdayBornWhale</title>
+    <title>Two red-team critiques of METR&#39;s research on long tasks | TuesdayBornWhale</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="AI benchmarks are one attempt to track and formalise the progress of AI&rsquo;s developing capabilities. As explained succinctly in the introduction to &ldquo;Measuring AI Ability to Complete Long Tasks&rdquo; (Kwa et al.), published by METR this year, commonly used benchmarks suffer from a variety of issues. One of them is that it&rsquo;s hard to track AI progress across time because benchmarks are often not mutually comparable. METR proposes a metric which addresses this problem: the X% (task completion) time horizon, defined as the maximum length of task for a human that an AI can complete X% of the time. I really like this metric as an attempt to quantitatively come to grips with how AI is developing over time.">
     <meta name="generator" content="Hugo 0.150.0">
@@ -33,7 +33,7 @@
     
     <meta property="og:url" content="http://localhost:1313/posts/metr_long_tasks/">
   <meta property="og:site_name" content="TuesdayBornWhale">
-  <meta property="og:title" content="Two red-team objections to METR&#39;s research on long tasks ">
+  <meta property="og:title" content="Two red-team critiques of METR&#39;s research on long tasks">
   <meta property="og:description" content="AI benchmarks are one attempt to track and formalise the progress of AI’s developing capabilities. As explained succinctly in the introduction to “Measuring AI Ability to Complete Long Tasks” (Kwa et al.), published by METR this year, commonly used benchmarks suffer from a variety of issues. One of them is that it’s hard to track AI progress across time because benchmarks are often not mutually comparable. METR proposes a metric which addresses this problem: the X% (task completion) time horizon, defined as the maximum length of task for a human that an AI can complete X% of the time. I really like this metric as an attempt to quantitatively come to grips with how AI is developing over time.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -41,13 +41,13 @@
     <meta property="article:published_time" content="2025-09-16T20:32:28+02:00">
     <meta property="article:modified_time" content="2025-09-16T20:32:28+02:00">
 
-  <meta itemprop="name" content="Two red-team objections to METR&#39;s research on long tasks ">
+  <meta itemprop="name" content="Two red-team critiques of METR&#39;s research on long tasks">
   <meta itemprop="description" content="AI benchmarks are one attempt to track and formalise the progress of AI’s developing capabilities. As explained succinctly in the introduction to “Measuring AI Ability to Complete Long Tasks” (Kwa et al.), published by METR this year, commonly used benchmarks suffer from a variety of issues. One of them is that it’s hard to track AI progress across time because benchmarks are often not mutually comparable. METR proposes a metric which addresses this problem: the X% (task completion) time horizon, defined as the maximum length of task for a human that an AI can complete X% of the time. I really like this metric as an attempt to quantitatively come to grips with how AI is developing over time.">
   <meta itemprop="datePublished" content="2025-09-16T20:32:28+02:00">
   <meta itemprop="dateModified" content="2025-09-16T20:32:28+02:00">
-  <meta itemprop="wordCount" content="1341">
+  <meta itemprop="wordCount" content="1353">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Two red-team objections to METR&#39;s research on long tasks ">
+  <meta name="twitter:title" content="Two red-team critiques of METR&#39;s research on long tasks">
   <meta name="twitter:description" content="AI benchmarks are one attempt to track and formalise the progress of AI’s developing capabilities. As explained succinctly in the introduction to “Measuring AI Ability to Complete Long Tasks” (Kwa et al.), published by METR this year, commonly used benchmarks suffer from a variety of issues. One of them is that it’s hard to track AI progress across time because benchmarks are often not mutually comparable. METR proposes a metric which addresses this problem: the X% (task completion) time horizon, defined as the maximum length of task for a human that an AI can complete X% of the time. I really like this metric as an attempt to quantitatively come to grips with how AI is developing over time.">
 
 	
@@ -133,7 +133,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Two red-team objections to METR&#39;s research on long tasks </h1>
+      <h1 class="f1 athelas mt3 mb1">Two red-team critiques of METR&#39;s research on long tasks</h1>
       
 
       
@@ -146,13 +146,13 @@
       
       
         <span class="f6 mv4 dib tracked"> - 7 minutes read </span>
-        <span class="f6 mv4 dib tracked"> - 1341 words </span>
+        <span class="f6 mv4 dib tracked"> - 1353 words </span>
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>AI benchmarks are one attempt to track and formalise the progress of AI&rsquo;s developing capabilities. As explained succinctly in the introduction to <a href="https://arxiv.org/abs/2503.14499">&ldquo;Measuring AI Ability to Complete Long Tasks&rdquo;</a> (Kwa et al.), published by METR this year, commonly used benchmarks suffer from a variety of issues. One of them is that it&rsquo;s hard to track AI progress across time because benchmarks are often not mutually comparable. METR proposes a metric which addresses this problem: the X% (task completion) time horizon, defined as the maximum length of task for a human that an AI can complete X% of the time. I really like this metric as an attempt to quantitatively come to grips with how AI is developing over time.</p>
 <p>In this paper, the authors make an effort to &lsquo;prototype&rsquo; this metric in a practical setting, by measuring the development of the 50% and 80% time horizons in LLMs since GPT-2. They do so by employing human baseliners to perform coding tasks<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, garnering an estimate of the time each task takes. They then evaluate the performance of LLMs since GPT-2 on each task and extract a binary value (did they &lsquo;do&rsquo; the task or not).</p>
-<p>I don&rsquo;t find the object-level results very compelling, as there are many methodological flaws in the way both human baseliners&rsquo; and AI&rsquo;s performance are measured. Many of these are the result of limitations in resources and funding for a small non-profit like METR, and many are recognised and discussed thoughtfully in the paper. Overall, I see it as a pilot that introduces a good idea for meaningfully tracking AI&rsquo;s progress over time, and lays the groundwork for this metric to be measured robustly with more resources.</p>
-<p>In the interest of red-teaming, I&rsquo;ve assembled two objections I have to methodological choices and takeaways in the paper. I chose items which I consider aren&rsquo;t sufficiently addressed, and which I think aren&rsquo;t easily covered by just &lsquo;scaling up&rsquo; (e.g. employing more human baseliners).</p>
+<p>I don&rsquo;t find the object-level results very compelling, as there are many methodological flaws in the way both human baseliners&rsquo; and AI&rsquo;s performance are measured. Many of these are the result of limitations in resources and funding for a small non-profit like METR, and many are recognised and discussed thoughtfully in the paper. Overall, I see it as an excellent pilot that introduces a good idea for meaningfully tracking AI&rsquo;s progress over time, and lays the groundwork for this metric to be measured robustly with more resources.</p>
+<p>In the interest of red-teaming, I&rsquo;ve assembled two critiques I have of methodological choices and takeaways in the paper. I chose items which I consider aren&rsquo;t sufficiently addressed, and which I think aren&rsquo;t easily covered by just &lsquo;scaling up&rsquo; (e.g. employing more human baseliners).</p>
 <h2 id="1-on-context-and-environment">1. On context and environment</h2>
 <p>A subset of <a href="https://arxiv.org/pdf/2503.17354">HCAST</a> tasks were given to both agents and human baseliners in <a href="https://vivaria.metr.org/">vivaria</a>, METR&rsquo;s open-source tool for running evaluations on agents. According to Kwa et al, these tasks require &ldquo;much less context&rdquo; than usual software tasks. Moreover, these were selected among other things to need only text input without, for example, visual inputs needed. Finally, all given HCAST tasks are &ldquo;solvable by text editing via a bash shell&rdquo;.</p>
 <p>I point these details out to emphasize how the tasks are selected to be tractable for LLMs, and that human baseliners were made to complete these tasks with equally low context and in limited environments. I think this is relevant because humans have a comparative advantage with respect to LLMs in more complex environments and probably use context to their advantage in completing real-world tasks.</p>
@@ -166,11 +166,11 @@
 <h2 id="2-on-generalisability-and-coding-is-all-you-need">2. On generalisability and &lsquo;coding is all you need&rsquo;</h2>
 <p>Is coding all you need – or not? Why or why not?</p>
 <p>The suites used by Kwa et al. almost exclusively contain tasks related to software development and machine learning. The paper recognises this limitation, and METR <em>has</em> since made <a href="https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/">efforts</a> to examine time-horizon development across different domains. However, they also suggest<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> that their findings may generalise at least somewhat to other domains.</p>
-<p>I’m not convinced that improvement in the X% time-horizon for coding tasks is likely to translate to other domains. One reason for my skepticism is related to my previous objection on context. Many coding tasks require less context and simpler environments than other ‘economically valuable’<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> tasks.</p>
+<p>I’m not convinced that improvement in the X% time-horizon for coding tasks is likely to translate to other domains. One reason for my skepticism is related to my previous critique on context. Many coding tasks require less context and simpler environments than other ‘economically valuable’<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> tasks.</p>
 <p>An obvious point in favour of coding capabilities generalising well is the ‘coding is all you need’ hypothesis. It postulates that improvements in AI coding should enable the automation of large parts of AI R&amp;D in all domains. This would speed up AI’s general development as a downstream effect of its improvement in software tasks. The authors nod towards this possibility<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, describing &ldquo;substantial AI R&amp;D automation&rdquo; as likely. However, they also seem willing to explore time-horizon development across other fields, which could be interpreted as hedging against generalisation.</p>
-<p>What I’d love to find out is how much stock Kwa et al. put into the ‘coding is all you need’ hypothesis. Moreover, I’m interested in what kind of research can be done into exactly how much AI R&amp;D can be automated as a result of advances in its coding. The reason I am objecting and not merely asking questions is that this hypothesis is a potential crux on which generalisability to other domains stands. Such a crucial hypothesis cannot be assumed, it has to be tested and justified.</p>
+<p>What I’d love to find out is how much stock Kwa et al. put into the ‘coding is all you need’ hypothesis. Moreover, I’m interested in what kind of research can be done into exactly how much AI R&amp;D can be automated as a result of advances in its coding. The reason I am critiquing and not merely asking questions is that this hypothesis is a potential crux on which generalisability to other domains stands. Such a crucial hypothesis should be tested and justified.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>This post presents two objections I have to aspects of METR’s <a href="https://arxiv.org/abs/2503.14499">“Measuring AI Ability to Complete Long Tasks”</a>. My first objection is that the paper measures AI’s coding capabilities in environments with context too low to allow good predictions for when real coding tasks may be automated. AI’s coding should instead be measured in high context environments against high context humans. The other objection concerns how generalisable AI’s progress in software development may be to other types of tasks – I propose that the ‘coding is all you need’ hypothesis is a crux for generalisability and should be tested.</p>
+<p>This post briefly summarises METR’s <a href="https://arxiv.org/abs/2503.14499">“Measuring AI Ability to Complete Long Tasks”</a>, describing why it is valuable research that I&rsquo;m excited about. I additionally present two critiques that open up avenues for further research. My first point is that the paper measures AI’s coding capabilities in environments with context too low to allow good predictions for when real coding tasks may be automated. AI’s coding should instead be measured in high context environments against high context humans. The other critique concerns how generalisable AI’s progress in software development may be to other types of tasks – I propose that the ‘coding is all you need’ hypothesis is a crux for generalisability and should be tested.</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
