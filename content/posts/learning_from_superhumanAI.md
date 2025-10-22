@@ -10,7 +10,7 @@ draft: false
 
 {{< figure 
   src="/images/human_AI_gap.png" 
-  caption="Graph showing drop in the gap between human experts and AI in Go since AI. From [Shin et al. (2020)](https://arxiv.org/pdf/2012.15035)" 
+  caption="Graph showing a drop in the gap between human experts and AI in Go since AI. From [Shin et al. (2020)](https://arxiv.org/pdf/2012.15035)" 
 >}}
 
 As AI continues to improve at writing and math-based tasks, it seems plausible that it either has or soon will surpass domain experts in some of these tasks. This post aims to explore to what extent superhuman AI in a domain can instruct and empower humans to improve for themselves. 
